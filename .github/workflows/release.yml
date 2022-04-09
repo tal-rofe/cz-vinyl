@@ -21,7 +21,7 @@ jobs:
             - name: Installing dependencies
               run: yarn install --immutable --immutable-cache --check-cache --ignore-scripts
 
-            - name: Check build command
+            - name: Build dist folder
               run: yarn run build
 
             - name: Semantic Release
