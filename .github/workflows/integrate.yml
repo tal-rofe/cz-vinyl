@@ -19,7 +19,7 @@ jobs:
                   node-version: 16
 
             - name: Installing dependencies
-              run: yarn install --immutable --immutable-cache --check-cache
+              run: yarn install --immutable --immutable-cache --check-cache --ignore-scripts
 
             - name: Check unused dependencies
               run: yarn run depcheck
