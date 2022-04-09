@@ -48,7 +48,7 @@ Add this to your `package.json`:
 ```json
 "config": {
   "commitizen": {
-    "path": "cz-emoji"
+    "path": "cz-vinyl"
   }
 }
 ```
