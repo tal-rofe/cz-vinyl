@@ -32,7 +32,7 @@
 		"preinstall": "npx only-allow yarn",
 		"husky:install": "husky install",
 		"git:config": "git config --local include.path ../.gitconfig",
-		"prepare": "yarn build && run-p husky:install git:config || exit 0",
+		"prepare": "run-p husky:install git:config",
 		"build": "tsc --project ./tsconfig.build.json && tsc-alias --project ./tsconfig.build.json",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",

@@ -13,6 +13,17 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v3
 
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+
+            - name: Installing dependencies
+              run: yarn install --immutable --immutable-cache --check-cache --ignore-scripts
+
+            - name: Check build command
+              run: yarn run build
+
             - name: Semantic Release
               uses: cycjimmy/semantic-release-action@v2
               with:
