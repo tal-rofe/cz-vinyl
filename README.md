@@ -62,7 +62,7 @@ $ git cz
 ## Configuration
 
 Like commitizen, you can specify the configuration of cz-vinyl through various options.
-Configuration can be set in the following:
+Configuration can be set in the following files:
 
 -   a `package.json` property: `"czvinyl": {...}`
 -   a `.czvinylrc` file in JSON or YAML format
