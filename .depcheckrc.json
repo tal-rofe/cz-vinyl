@@ -1,0 +1,4 @@
+{
+	"ignores": ["@commitlint/cli", "commitizen", "lint-staged"],
+	"skipMissing": true
+}

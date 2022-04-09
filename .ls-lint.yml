@@ -1,0 +1,18 @@
+ls:
+    src:
+        .dir: kebab-case
+    tests:
+        .dir: kebab-case
+    .ts: kebab-case
+    .d.ts: kebab-case
+    .test.ts: kebab-case
+    .png: kebab-case
+    .jpg: kebab-case
+
+ignore:
+    - .github
+    - .husky
+    - .vscode
+    - '@types'
+    - coverage
+    - node_modules
