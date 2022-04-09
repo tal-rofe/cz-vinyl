@@ -16,7 +16,7 @@
 		}
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/Vinyl-Depository/cz-vinyl",
+	"homepage": "https://github.com/Vinyl-Depository/cz-vinyl#readme",
 	"bugs": {
 		"url": "https://github.com/Vinyl-Depository/cz-vinyl/issues"
 	},
@@ -32,7 +32,7 @@
 		"preinstall": "npx only-allow yarn",
 		"husky:install": "husky install",
 		"git:config": "git config --local include.path ../.gitconfig",
-		"prepare": "run-p husky:install git:config || exit 0",
+		"prepare": "yarn build && run-p husky:install git:config || exit 0",
 		"build": "tsc --project ./tsconfig.build.json && tsc-alias --project ./tsconfig.build.json",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
