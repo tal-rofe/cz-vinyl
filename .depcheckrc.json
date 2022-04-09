@@ -1,4 +1,4 @@
 {
-	"ignores": ["@commitlint/cli", "commitizen", "lint-staged"],
+	"ignores": ["@commitlint/cli", "commitizen", "lint-staged", "cz-vinyl"],
 	"skipMissing": true
 }

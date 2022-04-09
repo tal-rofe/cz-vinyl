@@ -1782,6 +1782,19 @@ cz-conventional-changelog@3.2.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
+cz-vinyl@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/cz-vinyl/-/cz-vinyl-1.0.5.tgz#1cd5ab5594d4daf51411f1be8848c593ec85ba61"
+  integrity sha512-zdad6griTYahpEjeEDyeswVckzlW0OoOkee28hBO1yf1/mrhR4n/mwWeuzCTlIMYyhbU1M7uh+IrUJXzxL3WKg==
+  dependencies:
+    cosmiconfig "7.0.1"
+    fuse.js "6.5.3"
+    inquirer "8.2.2"
+    inquirer-autocomplete-prompt "2.0.0"
+    inquirer-maxlength-input-prompt "1.0.2"
+    simple-git "3.5.0"
+    word-wrap "1.2.3"
+
 dargs@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/dargs/-/dargs-7.0.0.tgz#04015c41de0bcb69ec84050f3d9be0caf8d6d5cc"
