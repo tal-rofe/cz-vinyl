@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.0...v1.0.1) (2022-04-09)
+
+
+### Bug Fixes
+
+* 🐞 fix prepare script in ci ([bb2f7f7](https://github.com/Vinyl-Depository/cz-vinyl/commit/bb2f7f70f51c9ee5dfc04f8f9ef635e358ff42aa))
+
 # 1.0.0 (2022-04-09)
 
 
