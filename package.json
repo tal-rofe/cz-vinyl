@@ -63,7 +63,7 @@
 		"@typescript-eslint/eslint-plugin": "5.18.0",
 		"@typescript-eslint/parser": "5.18.0",
 		"commitizen": "4.2.4",
-		"cz-vinyl": "1.0.5",
+		"cz-vinyl": "1.0.8",
 		"depcheck": "1.4.3",
 		"eslint": "8.12.0",
 		"eslint-config-prettier": "8.5.0",
