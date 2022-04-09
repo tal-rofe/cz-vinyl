@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.1...v1.0.2) (2022-04-09)
+
+
+### Bug Fixes
+
+* 🐞 build dist folder when publish to npm ([a549c62](https://github.com/Vinyl-Depository/cz-vinyl/commit/a549c62dc74872faf853c2f90a5efde1375641ec))
+
 ## [1.0.1](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.0...v1.0.1) (2022-04-09)
 
 
