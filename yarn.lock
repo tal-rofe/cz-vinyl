@@ -1782,10 +1782,10 @@ cz-conventional-changelog@3.2.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
-cz-vinyl@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/cz-vinyl/-/cz-vinyl-1.0.5.tgz#1cd5ab5594d4daf51411f1be8848c593ec85ba61"
-  integrity sha512-zdad6griTYahpEjeEDyeswVckzlW0OoOkee28hBO1yf1/mrhR4n/mwWeuzCTlIMYyhbU1M7uh+IrUJXzxL3WKg==
+cz-vinyl@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/cz-vinyl/-/cz-vinyl-1.0.8.tgz#7bc9ce0d68bcb4df319c2b5585b3be15d1e24b71"
+  integrity sha512-lArAwBhi5C+WvCYhWUP6qD6GTcJUX76ynto2dAHBiJh4bN7pNp9plHnudNlbPRWcca0QxQCH5liiY7XD7W51FA==
   dependencies:
     cosmiconfig "7.0.1"
     fuse.js "6.5.3"
