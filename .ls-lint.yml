@@ -8,6 +8,7 @@ ls:
     .test.ts: kebab-case
     .png: kebab-case
     .jpg: kebab-case
+    .gif: kebab-case
 
 ignore:
     - .github

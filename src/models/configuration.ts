@@ -58,11 +58,11 @@ export const CONFIGURATION_MODULE_NAME = 'czvinyl';
 export const DEFAULT_CONFIGURATION = {
 	commitTypes: DEFAULT_COMMIT_TYPES,
 	maxCommitLineWidth: 72,
-	typeQuestion: "Select the type of changes you're commiting:",
+	typeQuestion: "Select the type of changes you're commiting:\n",
 	scopeQuestion: 'Specify a scope:',
 	skipScope: true,
 	scopes: [],
-	ticketIdQuestion: 'Type the ticket Id (ex. V-12345):',
+	ticketIdQuestion: 'Type the JIRA Id (ex. V-12345):',
 	skipTicketId: false,
 	ticketIdRegex: TICKET_ID_REGEX,
 	subjectQuestion: 'Write a short, imperative mood description of the change:\n',
