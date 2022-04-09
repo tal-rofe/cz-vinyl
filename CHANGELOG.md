@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.3...v1.0.4) (2022-04-09)
+
+
+### Bug Fixes
+
+* 🐞 remove npmignore file and fix package json "files" entry ([f4f014e](https://github.com/Vinyl-Depository/cz-vinyl/commit/f4f014ef9e785573278a5c45ae00f08c70050d1a))
+
 ## [1.0.3](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.2...v1.0.3) (2022-04-09)
 
 
