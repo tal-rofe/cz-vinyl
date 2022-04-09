@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.2...v1.0.3) (2022-04-09)
+
+
+### Bug Fixes
+
+* 🐞 remove redundant file from publish folder ([8e38d11](https://github.com/Vinyl-Depository/cz-vinyl/commit/8e38d1143cab75a0987dd6c462e11c3b3530dac4))
+
 ## [1.0.2](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.1...v1.0.2) (2022-04-09)
 
 
