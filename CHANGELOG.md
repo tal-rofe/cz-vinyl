@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.5...v1.0.6) (2022-04-09)
+
+
+### Bug Fixes
+
+* 🐞 added readme and edited configuration text ([e022d31](https://github.com/Vinyl-Depository/cz-vinyl/commit/e022d316a2ec8b0ade066592b3c268b7901ff3ce))
+
 ## [1.0.5](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.4...v1.0.5) (2022-04-09)
 
 
