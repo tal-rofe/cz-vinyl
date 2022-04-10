@@ -36,7 +36,7 @@
 		"build": "tsc --project ./tsconfig.build.json && tsc-alias --project ./tsconfig.build.json",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"format": "prettier --write \"**/*.{ts,tsx,scss,js,json}\"",
+		"format": "prettier --write \"**/*.{ts,js,json}\"",
 		"type-check": "tsc --project ./tsconfig.json",
 		"lslint": "ls-lint",
 		"test": "jest",
