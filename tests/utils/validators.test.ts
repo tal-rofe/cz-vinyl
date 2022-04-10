@@ -69,4 +69,29 @@ describe('[utils/validators]', () => {
 
 		expect(JSON.stringify(result) === JSON.stringify(expectedOutput)).toEqual(true);
 	});
+
+	// ! - Note that the object's order is important
+	it('validateEnvConfiguration | Function should return a proper object when a known envirnoment variables types are valid', () => {
+		const expectedOutput = {
+			commitTypes: [{ value: 'X', description: 'Y' }],
+			maxCommitLineWidth: 5,
+			scopes: ['JUST A TEST'],
+			subjectMaxLength: 5,
+			subjectMinLength: 10,
+			skipIssues: false,
+		};
+
+		sandbox.stub(process, 'env').value({
+			CZ_SKIP_ISSUES: 'false',
+			CZ_MAX_COMMIT_LINE_WIDTH: '5',
+			CZ_SUBJECT_MAX_LENGTH: '5',
+			CZ_SUBJECT_MIN_LENGTH: '10',
+			CZ_SCOPES: '["JUST A TEST"]',
+			CZ_COMMIT_TYPES: '[{ "value": "X", "description": "Y" }]',
+		});
+
+		const result = validateEnvConfiguration();
+
+		expect(JSON.stringify(result) === JSON.stringify(expectedOutput)).toEqual(true);
+	});
 });
