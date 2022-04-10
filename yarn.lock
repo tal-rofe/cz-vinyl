@@ -1782,17 +1782,17 @@ cz-conventional-changelog@3.2.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
-cz-vinyl@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/cz-vinyl/-/cz-vinyl-1.0.8.tgz#7bc9ce0d68bcb4df319c2b5585b3be15d1e24b71"
-  integrity sha512-lArAwBhi5C+WvCYhWUP6qD6GTcJUX76ynto2dAHBiJh4bN7pNp9plHnudNlbPRWcca0QxQCH5liiY7XD7W51FA==
+cz-vinyl@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cz-vinyl/-/cz-vinyl-1.1.0.tgz#18bd5f86436cbc64b30ccb23b0968764fe740045"
+  integrity sha512-r2pv6neNPSfsyplooOm9ZKcYwOLn7RDR6irV7BXlOQpX7Bymfg2u2fkxGBFq3s5n/5k7yKLo50YZW2KIpikEsQ==
   dependencies:
     cosmiconfig "7.0.1"
     fuse.js "6.5.3"
     inquirer "8.2.2"
     inquirer-autocomplete-prompt "2.0.0"
     inquirer-maxlength-input-prompt "1.0.2"
-    simple-git "3.5.0"
+    simple-git "3.6.0"
     word-wrap "1.2.3"
 
 dargs@^7.0.0:
@@ -4776,15 +4776,6 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
-
-simple-git@3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.5.0.tgz#3c3538f4d7a1b3c8f3904412b12740bdcad9c8b1"
-  integrity sha512-fZsaq5nzdxQRhMNs6ESGLpMUHoL5GRP+boWPhq9pMYMKwOGZV2jHOxi8AbFFA2Y/6u4kR99HoULizSbpzaODkA==
-  dependencies:
-    "@kwsites/file-exists" "^1.1.1"
-    "@kwsites/promise-deferred" "^1.1.1"
-    debug "^4.3.3"
 
 simple-git@3.6.0:
   version "3.6.0"
