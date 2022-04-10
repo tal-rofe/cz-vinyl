@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.8...v1.1.0) (2022-04-10)
+
+
+### Features
+
+* 🔥 added validations and environments variables ([1659da3](https://github.com/Vinyl-Depository/cz-vinyl/commit/1659da3619b18d3c1a7d49a434aee4d741356dfd))
+* 🔥 added validations and environments variables ([ff193da](https://github.com/Vinyl-Depository/cz-vinyl/commit/ff193da02d18021af9b8e5033e95cc4dad1c9261))
+
 ## [1.0.8](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.7...v1.0.8) (2022-04-09)
 
 
