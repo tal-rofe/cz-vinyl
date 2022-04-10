@@ -4786,6 +4786,15 @@ simple-git@3.5.0:
     "@kwsites/promise-deferred" "^1.1.1"
     debug "^4.3.3"
 
+simple-git@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.6.0.tgz#28a9ebb7ca55495bb4e6cc5d367b4543e2d857a4"
+  integrity sha512-2e+4QhOVO59GeLsHgwSMKNrSKCnuACeA/gMNrLCYR8ID9qwm4hViVt4WsODcUGjx//KDv6GMLC6Hs/MeosgXxg==
+  dependencies:
+    "@kwsites/file-exists" "^1.1.1"
+    "@kwsites/promise-deferred" "^1.1.1"
+    debug "^4.3.3"
+
 sinon@13.0.1:
   version "13.0.1"
   resolved "https://registry.yarnpkg.com/sinon/-/sinon-13.0.1.tgz#2a568beca2084c48985dd98e276e065c81738e3c"
