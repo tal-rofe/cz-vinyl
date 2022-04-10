@@ -62,7 +62,7 @@ $ git cz
 ## Configuration
 
 Like commitizen, you can specify the configuration of cz-vinyl through various options.
-Configuration can be set in the following files:
+Configuration can be set in environment variables or in the following files:
 
 -   a `package.json` property: `"czvinyl": {...}`
 -   a `.czvinylrc` file in JSON or YAML format
@@ -126,25 +126,25 @@ The default commit types, descriptions and emoji that are used are:
 ]
 ```
 
-| Key                   | Type       | default                                                       | Description                                                                |
-| :-------------------- | :--------- | :------------------------------------------------------------ | :------------------------------------------------------------------------- |
-| `commitTypes`         | `object`   | Above                                                         | The commit types to work with. Only `value` and `description` are required |
-| `maxCommitLineWidth`  | `number`   | `72`                                                          | Wraps the commit body message with max line width                          |
-| `typeQuestion`        | `string`   | `Select the type of changes you're commiting:\n`              | The CLI question for type                                                  |
-| `scopeQuestion`       | `string`   | `Specify a scope:`                                            | The CLI question for scope                                                 |
-| `skipScope`           | `boolean`  | `true`                                                        | Whether to prompt the user to a scope question                             |
-| `scopes`              | `string[]` | `[]`                                                          | Available scopes (empty array allows free text)                            |
-| `ticketIdQuestion`    | `string`   | `Type the JIRA Id (ex. V-12345):`                             | The CLI question for ticket ID                                             |
-| `skipTicketId`        | `boolean`  | `false`                                                       | Whether to prompt the user to a ticket ID question                         |
-| `ticketIdRegex`       | `string`   | `((?<!([A-Z]{1,10})-?)[A-Z]+-\d+)`                            | A string represents a valid RegEx to extract ticket ID from the branch     |
-| `subjectQuestion`     | `string`   | `Write a short, imperative mood description of the change:\n` | The CLI question for subject                                               |
-| `subjectMaxLength`    | `number`   | `70`                                                          | Max length of the subject text                                             |
-| `subjectMinLength`    | `number`   | `3`                                                           | Min length of the subject text                                             |
-| `bodyQuestion`        | `string`   | `Provide a longer description of the change:\n`               | The CLI question for body                                                  |
-| `skipBody`            | `boolean`  | `false`                                                       | Whether to prompt the user to a body question                              |
-| `skipBreakingChanges` | `boolean`  | `true`                                                        | Whether to prompt the user to a breaking change question                   |
-| `issuesQuestion`      | `string`   | `List any issue closed (#1, #2, ...):`                        | The CLI question for issues                                                |
-| `skipIssues`          | `boolean`  | `true`                                                        | Whether to prompt the user to a issues question                            |
+| Environment variable       | Key                   | Type       | default                                                       | Description                                                                |
+| :------------------------- | :-------------------- | :--------- | :------------------------------------------------------------ | :------------------------------------------------------------------------- |
+| `CZ_COMMIT_TYPES`          | `commitTypes`         | `array`    | Above                                                         | The commit types to work with. Only `value` and `description` are required |
+| `CZ_MAX_COMMIT_LINE_WIDTH` | `maxCommitLineWidth`  | `number`   | `72`                                                          | Wraps the commit body message with max line width                          |
+| `CZ_TYPE_QUESTION`         | `typeQuestion`        | `string`   | `Select the type of changes you're commiting:\n`              | The CLI question for type                                                  |
+| `CZ_SCOPE_QUESTION`        | `scopeQuestion`       | `string`   | `Specify a scope:`                                            | The CLI question for scope                                                 |
+| `CZ_SKIP_SCOPE`            | `skipScope`           | `boolean`  | `true`                                                        | Whether to prompt the user to a scope question                             |
+| `CZ_SCOPES`                | `scopes`              | `string[]` | `[]`                                                          | Available scopes (empty array allows free text)                            |
+| `CZ_TICKET_ID_QUESTION`    | `ticketIdQuestion`    | `string`   | `Type the JIRA Id (ex. V-12345):`                             | The CLI question for ticket ID                                             |
+| `CZ_SKIP_TICKET_ID`        | `skipTicketId`        | `boolean`  | `false`                                                       | Whether to prompt the user to a ticket ID question                         |
+| `CZ_TICKET_ID_REGEX`       | `ticketIdRegex`       | `string`   | `((?<!([A-Z]{1,10})-?)[A-Z]+-\d+)`                            | A string represents a valid RegEx to extract ticket ID from the branch     |
+| `CZ_SUBJECT_QUESTION`      | `subjectQuestion`     | `string`   | `Write a short, imperative mood description of the change:\n` | The CLI question for subject                                               |
+| `CZ_SUBJECT_MAX_LENGTH`    | `subjectMaxLength`    | `number`   | `70`                                                          | Max length of the subject text                                             |
+| `CZ_SUBJECT_MIN_LENGTH`    | `subjectMinLength`    | `number`   | `3`                                                           | Min length of the subject text                                             |
+| `CZ_BODY_QUESTION`         | `bodyQuestion`        | `string`   | `Provide a longer description of the change:\n`               | The CLI question for body                                                  |
+| `CZ_SKIP_BODY`             | `skipBody`            | `boolean`  | `false`                                                       | Whether to prompt the user to a body question                              |
+| `SKIP_BREAKING_CHANGES`    | `skipBreakingChanges` | `boolean`  | `true`                                                        | Whether to prompt the user to a breaking change question                   |
+| `CZ_ISSUES_QUESTION`       | `issuesQuestion`      | `string`   | `List any issue closed (#1, #2, ...):`                        | The CLI question for issues                                                |
+| `CZ_SKIP_ISSUES`           | `skipIssues`          | `boolean`  | `true`                                                        | Whether to prompt the user to a issues question                            |
 
 ## Examples
 

@@ -3,10 +3,10 @@ const customJestConfig = {
 	coveragePathIgnorePatterns: ['<rootDir>/src/models', '<rootDir>/src/index.ts'],
 	coverageThreshold: {
 		global: {
-			branches: 60,
-			functions: 60,
-			lines: 60,
-			statements: 60,
+			branches: 83,
+			functions: 83,
+			lines: 83,
+			statements: 83,
 		},
 	},
 	moduleNameMapper: {
