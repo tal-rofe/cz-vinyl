@@ -82,7 +82,7 @@ export interface ICommitType {
 }
 
 export interface IConfiguration {
-	readonly commitTypes: ReadonlyArray<ICommitType>;
+	readonly commitTypes: ICommitType[];
 	readonly maxCommitLineWidth: number;
 	readonly typeQuestion: string;
 	readonly scopeQuestion: string;
