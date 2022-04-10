@@ -50,7 +50,7 @@
 		"inquirer": "8.2.2",
 		"inquirer-autocomplete-prompt": "2.0.0",
 		"inquirer-maxlength-input-prompt": "1.0.2",
-		"simple-git": "3.5.0",
+		"simple-git": "3.6.0",
 		"word-wrap": "1.2.3"
 	},
 	"devDependencies": {
