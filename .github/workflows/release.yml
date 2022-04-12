@@ -19,7 +19,7 @@ jobs:
                   node-version: 16
 
             - name: Installing dependencies
-              run: yarn install --immutable --immutable-cache --check-cache --ignore-scripts
+              run: yarn install --immutable --immutable-cache --check-cache
 
             - name: Build dist folder
               run: yarn run build
