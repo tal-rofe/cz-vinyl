@@ -27,6 +27,7 @@ const prompter = async (cz: Inquirer, commit: Commit) => {
 	commit(
 		[
 			formatHeader(
+				configuration.headerFormat,
 				answers.type.type,
 				answers.scope,
 				answers.type.emoji,

@@ -56,6 +56,7 @@ const DEFAULT_COMMIT_TYPES = [
 export const CONFIGURATION_MODULE_NAME = 'czvinyl';
 
 export const DEFAULT_CONFIGURATION = {
+	headerFormat: '{{ type }}: {{ emoji }} [{{ ticket_id }}] {{ subject }}',
 	commitTypes: DEFAULT_COMMIT_TYPES,
 	maxCommitLineWidth: 72,
 	typeQuestion: "Select the type of changes you're commiting:\n",
@@ -82,6 +83,7 @@ export interface ICommitType {
 }
 
 export interface IConfiguration {
+	readonly headerFormat: string;
 	readonly commitTypes: ICommitType[];
 	readonly maxCommitLineWidth: number;
 	readonly typeQuestion: string;

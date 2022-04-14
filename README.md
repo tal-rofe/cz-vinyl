@@ -128,7 +128,8 @@ The default commit types, descriptions and emoji that are used are:
 
 | Environment variable       | Key                   | Type       | default                                                       | Description                                                                |
 | :------------------------- | :-------------------- | :--------- | :------------------------------------------------------------ | :------------------------------------------------------------------------- |
-| `CZ_COMMIT_TYPES`          | `commitTypes`         | `array`    | Above                                                         | The commit types to work with. Only `value` and `description` are required |
+| `CZ_HEADER_FORMAT`         | `headerFormat`        | `string`   | `{type}: {emoji} [{ticket_id}] {subject}`                     | How the commit header will be formatted. Support: `type`, `scope`, `emoji`, `ticket_id`, `subject`
+| `CZ_COMMIT_TYPES`          | `commitTypes`         | `{ value: string; description: string; emoji?: string }[]`    | Above                                                         | The commit types to work with. Only `value` and `description` are required |
 | `CZ_MAX_COMMIT_LINE_WIDTH` | `maxCommitLineWidth`  | `number`   | `72`                                                          | Wraps the commit body message with max line width                          |
 | `CZ_TYPE_QUESTION`         | `typeQuestion`        | `string`   | `Select the type of changes you're commiting:\n`              | The CLI question for type                                                  |
 | `CZ_SCOPE_QUESTION`        | `scopeQuestion`       | `string`   | `Specify a scope:`                                            | The CLI question for scope                                                 |
