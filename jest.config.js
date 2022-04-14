@@ -1,6 +1,10 @@
 const customJestConfig = {
 	collectCoverageFrom: ['src/**/*.ts', '!src/**/*.d.ts'],
-	coveragePathIgnorePatterns: ['<rootDir>/src/models', '<rootDir>/src/index.ts'],
+	coveragePathIgnorePatterns: [
+		'<rootDir>/src/models',
+		'<rootDir>/src/index.ts',
+		'<rootDir>/src/utils/questions.ts',
+	],
 	coverageThreshold: {
 		global: {
 			branches: 84.7,

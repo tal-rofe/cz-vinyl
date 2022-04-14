@@ -5,6 +5,13 @@ import { getConfiguration } from '@/utils/configuration';
 import { DEFAULT_CONFIGURATION } from '@/models/configuration';
 import * as ValidatorsUtils from '@/utils/validators';
 
+const cosmiconfigFunctions = {
+	clearCaches: () => undefined,
+	clearLoadCache: () => undefined,
+	clearSearchCache: () => undefined,
+	load: () => Promise.resolve(null),
+};
+
 describe('[utils/configuration]', () => {
 	const sandbox = sinon.createSandbox();
 
@@ -13,16 +20,7 @@ describe('[utils/configuration]', () => {
 	it('getConfiguration | Function should return the default when there is no configuration file', async () => {
 		sandbox.stub(CosmiconfigUtils, 'cosmiconfig').returns({
 			search: () => Promise.resolve(null),
-			clearCaches: () => {
-				return;
-			},
-			clearLoadCache: () => {
-				return;
-			},
-			clearSearchCache: () => {
-				return;
-			},
-			load: () => Promise.resolve(null),
+			...cosmiconfigFunctions,
 		});
 
 		const result = await getConfiguration();
@@ -33,16 +31,7 @@ describe('[utils/configuration]', () => {
 	it('getConfiguration | Function should return the default when trying to get configuration file fails', async () => {
 		sandbox.stub(CosmiconfigUtils, 'cosmiconfig').returns({
 			search: Promise.reject,
-			clearCaches: () => {
-				return;
-			},
-			clearLoadCache: () => {
-				return;
-			},
-			clearSearchCache: () => {
-				return;
-			},
-			load: () => Promise.resolve(null),
+			...cosmiconfigFunctions,
 		});
 
 		const result = await getConfiguration();
@@ -57,16 +46,7 @@ describe('[utils/configuration]', () => {
 					config: { skipIssues: false },
 					filepath: 'FILE_PATH_TEST',
 				}),
-			clearCaches: () => {
-				return;
-			},
-			clearLoadCache: () => {
-				return;
-			},
-			clearSearchCache: () => {
-				return;
-			},
-			load: () => Promise.resolve(null),
+			...cosmiconfigFunctions,
 		});
 
 		const result = await getConfiguration();
@@ -90,16 +70,7 @@ describe('[utils/configuration]', () => {
 					config: configurationFromFile,
 					filepath: 'FILE_PATH_TEST',
 				}),
-			clearCaches: () => {
-				return;
-			},
-			clearLoadCache: () => {
-				return;
-			},
-			clearSearchCache: () => {
-				return;
-			},
-			load: () => Promise.resolve(null),
+			...cosmiconfigFunctions,
 		});
 		sandbox.stub(ValidatorsUtils, 'validateConfiguration').returns(configurationFromFile);
 		sandbox.stub(ValidatorsUtils, 'validateEnvConfiguration').returns({});
@@ -125,16 +96,7 @@ describe('[utils/configuration]', () => {
 					config: {},
 					filepath: 'FILE_PATH_TEST',
 				}),
-			clearCaches: () => {
-				return;
-			},
-			clearLoadCache: () => {
-				return;
-			},
-			clearSearchCache: () => {
-				return;
-			},
-			load: () => Promise.resolve(null),
+			...cosmiconfigFunctions,
 		});
 		sandbox.stub(ValidatorsUtils, 'validateConfiguration').returns({});
 		sandbox.stub(ValidatorsUtils, 'validateEnvConfiguration').returns(configurationFromENVs);
@@ -164,16 +126,7 @@ describe('[utils/configuration]', () => {
 					config: configurationFromFile,
 					filepath: 'FILE_PATH_TEST',
 				}),
-			clearCaches: () => {
-				return;
-			},
-			clearLoadCache: () => {
-				return;
-			},
-			clearSearchCache: () => {
-				return;
-			},
-			load: () => Promise.resolve(null),
+			...cosmiconfigFunctions,
 		});
 		sandbox.stub(ValidatorsUtils, 'validateConfiguration').returns(configurationFromFile);
 		sandbox.stub(ValidatorsUtils, 'validateEnvConfiguration').returns(configurationFromENVs);
