@@ -1,4 +1,5 @@
 import { ICommitType, IConfiguration } from '@/models/configuration';
+import { cleanObject } from './object';
 
 /**
  * The function validates a given number
@@ -101,11 +102,7 @@ export const validateConfiguration = (configuration: Partial<IConfiguration>) =>
 		skipIssues: validateBoolean(configuration.skipIssues),
 	};
 
-	Object.keys(finalConfiguration).forEach(
-		(key) =>
-			finalConfiguration[key as keyof IConfiguration] === undefined &&
-			delete finalConfiguration[key as keyof IConfiguration],
-	);
+	cleanObject(finalConfiguration);
 
 	return finalConfiguration;
 };
@@ -147,11 +144,7 @@ export const validateEnvConfiguration = () => {
 		skipIssues: parseStringToBoolean(process.env.CZ_SKIP_ISSUES),
 	};
 
-	Object.keys(envConfiguration).forEach(
-		(key) =>
-			envConfiguration[key as keyof IConfiguration] === undefined &&
-			delete envConfiguration[key as keyof IConfiguration],
-	);
+	cleanObject(envConfiguration);
 
 	return envConfiguration;
 };
