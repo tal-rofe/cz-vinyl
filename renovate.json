@@ -7,5 +7,6 @@
 			"automerge": true
 		}
 	],
+	"ignoreDeps": ["chalk"],
 	"commitMessageAction": "🤖 Update"
 }
