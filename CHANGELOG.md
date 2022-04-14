@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.1.0...v1.2.0) (2022-04-14)
+
+
+### Features
+
+* 🔥 support configuration for the format of the header ([68ed9ae](https://github.com/Vinyl-Depository/cz-vinyl/commit/68ed9ae70080e177f4e3489a7b573029465384df))
+
 # [1.1.0](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.0.8...v1.1.0) (2022-04-10)
 
 
