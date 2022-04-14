@@ -1,3 +1,5 @@
+import StringTemplate from 'string-template';
+
 /**
  * The function receives the issues input and formats it into the commit message
  * @param issues the issues input
@@ -19,16 +21,20 @@ export const formatIssues = (issues: string) => {
  * @returns the formatted header
  */
 export const formatHeader = (
+	format: string,
 	type: string,
 	scope: string,
 	emoji: string,
 	ticketId: string,
 	subject: string,
 ) => {
-	const scopeInHeader = `${scope ? `(${scope})` : ''}`;
-	const ticketIdInHeader = `${ticketId ? `[${ticketId}]` : ''}`;
-
-	const commitHeader = `${type}${scopeInHeader}: ${emoji || ''} ${ticketIdInHeader} ${subject}`
+	const commitHeader = StringTemplate(format, {
+		type,
+		scope,
+		emoji,
+		ticket_id: ticketId,
+		subject,
+	})
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 

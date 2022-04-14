@@ -83,6 +83,7 @@ const validateCommitTypes = (commitTypes?: ICommitType[]) => {
  */
 export const validateConfiguration = (configuration: Partial<IConfiguration>) => {
 	const finalConfiguration: Partial<IConfiguration> = {
+		headerFormat: validateString(configuration.headerFormat),
 		commitTypes: validateCommitTypes(configuration.commitTypes),
 		maxCommitLineWidth: validateInt(configuration.maxCommitLineWidth),
 		typeQuestion: validateString(configuration.typeQuestion),
@@ -125,6 +126,7 @@ export const validateEnvConfiguration = () => {
 	} catch {}
 
 	const envConfiguration: Partial<IConfiguration> = {
+		headerFormat: validateString(process.env.CZ_HEADER_FORMAT),
 		commitTypes: parsedCommitTypes,
 		maxCommitLineWidth: validateInt(parseInt(process.env.CZ_MAX_COMMIT_LINE_WIDTH ?? '')),
 		typeQuestion: validateString(process.env.CZ_TYPE_QUESTION),

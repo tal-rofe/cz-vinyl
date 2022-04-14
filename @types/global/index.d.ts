@@ -1,6 +1,7 @@
 declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
+			readonly CZ_HEADER_FORMAT?: string;
 			readonly CZ_COMMIT_TYPES?: string;
 			readonly CZ_MAX_COMMIT_LINE_WIDTH?: string;
 			readonly CZ_TYPE_QUESTION?: string;

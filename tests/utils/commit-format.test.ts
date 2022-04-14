@@ -20,10 +20,41 @@ describe('[utils/commit-format]', () => {
 	});
 
 	it('formatHeader | Function should return proper output for all possible options', () => {
-		const result1 = formatHeader('typeTest', 'scopeTest', 'emojiTest', 'ticketIdTest', 'subjectTest');
-		const result2 = formatHeader('typeTest', '', 'emojiTest', 'ticketIdTest', 'subjectTest');
-		const result3 = formatHeader('typeTest', '', '', 'ticketIdTest', 'subjectTest');
-		const result4 = formatHeader('typeTest', '', '', '', 'subjectTest');
+		const result1 = formatHeader(
+			'{type}: {emoji} [{ticket_id}] {subject}',
+			'typeTest',
+			'scopeTest',
+			'emojiTest',
+			'ticketIdTest',
+			'subjectTest',
+		);
+
+		const result2 = formatHeader(
+			'{type}: {emoji} [{ticket_id}] {subject}',
+			'typeTest',
+			'',
+			'emojiTest',
+			'ticketIdTest',
+			'subjectTest',
+		);
+
+		const result3 = formatHeader(
+			'{type}: {emoji} [{ticket_id}] {subject}',
+			'typeTest',
+			'',
+			'',
+			'ticketIdTest',
+			'subjectTest',
+		);
+
+		const result4 = formatHeader(
+			'{type}: {emoji} [{ticket_id}] {subject}',
+			'typeTest',
+			'',
+			'',
+			'',
+			'subjectTest',
+		);
 
 		expect(result1 === 'typeTest(scopeTest): emojiTest [ticketIdTest] subjectTest');
 		expect(result2 === 'typeTest: emojiTest [ticketIdTest] subjectTest');

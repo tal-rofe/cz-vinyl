@@ -53,6 +53,7 @@
 		"inquirer-autocomplete-prompt": "2.0.0",
 		"inquirer-maxlength-input-prompt": "1.0.2",
 		"simple-git": "3.6.0",
+		"string-template": "1.0.0",
 		"word-wrap": "1.2.3"
 	},
 	"devDependencies": {
@@ -62,6 +63,7 @@
 		"@types/inquirer-autocomplete-prompt": "1.3.4",
 		"@types/jest": "27.4.1",
 		"@types/sinon": "10.0.11",
+		"@types/string-template": "1.0.2",
 		"@typescript-eslint/eslint-plugin": "5.19.0",
 		"@typescript-eslint/parser": "5.19.0",
 		"chalk": "4.1.2",
