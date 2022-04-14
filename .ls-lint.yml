@@ -3,6 +3,9 @@ ls:
         .dir: kebab-case
     tests:
         .dir: kebab-case
+    scripts:
+        .dir: kebab-case
+        .js: kebab-case
     .ts: kebab-case
     .d.ts: kebab-case
     .test.ts: kebab-case

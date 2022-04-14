@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const figlet = require('figlet');
 
-figlet('cz - vinyl', function (err, figletText) {
+figlet('cz - vinyl', (err, figletText) => {
 	if (err) {
 		return;
 	}
@@ -24,7 +24,7 @@ figlet('cz - vinyl', function (err, figletText) {
 
 	console.log(
 		chalk.bold(
-			`\n👥👥👥 For any help or questions, an issue can be opened or you can contact ${chalk.red(
+			`\n👥👥👥 For any help or questions, you can open an issue or contact ${chalk.italic.gray(
 				'dev@vinyldepository.com',
 			)} 👥👥👥\n`,
 		),

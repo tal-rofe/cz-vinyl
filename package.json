@@ -33,7 +33,7 @@
 		"husky:install": "husky install",
 		"git:config": "git config --local include.path ../.gitconfig",
 		"setdev": "run-p husky:install git:config",
-		"onboarding": "node ./onboarding.js",
+		"onboarding": "node ./scripts/on-boarding.js",
 		"prepare": "is-ci || run-s setdev onboarding",
 		"build": "tsc --project ./tsconfig.build.json && tsc-alias --project ./tsconfig.build.json",
 		"lint": "eslint {src,tests}/**/*",
