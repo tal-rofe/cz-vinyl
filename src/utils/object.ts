@@ -3,6 +3,10 @@
  * @param input the object to clean
  * @returns void
  */
-export const cleanObject = (input: Record<string | number | symbol, unknown>) => {
-	Object.keys(input).forEach((key) => input[key] === undefined && delete input[key]);
+export const withCleanObject = <T extends object>(input: T) => {
+	const obj = { ...input };
+
+	Object.keys(obj).forEach((key) => obj[key as keyof T] === undefined && delete obj[key as keyof T]);
+
+	return obj;
 };

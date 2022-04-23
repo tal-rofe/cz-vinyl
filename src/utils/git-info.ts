@@ -1,16 +1,24 @@
-import simpleGit from 'simple-git';
+import { asyncExec } from './os';
 
 /**
- * The function returns the ticket Id, is presents, in the branch name
+ * The function returns the current branch name
+ * @returns branch name
+ */
+const getBranchName = async () => {
+	const gitCommand = 'git rev-parse --abbrev-ref HEAD';
+	const branchName = await asyncExec(gitCommand);
+
+	return branchName;
+};
+
+/**
+ * The function returns the ticket Id, if presents, in the branch name, or null if not
  * @returns ticket Id
  */
 export const getTicketIdFromBranchName = async (ticketRegex: RegExp) => {
-	const git = simpleGit();
-
 	try {
-		const localBranches = await git.branchLocal();
-		const currentBranch = localBranches.current;
-		const currentBranchTicketMatches = currentBranch.match(ticketRegex);
+		const branchName = await getBranchName();
+		const currentBranchTicketMatches = branchName.match(ticketRegex);
 
 		if (currentBranchTicketMatches) {
 			return currentBranchTicketMatches[0];

@@ -25,7 +25,7 @@ jobs:
               run: yarn run depcheck
 
             - name: Check Files and Directories Linter
-              run: yarn run lslint
+              run: yarn run inflint
 
             - name: Check Typescript
               run: yarn run type-check
@@ -36,5 +36,5 @@ jobs:
             - name: Testing with coverage
               run: yarn run test:cov
 
-            - name: Check build command
-              run: yarn run build
+            - name: Check dist command
+              run: yarn run dist

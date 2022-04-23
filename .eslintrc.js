@@ -1,7 +1,8 @@
 module.exports = {
 	root: true,
 	env: {
-		es2021: true,
+		node: true,
+		jest: true,
 	},
 	extends: [
 		'eslint:recommended',
@@ -16,7 +17,7 @@ module.exports = {
 	},
 	plugins: ['@typescript-eslint', 'unused-imports', 'node', 'import'],
 	rules: {
-		'max-lines': ['error', { max: 115, skipBlankLines: true, skipComments: true }],
+		'max-lines': ['error', { max: 100, skipBlankLines: true, skipComments: true }],
 		'indent': ['error', 'tab'],
 		'quotes': ['error', 'single', { avoidEscape: true }],
 		'semi': ['error', 'always'],
@@ -39,11 +40,10 @@ module.exports = {
 		'no-labels': 'error',
 		'no-inline-comments': 'error',
 		'eqeqeq': 'error',
-		'no-console': 'warn',
+		'no-console': 'error',
 		'no-eval': 'error',
 		'no-implicit-globals': 'error',
 		'no-useless-call': 'error',
-		'jsx-quotes': ['error', 'prefer-double'],
 		'curly': ['error', 'all'],
 		'padding-line-between-statements': [
 			'error',
@@ -157,4 +157,12 @@ module.exports = {
 
 		'node/no-sync': 'error',
 	},
+	overrides: [
+		{
+			files: ['tests/**/*'],
+			rules: {
+				'max-lines': ['error', { max: 130, skipBlankLines: true, skipComments: true }],
+			},
+		},
+	],
 };

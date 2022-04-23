@@ -3,7 +3,7 @@ import * as CosmiconfigUtils from 'cosmiconfig';
 
 import { getConfiguration } from '@/utils/configuration';
 import { DEFAULT_CONFIGURATION } from '@/models/configuration';
-import * as ValidatorsUtils from '@/utils/validators';
+import * as ConfigurationValidators from '@/validators/configuration';
 
 const cosmiconfigFunctions = {
 	clearCaches: () => undefined,
@@ -20,6 +20,22 @@ describe('[utils/configuration]', () => {
 	it('getConfiguration | Function should return the default when there is no configuration file', async () => {
 		sandbox.stub(CosmiconfigUtils, 'cosmiconfig').returns({
 			search: () => Promise.resolve(null),
+			...cosmiconfigFunctions,
+		});
+
+		const result = await getConfiguration();
+
+		expect(JSON.stringify(result) === JSON.stringify(DEFAULT_CONFIGURATION)).toEqual(true);
+	});
+
+	it('getConfiguration | Function should return the default when configuration file is empty', async () => {
+		sandbox.stub(CosmiconfigUtils, 'cosmiconfig').returns({
+			search: () =>
+				Promise.resolve({
+					config: {},
+					filepath: 'FILE_PATH_TEST',
+					isEmpty: true,
+				}),
 			...cosmiconfigFunctions,
 		});
 
@@ -45,6 +61,7 @@ describe('[utils/configuration]', () => {
 				Promise.resolve({
 					config: { skipIssues: false },
 					filepath: 'FILE_PATH_TEST',
+					isEmpty: false,
 				}),
 			...cosmiconfigFunctions,
 		});
@@ -59,7 +76,7 @@ describe('[utils/configuration]', () => {
 		expect(JSON.stringify(result) === JSON.stringify(expectedOutput)).toEqual(true);
 	});
 
-	it('getConfiguration | Function should return the proper configuration when "validateConfigurtion" returns expected object and known environments variables are not set', async () => {
+	it('getConfiguration | Function should return the proper configuration when known environments variables are not set', async () => {
 		const configurationFromFile = {
 			skipIssues: false,
 		};
@@ -69,11 +86,11 @@ describe('[utils/configuration]', () => {
 				Promise.resolve({
 					config: configurationFromFile,
 					filepath: 'FILE_PATH_TEST',
+					isEmpty: false,
 				}),
 			...cosmiconfigFunctions,
 		});
-		sandbox.stub(ValidatorsUtils, 'validateConfiguration').returns(configurationFromFile);
-		sandbox.stub(ValidatorsUtils, 'validateEnvConfiguration').returns({});
+		sandbox.stub(ConfigurationValidators, 'validateEnvConfiguration').returns({});
 
 		const result = await getConfiguration();
 
@@ -85,7 +102,7 @@ describe('[utils/configuration]', () => {
 		expect(JSON.stringify(result) === JSON.stringify(expectedOutput)).toEqual(true);
 	});
 
-	it('getConfiguration | Function should return the proper configuration when "validateConfigurtion" returns an empty object and known environments variables are set', async () => {
+	it('getConfiguration | Function should return the proper configuration when there are no configurations from fule returns an empty object and known environments variables are set', async () => {
 		const configurationFromENVs = {
 			skipIssues: false,
 		};
@@ -95,11 +112,12 @@ describe('[utils/configuration]', () => {
 				Promise.resolve({
 					config: {},
 					filepath: 'FILE_PATH_TEST',
+					isEmpty: true,
 				}),
 			...cosmiconfigFunctions,
 		});
-		sandbox.stub(ValidatorsUtils, 'validateConfiguration').returns({});
-		sandbox.stub(ValidatorsUtils, 'validateEnvConfiguration').returns(configurationFromENVs);
+		sandbox.stub(ConfigurationValidators, 'validateConfiguration').returns({});
+		sandbox.stub(ConfigurationValidators, 'validateEnvConfiguration').returns(configurationFromENVs);
 
 		const result = await getConfiguration();
 
@@ -125,11 +143,12 @@ describe('[utils/configuration]', () => {
 				Promise.resolve({
 					config: configurationFromFile,
 					filepath: 'FILE_PATH_TEST',
+					isEmpty: false,
 				}),
 			...cosmiconfigFunctions,
 		});
-		sandbox.stub(ValidatorsUtils, 'validateConfiguration').returns(configurationFromFile);
-		sandbox.stub(ValidatorsUtils, 'validateEnvConfiguration').returns(configurationFromENVs);
+		sandbox.stub(ConfigurationValidators, 'validateConfiguration').returns(configurationFromFile);
+		sandbox.stub(ConfigurationValidators, 'validateEnvConfiguration').returns(configurationFromENVs);
 
 		const result = await getConfiguration();
 

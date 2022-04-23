@@ -6,7 +6,7 @@ figlet('cz - vinyl', (err, figletText) => {
 		return;
 	}
 
-	console.log(figletText);
+	console.log(chalk.bold(figletText));
 
 	console.log(chalk.bold.blue('Welcome to cz-vinyl package!!'));
 

@@ -1,7 +1,7 @@
 import fuse from 'fuse.js';
 
-import { IConfiguration } from '@/models/configuration';
-import { transformCommitType } from './commit-type';
+import type { IConfiguration } from '../interfaces/configuration';
+import { transformCommitType } from '../pipes/commit-type';
 import { getTicketIdFromBranchName } from './git-info';
 
 /**
