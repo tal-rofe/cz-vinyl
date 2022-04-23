@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.2.1...v1.3.0) (2022-04-23)
+
+
+### Features
+
+* 🔥 support Typescript configuration file ([6dbaf1d](https://github.com/Vinyl-Depository/cz-vinyl/commit/6dbaf1d4f4d2e3c92332d91e251f6bba13ebb9ae))
+
 ## [1.2.1](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.2.0...v1.2.1) (2022-04-23)
 
 
