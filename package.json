@@ -1,6 +1,6 @@
 {
 	"name": "cz-vinyl",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Commitizen adapter formatting commit messages using Vinyl Depository conventions.",
 	"author": "Vinyl Depository <dev@vinyldepository.com> (https://www.vinyldepository.com)",
 	"keywords": [
