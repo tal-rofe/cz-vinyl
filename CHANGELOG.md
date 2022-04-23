@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.3.0...v1.3.1) (2022-04-23)
+
+
+### Bug Fixes
+
+* 🐞 fix types issues ([002a69f](https://github.com/Vinyl-Depository/cz-vinyl/commit/002a69fe4f7bb23fa0c6abcae7874cea9ede4d85))
+
 # [1.3.0](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.2.1...v1.3.0) (2022-04-23)
 
 
