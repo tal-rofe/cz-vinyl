@@ -71,9 +71,9 @@ Configuration can be set in environment variables or in the following files:
 
 If you set a TypeScript configuration file, you can use the configuration interface:
 ```ts
-import { IConfiguration } from 'cz-vinyl';
+import { Config } from 'cz-vinyl';
 
-const czvinyConfig: IConfiguration = {
+const czvinyConfig: Config = {
 	...
 }
 

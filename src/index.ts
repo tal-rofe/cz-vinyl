@@ -46,6 +46,6 @@ const prompter = (cz: Inquirer, commit: ICommitFunc) => {
 
 const InqObj = { prompter };
 
-export * from './interfaces/configuration';
+export * from './config';
 
 export default InqObj;
