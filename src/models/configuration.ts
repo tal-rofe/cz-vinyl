@@ -1,6 +1,7 @@
+import { IConfiguration, ICommitType } from '../interfaces/configuration';
 import { TICKET_ID_REGEX } from './ticket-id';
 
-const DEFAULT_COMMIT_TYPES = [
+const DEFAULT_COMMIT_TYPES: ICommitType[] = [
 	{
 		description: 'Build process or auxiliary tool changes',
 		emoji: '🤖',
@@ -55,8 +56,8 @@ const DEFAULT_COMMIT_TYPES = [
 
 export const CONFIGURATION_MODULE_NAME = 'czvinyl';
 
-export const DEFAULT_CONFIGURATION = {
-	headerFormat: '{{ type }}: {{ emoji }} [{{ ticket_id }}] {{ subject }}',
+export const DEFAULT_CONFIGURATION: IConfiguration = {
+	headerFormat: '{type}: {emoji} [{ticket_id}] {subject}',
 	commitTypes: DEFAULT_COMMIT_TYPES,
 	maxCommitLineWidth: 72,
 	typeQuestion: "Select the type of changes you're commiting:\n",
@@ -75,30 +76,3 @@ export const DEFAULT_CONFIGURATION = {
 	issuesQuestion: 'List any issue closed (#1, #2, ...):',
 	skipIssues: true,
 };
-
-export interface ICommitType {
-	readonly value: string;
-	readonly description: string;
-	readonly emoji?: string;
-}
-
-export interface IConfiguration {
-	readonly headerFormat: string;
-	readonly commitTypes: ICommitType[];
-	readonly maxCommitLineWidth: number;
-	readonly typeQuestion: string;
-	readonly scopeQuestion: string;
-	readonly skipScope: boolean;
-	readonly scopes: ReadonlyArray<string>;
-	readonly ticketIdQuestion: string;
-	readonly skipTicketId: boolean;
-	readonly ticketIdRegex: string;
-	readonly subjectQuestion: string;
-	readonly subjectMaxLength: number;
-	readonly subjectMinLength: number;
-	readonly bodyQuestion: string;
-	readonly skipBody: boolean;
-	readonly skipBreakingChanges: boolean;
-	readonly issuesQuestion: string;
-	readonly skipIssues: boolean;
-}

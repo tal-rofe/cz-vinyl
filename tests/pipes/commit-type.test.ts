@@ -1,4 +1,4 @@
-import { transformCommitType } from '@/utils/commit-type';
+import { transformCommitType } from '@/pipes/commit-type';
 
 describe('[utils/commit-type]', () => {
 	it('transformCommitType | Function should return proper outputs for all possible inputs', () => {

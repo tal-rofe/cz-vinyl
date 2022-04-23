@@ -1,6 +1,6 @@
-import { formatIssues, formatHeader, formatBreakingChange } from '@/utils/commit-format';
+import { formatIssues, formatHeader, formatBreakingChange } from '@/pipes/commit-format';
 
-describe('[utils/commit-format]', () => {
+describe('[pipes/commit-format]', () => {
 	it('formatIssues | Function should return empty output when there is empty input', () => {
 		const result = formatIssues('');
 
