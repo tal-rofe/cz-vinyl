@@ -4,7 +4,7 @@ commitlint.config.js
 lint-staged.config.js
 release.config.js
 jest.config.ts
-czvinyl.config.js
+czvinyl.config.ts
 inflint.config.js
 depcheck.config.js
 dist
