@@ -1,8 +1,10 @@
 import { cosmiconfig } from 'cosmiconfig';
+import TypeScriptLoader from 'cosmiconfig-typescript-loader';
 
-import { CONFIGURATION_MODULE_NAME, DEFAULT_CONFIGURATION } from '../models/configuration';
+import { DEFAULT_CONFIGURATION } from '../models/configuration';
 import type { IConfiguration } from '../interfaces/configuration';
 import { validateConfiguration, validateEnvConfiguration } from '../validators/configuration';
+import { CONFIGURATION_MODULE_NAME, SEARCH_PLACES } from '../models/cosmiconfig';
 
 /**
  * The function sets a default configuration to work with,
@@ -12,7 +14,12 @@ import { validateConfiguration, validateEnvConfiguration } from '../validators/c
 export const getConfiguration = async () => {
 	let finalConfiguration: IConfiguration = DEFAULT_CONFIGURATION;
 
-	const explorer = cosmiconfig(CONFIGURATION_MODULE_NAME);
+	const explorer = cosmiconfig(CONFIGURATION_MODULE_NAME, {
+		searchPlaces: SEARCH_PLACES,
+		loaders: {
+			'.ts': TypeScriptLoader(),
+		},
+	});
 
 	try {
 		const result = await explorer.search();

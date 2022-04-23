@@ -2,8 +2,6 @@ import { IConfiguration } from '../interfaces/configuration';
 import { DEFAULT_COMMIT_TYPES } from './commit-type';
 import { TICKET_ID_REGEX } from './ticket-id';
 
-export const CONFIGURATION_MODULE_NAME = 'czvinyl';
-
 export const DEFAULT_CONFIGURATION: IConfiguration = {
 	headerFormat: '{type}: {emoji} [{ticket_id}] {subject}',
 	commitTypes: DEFAULT_COMMIT_TYPES,

@@ -1,12 +1,3 @@
 {
-	"ignores": [
-		"@commitlint/cli",
-		"commitizen",
-		"lint-staged",
-		"cz-vinyl",
-		"webpack-cli",
-		"ts-loader",
-		"ts-jest",
-		"@types/jest"
-	]
+	"ignores": ["@commitlint/cli", "commitizen", "lint-staged", "cz-vinyl", "ts-jest", "@types/jest"]
 }

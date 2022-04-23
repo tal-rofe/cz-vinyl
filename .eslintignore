@@ -5,7 +5,6 @@ lint-staged.config.js
 release.config.js
 jest.config.ts
 czvinyl.config.js
-webpack.config.ts
 inflint.config.js
 depcheck.config.js
 dist

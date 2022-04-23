@@ -25,8 +25,11 @@
 		"url": "git+https://github.com/Vinyl-Depository/cz-vinyl.git"
 	},
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"files": [
-		"dist/index.js"
+		"dist/**/*.js",
+		"dist/index.d.ts",
+		"dist/interfaces/configuration.d.ts"
 	],
 	"scripts": {
 		"preinstall": "is-ci || npx only-allow yarn",
@@ -35,7 +38,7 @@
 		"setdev": "run-p husky:install git:config",
 		"onboarding": "node ./scripts/onboarding.js",
 		"prepare": "is-ci || run-s setdev onboarding",
-		"dist:create": "webpack -c webpack.config.ts",
+		"dist:create": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
 		"dist:remove": "rimraf dist",
 		"dist": "run-s dist:remove dist:create",
 		"test": "jest -c jest.config.ts",
@@ -50,6 +53,7 @@
 	},
 	"dependencies": {
 		"cosmiconfig": "7.0.1",
+		"cosmiconfig-typescript-loader": "1.0.9",
 		"fuse.js": "6.5.3",
 		"inquirer": "8.2.2",
 		"inquirer-autocomplete-prompt": "2.0.0",
@@ -65,7 +69,6 @@
 		"@types/jest": "27.4.1",
 		"@types/sinon": "10.0.11",
 		"@types/string-template": "1.0.2",
-		"@types/webpack-node-externals": "2.5.3",
 		"@typescript-eslint/eslint-plugin": "5.19.0",
 		"@typescript-eslint/parser": "5.19.0",
 		"chalk": "4.1.2",
@@ -87,11 +90,7 @@
 		"prettier": "2.6.2",
 		"sinon": "13.0.2",
 		"ts-jest": "27.1.4",
-		"ts-loader": "9.2.8",
-		"tsconfig-paths-webpack-plugin": "3.5.2",
-		"typescript": "4.6.3",
-		"webpack": "5.72.0",
-		"webpack-cli": "4.9.2",
-		"webpack-node-externals": "3.0.0"
+		"tsc-alias": "1.6.6",
+		"typescript": "4.6.3"
 	}
 }

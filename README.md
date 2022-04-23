@@ -66,8 +66,19 @@ Configuration can be set in environment variables or in the following files:
 
 -   a `package.json` property: `"czvinyl": {...}`
 -   a `.czvinylrc` file in JSON or YAML format
--   a `.czvinylrc.json`, `.czvinylrc.yaml`, `.czvinylrc.yml`, `.czvinylrc.js`, or `.czvinylrc.cjs` file
--   a `czvinyl.config.js` or `czvinyl.config.cjs` CommonJS module exporting an object
+-   a `.czvinylrc.json`, `.czvinylrc.yaml`, `.czvinylrc.yml`, `.czvinylrc.js`, `.czvinylrc.ts`, or `.czvinylrc.cjs` file
+-   a `czvinyl.config.js`, `czvinyl.config.ts`, or `czvinyl.config.cjs` CommonJS module exporting an object
+
+If you set a TypeScript configuration file, you can use the configuration interface:
+```ts
+import { IConfiguration } from 'cz-vinyl';
+
+const czvinyConfig: IConfiguration = {
+	...
+}
+
+export default czvinylConfig;
+```
 
 The default commit types, descriptions and emoji that are used are:
 
