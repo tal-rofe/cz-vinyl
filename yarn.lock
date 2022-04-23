@@ -1784,13 +1784,12 @@ cz-conventional-changelog@3.2.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
-cz-vinyl@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/cz-vinyl/-/cz-vinyl-1.3.1.tgz#6a52881000b19c5060f3d5bd4cd663f583e3ffb1"
-  integrity sha512-TREhhK/YadSPJndqm0WLwSZ5RdR+KW2NB/EibutjicHnn+3sWzchVxHbc1RBLT6h08w4AdY5EAwo3bgPpXSfHg==
+cz-vinyl@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/cz-vinyl/-/cz-vinyl-1.2.1.tgz#883ed6db5dd01ae5908c38b6e2685056047c11bc"
+  integrity sha512-yEnsWoBQsTcsluCCdclgTau8je76qP9Mq5IPU9WqqF/6mClGRf32cSLepHTYJon86c44g/KvIg3+d9oisDu6YA==
   dependencies:
     cosmiconfig "7.0.1"
-    cosmiconfig-typescript-loader "1.0.9"
     fuse.js "6.5.3"
     inquirer "8.2.2"
     inquirer-autocomplete-prompt "2.0.0"
