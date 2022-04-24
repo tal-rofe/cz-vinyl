@@ -89,7 +89,7 @@
 		"prettier": "2.6.2",
 		"sinon": "13.0.2",
 		"ts-jest": "27.1.4",
-		"tsc-alias": "1.6.6",
+		"tsc-alias": "1.6.7",
 		"typescript": "4.6.3"
 	}
 }
