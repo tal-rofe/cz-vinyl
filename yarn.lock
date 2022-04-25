@@ -2823,13 +2823,14 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inflint@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/inflint/-/inflint-1.1.4.tgz#1c3b42320a9f2788a34f9e837ece7ffaed85f04f"
-  integrity sha512-S4DIa9JRYOqIqNfNmHeYXjcsG4uilq8ZsIGxZPmwMmWDrA4MlUPKF7zYHjkaP3njPI4YlMxZVj+sNPxfBgjC4g==
+inflint@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/inflint/-/inflint-1.2.0.tgz#d7fba1a18bf7038873ab2b8c5e2bcbe7c9769d6c"
+  integrity sha512-L08q4uPrWgtLmNnIWvkLhZJyWHD3upvIxAhqomdC+dxO1+rs3d30n/H4kTdmC5R9rae5lxK7703ifRHjAJYMHg==
   dependencies:
     "@expo/spawn-async" "1.6.0"
     cosmiconfig "7.0.1"
+    cosmiconfig-typescript-loader "1.0.9"
     fast-glob "3.2.11"
     inquirer "8.2.2"
     micromatch "4.0.5"
