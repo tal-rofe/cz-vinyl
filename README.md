@@ -1,6 +1,24 @@
-![Logo](assets/logo.png)
+<p align="center">
+	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
+    	<img src="https://img.shields.io/github/workflow/status/Vinyl-Depository/cz-vinyl/Integration" alt="build status">
+  	</a>
+	<a href="https://www.npmjs.com/package/cz-vinyl">
+    	<img src="https://img.shields.io/npm/dw/cz-vinyl" alt="npm downloads">
+  	</a>
+	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
+    	<img src="https://img.shields.io/npm/l/cz-vinyl" alt="npm license">
+  	</a>
+	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
+    	<img src="https://img.shields.io/npm/v/cz-vinyl" alt="npm version">
+  	</a>
+	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
+    	<img src="https://img.shields.io/github/commit-activity/m/Vinyl-Depository/cz-vinyl" alt="commits">
+  	</a>
+</p>
 
-# cz-vinyl
+<p align="center"><img src="assets/logo.png"/></p>
+
+<h2 align="center">cz-vinyl</h2>
 
 > Commitizen adapter formatting commit messages using Vinyl Depository conventions.
 > Format commit messages with [conventional commits].
