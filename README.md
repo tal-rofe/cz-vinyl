@@ -18,16 +18,12 @@
 
 <p align="center"><img src="assets/logo.png"/></p>
 
-<h2 align="center">cz-vinyl</h2>
+<h1 align="center">cz-vinyl</h1>
 
 > Commitizen adapter formatting commit messages using Vinyl Depository conventions.
 > Format commit messages with [conventional commits].
 
 cz-vinyl allows you to easily use emojis and ticket ID (JIRA, ...) in your commits using [commitizen].
-
-[![npm version](https://img.shields.io/npm/v/cz-vinyl.svg?style=flat-square)](https://www.npmjs.org/package/cz-vinyl)
-
-[![npm downloads](https://img.shields.io/npm/dm/cz-vinyl.svg?style=flat-square)](http://npm-stat.com/charts.html?package=cz-vinyl)
 
 ```javascript
 ? Select the type of changes you're commiting: (Use arrow keys or type to search)
