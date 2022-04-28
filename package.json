@@ -54,7 +54,7 @@
 		"cosmiconfig": "7.0.1",
 		"cosmiconfig-typescript-loader": "1.0.9",
 		"fuse.js": "6.5.3",
-		"inquirer": "8.2.3",
+		"inquirer": "8.2.4",
 		"inquirer-autocomplete-prompt": "2.0.0",
 		"inquirer-maxlength-input-prompt": "1.0.2",
 		"string-template": "1.0.0",
