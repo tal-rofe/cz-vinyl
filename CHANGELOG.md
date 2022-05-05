@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.3.1...v1.3.2) (2022-05-05)
+
+
+### Bug Fixes
+
+* 🐞 remove package json yarn enforcement ([674b7fe](https://github.com/Vinyl-Depository/cz-vinyl/commit/674b7fe4e774aa26b7bb9311cc1aa41b7df4f5a9))
+
 ## [1.3.1](https://github.com/Vinyl-Depository/cz-vinyl/compare/v1.3.0...v1.3.1) (2022-04-23)
 
 
