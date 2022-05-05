@@ -31,7 +31,6 @@
 		"dist/config.d.ts"
 	],
 	"scripts": {
-		"preinstall": "is-ci || npx only-allow yarn",
 		"husky:install": "husky install",
 		"git:config": "git config --local include.path ../.gitconfig",
 		"setdev": "run-p husky:install git:config",
