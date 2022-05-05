@@ -2840,16 +2840,16 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inflint@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/inflint/-/inflint-1.2.0.tgz#d7fba1a18bf7038873ab2b8c5e2bcbe7c9769d6c"
-  integrity sha512-L08q4uPrWgtLmNnIWvkLhZJyWHD3upvIxAhqomdC+dxO1+rs3d30n/H4kTdmC5R9rae5lxK7703ifRHjAJYMHg==
+inflint@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/inflint/-/inflint-1.2.2.tgz#d3fe8b9ddab42eed5f7f00a0c1b0f386320a4c77"
+  integrity sha512-MU4vTLau6dNcnS0LfyEPf7L9QAQp95C9R0A6RHvo5fB0bU1bRtmhWeWMAMplGKLT9yaYwfp4jX8aezEIDgMf+A==
   dependencies:
     "@expo/spawn-async" "1.6.0"
     cosmiconfig "7.0.1"
     cosmiconfig-typescript-loader "1.0.9"
     fast-glob "3.2.11"
-    inquirer "8.2.2"
+    inquirer "8.2.4"
     micromatch "4.0.5"
     minimist "1.2.6"
     v8-compile-cache "2.3.0"
@@ -2904,26 +2904,6 @@ inquirer@6.5.2:
     rxjs "^6.4.0"
     string-width "^2.1.0"
     strip-ansi "^5.1.0"
-    through "^2.3.6"
-
-inquirer@8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.2.tgz#1310517a87a0814d25336c78a20b44c3d9b7629d"
-  integrity sha512-pG7I/si6K/0X7p1qU+rfWnpTE1UIkTONN1wxtzh0d+dHXtT/JG6qBgLxoyHVsQa8cFABxAPh0pD6uUUHiAoaow==
-  dependencies:
-    ansi-escapes "^4.2.1"
-    chalk "^4.1.1"
-    cli-cursor "^3.1.0"
-    cli-width "^3.0.0"
-    external-editor "^3.0.3"
-    figures "^3.0.0"
-    lodash "^4.17.21"
-    mute-stream "0.0.8"
-    ora "^5.4.1"
-    run-async "^2.4.0"
-    rxjs "^7.5.5"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
     through "^2.3.6"
 
 inquirer@8.2.4:
