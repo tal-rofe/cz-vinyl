@@ -53,22 +53,22 @@
 		"cosmiconfig": "7.0.1",
 		"cosmiconfig-typescript-loader": "1.0.9",
 		"fuse.js": "6.5.3",
-		"inquirer": "8.2.2",
+		"inquirer": "8.2.4",
 		"inquirer-autocomplete-prompt": "2.0.0",
 		"inquirer-maxlength-input-prompt": "1.0.2",
 		"string-template": "1.0.0",
 		"word-wrap": "1.2.3"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "16.2.3",
+		"@commitlint/cli": "16.2.4",
 		"@jest/types": "27.5.1",
 		"@types/inquirer": "8.2.1",
 		"@types/inquirer-autocomplete-prompt": "1.3.4",
-		"@types/jest": "27.4.1",
+		"@types/jest": "27.5.0",
 		"@types/sinon": "10.0.11",
 		"@types/string-template": "1.0.2",
-		"@typescript-eslint/eslint-plugin": "5.19.0",
-		"@typescript-eslint/parser": "5.19.0",
+		"@typescript-eslint/eslint-plugin": "5.22.0",
+		"@typescript-eslint/parser": "5.22.0",
 		"chalk": "4.1.2",
 		"commitizen": "4.2.4",
 		"cz-vinyl": "1.3.1",
@@ -83,12 +83,12 @@
 		"inflint": "1.2.0",
 		"is-ci": "3.0.1",
 		"jest": "27.5.1",
-		"lint-staged": "12.4.0",
+		"lint-staged": "12.4.1",
 		"npm-run-all": "4.1.5",
 		"prettier": "2.6.2",
 		"sinon": "13.0.2",
 		"ts-jest": "27.1.4",
 		"tsc-alias": "1.6.7",
-		"typescript": "4.6.3"
+		"typescript": "4.6.4"
 	}
 }
