@@ -79,7 +79,7 @@
 		"eslint-plugin-node": "11.1.0",
 		"eslint-plugin-unused-imports": "2.0.0",
 		"figlet": "1.5.2",
-		"husky": "7.0.4",
+		"husky": "8.0.1",
 		"inflint": "1.2.2",
 		"is-ci": "3.0.1",
 		"jest": "27.5.1",
