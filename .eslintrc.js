@@ -2,7 +2,6 @@ module.exports = {
 	root: true,
 	env: {
 		node: true,
-		jest: true,
 	},
 	extends: [
 		'eslint:recommended',
@@ -161,7 +160,7 @@ module.exports = {
 		{
 			files: ['tests/**/*'],
 			rules: {
-				'max-lines': ['error', { max: 130, skipBlankLines: true, skipComments: true }],
+				'max-lines': ['error', { max: 135, skipBlankLines: true, skipComments: true }],
 			},
 		},
 	],

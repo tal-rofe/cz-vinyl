@@ -7,7 +7,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Pull Request Process
 
-1. Clone the project and ensure everything is set and ready to use with running `yarn` at the root folder.
+1. Clone the project and ensure everything is set and ready to use with running `pnpm` at the root folder.
 2. Update the README.md with details of changes to the repository (if relevant).
 3. Commit and push your changes using our commitizen adapter. For convenience, you can run `git cmt`.
 4. Ensure all GitHub workflows have passed successfully.

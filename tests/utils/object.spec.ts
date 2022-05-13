@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest';
+
 import { withCleanObject } from '@/utils/object';
 
 describe('[utils/object]', () => {
@@ -8,7 +10,7 @@ describe('[utils/object]', () => {
 
 		const result = withCleanObject(input);
 
-		expect(JSON.stringify(result) === JSON.stringify(input)).toEqual(true);
+		expect(result).toJsonEqual(input);
 	});
 
 	it('withCleanObject | Function should remove "undefined" fields', () => {
@@ -20,6 +22,6 @@ describe('[utils/object]', () => {
 
 		const expectedObject = {};
 
-		expect(JSON.stringify(result) === JSON.stringify(expectedObject)).toEqual(true);
+		expect(result).toJsonEqual(expectedObject);
 	});
 });

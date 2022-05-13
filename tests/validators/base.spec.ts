@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest';
+
 import { validatePositiveInt, validateString, validateBoolean } from '@/validators/base';
 
 describe('[validators/base]', () => {

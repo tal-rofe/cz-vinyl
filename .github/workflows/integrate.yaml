@@ -19,22 +19,22 @@ jobs:
                   node-version: 16
 
             - name: Installing dependencies
-              run: yarn install --immutable --immutable-cache --check-cache
+              run: pnpm install
 
             - name: Check unused dependencies
-              run: yarn run depcheck
+              run: pnpm depcheck
 
             - name: Check Files and Directories Linter
-              run: yarn run inflint
+              run: pnpm inflint
 
             - name: Check Typescript
-              run: yarn run type-check
+              run: pnpm type-check
 
             - name: Check ESLint
-              run: yarn run lint
+              run: pnpm lint
 
             - name: Testing with coverage
-              run: yarn run test:cov
+              run: pnpm test:cov
 
             - name: Check dist command
-              run: yarn run dist
+              run: pnpm dist

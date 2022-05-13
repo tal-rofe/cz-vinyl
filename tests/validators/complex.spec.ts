@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest';
+
 import { validateStringArray, validateRegex } from '@/validators/complex';
 
 describe('[validators/complex]', () => {
@@ -19,8 +21,8 @@ describe('[validators/complex]', () => {
 		const result1 = validateStringArray(['', 5]);
 		const result2 = validateStringArray(['DUMMY_TEXT']);
 
-		expect(JSON.stringify(result1) === JSON.stringify([])).toEqual(true);
-		expect(JSON.stringify(result2) === JSON.stringify(['DUMMY_TEXT'])).toEqual(true);
+		expect(result1).toJsonEqual([]);
+		expect(result2).toJsonEqual(['DUMMY_TEXT']);
 	});
 
 	it('validateRegex | should return "undefined" for all invalid inputs', () => {

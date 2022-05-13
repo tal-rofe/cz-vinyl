@@ -1,3 +1,4 @@
+import { describe, it, expect, afterEach } from 'vitest';
 import sinon from 'sinon';
 
 import * as OSUtils from '@/utils/os';
@@ -7,7 +8,7 @@ import { TICKET_ID_REGEX } from '@/models/ticket-id';
 describe('[utils/git-info]', () => {
 	const sandbox = sinon.createSandbox();
 
-	afterEach(sandbox.restore);
+	afterEach(() => sandbox.restore());
 
 	it('getTicketIdFromBranchName | should return null when "getBranchName" throws', async () => {
 		sandbox.stub(OSUtils, 'asyncExec').rejects();

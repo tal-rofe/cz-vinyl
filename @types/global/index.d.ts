@@ -1,3 +1,7 @@
+interface CustomMatchers<R = unknown> {
+	toJsonEqual(expected: unknown): R;
+}
+
 declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
@@ -20,6 +24,11 @@ declare global {
 			readonly CZ_ISSUES_QUESTION?: string;
 			readonly CZ_SKIP_ISSUES?: string;
 		}
+	}
+
+	namespace Vi {
+		interface Assertion extends CustomMatchers {}
+		interface AsymmetricMatchersContaining extends CustomMatchers {}
 	}
 }
 

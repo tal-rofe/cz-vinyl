@@ -1,11 +1,12 @@
 import sinon from 'sinon';
+import { describe, it, expect, afterEach } from 'vitest';
 
 import { validateConfiguration, validateEnvConfiguration } from '@/validators/configuration';
 
 describe('[validators/configuration]', () => {
 	const sandbox = sinon.createSandbox();
 
-	afterEach(sandbox.restore);
+	afterEach(() => sandbox.restore());
 
 	it('validateConfiguration | should return object with all the valid-only fields', () => {
 		const input = {
@@ -19,7 +20,7 @@ describe('[validators/configuration]', () => {
 
 		const result = validateConfiguration(input);
 
-		expect(JSON.stringify(result) === JSON.stringify(expectedOutput)).toEqual(true);
+		expect(result).toJsonEqual(expectedOutput);
 	});
 
 	it('validateEnvConfiguration | should return object with all the valid-only fields', () => {
@@ -43,6 +44,6 @@ describe('[validators/configuration]', () => {
 
 		const result = validateEnvConfiguration();
 
-		expect(JSON.stringify(result) === JSON.stringify(expectedOutput)).toEqual(true);
+		expect(result).toJsonEqual(expectedOutput);
 	});
 });

@@ -2,6 +2,7 @@ import child_process, { exec } from 'child_process';
 import { doesNotReject, rejects } from 'assert';
 
 import sinon from 'sinon';
+import { describe, it, afterEach } from 'vitest';
 
 import { asyncExec } from '@/utils/os';
 

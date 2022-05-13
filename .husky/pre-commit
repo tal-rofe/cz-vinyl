@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn run depcheck && ./node_modules/.bin/lint-staged
+pnpm depcheck && ./node_modules/.bin/lint-staged

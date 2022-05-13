@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest';
+
 import { validateCommitTypes } from '@/validators/commit-type';
 
 describe('[validators/commit-type]', () => {
@@ -77,6 +79,6 @@ describe('[validators/commit-type]', () => {
 
 		const expectedOutput = [item9, item10];
 
-		expect(JSON.stringify(result) === JSON.stringify(expectedOutput)).toEqual(true);
+		expect(result).toJsonEqual(expectedOutput);
 	});
 });
