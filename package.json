@@ -61,7 +61,7 @@
 		"@commitlint/cli": "16.2.4",
 		"@types/inquirer": "8.2.1",
 		"@types/inquirer-autocomplete-prompt": "1.3.4",
-		"@types/jest": "27.5.1",
+		"@types/jest": "28.1.1",
 		"@types/sinon": "10.0.11",
 		"@types/string-template": "1.0.2",
 		"@typescript-eslint/eslint-plugin": "5.23.0",
@@ -84,7 +84,7 @@
 		"npm-run-all": "4.1.5",
 		"prettier": "2.6.2",
 		"sinon": "14.0.0",
-		"ts-jest": "27.1.4",
+		"ts-jest": "28.0.4",
 		"tsc-alias": "1.6.7",
 		"typescript": "4.6.4"
 	}
