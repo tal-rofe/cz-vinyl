@@ -1,39 +1,46 @@
-import { describe, it, expect, afterEach } from 'vitest';
-import sinon from 'sinon';
+import { describe, it, expect, vi } from 'vitest';
 
-import * as OSUtils from '@/utils/os';
+import { asyncExec } from '@/utils/os';
 import { getTicketIdFromBranchName } from '@/utils/git-info';
 import { TICKET_ID_REGEX } from '@/models/ticket-id';
 
+vi.mock('@/utils/os');
+
 describe('[utils/git-info]', () => {
-	const sandbox = sinon.createSandbox();
+	describe('getTicketIdFromBranchName()', () => {
+		it('should return null when "getBranchName" throws', async () => {
+			vi.mocked(asyncExec).mockRejectedValueOnce(undefined);
 
-	afterEach(() => sandbox.restore());
+			const result = await getTicketIdFromBranchName(/^JUST A TEST$/);
 
-	it('getTicketIdFromBranchName | should return null when "getBranchName" throws', async () => {
-		sandbox.stub(OSUtils, 'asyncExec').rejects();
+			expect(result).toBeNull();
+		});
 
-		const result = await getTicketIdFromBranchName(/^JUST A TEST$/);
+		it('should return null when "getBranchName" returns with a defined "stderr"', async () => {
+			vi.mocked(asyncExec).mockResolvedValueOnce({ stdout: '', stderr: 'DUMMY_ERROR' });
 
-		expect(result === null).toEqual(true);
-	});
+			const result = await getTicketIdFromBranchName(/^JUST A TEST$/);
 
-	it('getTicketIdFromBranchName | should return null when failed to match ticket Id', async () => {
-		sandbox.stub(OSUtils, 'asyncExec').resolves('TEST A JUST');
+			expect(result).toBeNull();
+		});
 
-		const result = await getTicketIdFromBranchName(/^JUST A TEST$/);
+		it('should return null when failed to match ticket Id', async () => {
+			vi.mocked(asyncExec).mockResolvedValueOnce({ stdout: 'TEST A JUST', stderr: '' });
 
-		expect(result === null).toEqual(true);
-	});
+			const result = await getTicketIdFromBranchName(/^JUST A TEST$/);
 
-	it('getTicketIdFromBranchName | should ticket Id when there is one', async () => {
-		const ticketId = 'CLO-12345';
-		const ticketIdRegex = new RegExp(TICKET_ID_REGEX);
+			expect(result === null).toEqual(true);
+		});
 
-		sandbox.stub(OSUtils, 'asyncExec').resolves(`[${ticketId}] JUST A TEST`);
+		it('should ticket Id when there is one', async () => {
+			const ticketId = 'CLO-12345';
+			const ticketIdRegex = new RegExp(TICKET_ID_REGEX);
 
-		const result = await getTicketIdFromBranchName(ticketIdRegex);
+			vi.mocked(asyncExec).mockResolvedValueOnce({ stdout: `[${ticketId}] JUST A TEST`, stderr: '' });
 
-		expect(result === ticketId).toEqual(true);
+			const result = await getTicketIdFromBranchName(ticketIdRegex);
+
+			expect(result === ticketId).toEqual(true);
+		});
 	});
 });

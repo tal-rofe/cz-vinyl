@@ -25,7 +25,7 @@ figlet('cz - vinyl', (err, figletText) => {
 	console.log(
 		chalk.bold(
 			`\n👥👥👥 For any help or questions, you can open an issue or contact ${chalk.italic.gray(
-				'dev@vinyldepository.com',
+				'dev@exlint.io',
 			)} 👥👥👥\n`,
 		),
 	);

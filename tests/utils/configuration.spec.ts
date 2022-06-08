@@ -5,7 +5,8 @@ import { getConfiguration } from '@/utils/configuration';
 import { DEFAULT_CONFIGURATION } from '@/models/configuration';
 import { validateConfiguration, validateEnvConfiguration } from '@/validators/configuration';
 
-vi.mock('cosmicocnfig');
+vi.mock('cosmiconfig');
+vi.mock('@/validators/configuration');
 
 const cosmiconfigFunctions = {
 	clearCaches: () => undefined,
@@ -21,7 +22,7 @@ describe('[utils/configuration]', () => {
 		});
 
 		it('should return the default when there is no configuration file', async () => {
-			vi.mocked(cosmiconfig).mockReturnValue({
+			vi.mocked(cosmiconfig).mockReturnValueOnce({
 				search: () => Promise.resolve(null),
 				...cosmiconfigFunctions,
 			});
@@ -32,7 +33,7 @@ describe('[utils/configuration]', () => {
 		});
 
 		it('should return the default when configuration file is empty', async () => {
-			vi.mocked(cosmiconfig).mockReturnValue({
+			vi.mocked(cosmiconfig).mockReturnValueOnce({
 				search: () =>
 					Promise.resolve({
 						config: {},
@@ -48,7 +49,7 @@ describe('[utils/configuration]', () => {
 		});
 
 		it('should return the default when trying to get configuration file fails', async () => {
-			vi.mocked(cosmiconfig).mockReturnValue({
+			vi.mocked(cosmiconfig).mockReturnValueOnce({
 				search: Promise.reject,
 				...cosmiconfigFunctions,
 			});
@@ -59,7 +60,7 @@ describe('[utils/configuration]', () => {
 		});
 
 		it('should return the proper configuration when found configuration file', async () => {
-			vi.mocked(cosmiconfig).mockReturnValue({
+			vi.mocked(cosmiconfig).mockReturnValueOnce({
 				search: () =>
 					Promise.resolve({
 						config: { skipIssues: false },
@@ -84,7 +85,7 @@ describe('[utils/configuration]', () => {
 				skipIssues: false,
 			};
 
-			vi.mocked(cosmiconfig).mockReturnValue({
+			vi.mocked(cosmiconfig).mockReturnValueOnce({
 				search: () =>
 					Promise.resolve({
 						config: configurationFromFile,
@@ -93,7 +94,7 @@ describe('[utils/configuration]', () => {
 					}),
 				...cosmiconfigFunctions,
 			});
-			vi.mocked(validateConfiguration).mockReturnValue({});
+			vi.mocked(validateConfiguration).mockReturnValueOnce({});
 
 			const result = await getConfiguration();
 
@@ -110,7 +111,7 @@ describe('[utils/configuration]', () => {
 				skipIssues: false,
 			};
 
-			vi.mocked(cosmiconfig).mockReturnValue({
+			vi.mocked(cosmiconfig).mockReturnValueOnce({
 				search: () =>
 					Promise.resolve({
 						config: {},
@@ -119,8 +120,8 @@ describe('[utils/configuration]', () => {
 					}),
 				...cosmiconfigFunctions,
 			});
-			vi.mocked(validateConfiguration).mockReturnValue({});
-			vi.mocked(validateEnvConfiguration).mockReturnValue(configurationFromENVs);
+			vi.mocked(validateConfiguration).mockReturnValueOnce({});
+			vi.mocked(validateEnvConfiguration).mockReturnValueOnce(configurationFromENVs);
 
 			const result = await getConfiguration();
 
@@ -141,7 +142,7 @@ describe('[utils/configuration]', () => {
 				skipIssues: false,
 			};
 
-			vi.mocked(cosmiconfig).mockReturnValue({
+			vi.mocked(cosmiconfig).mockReturnValueOnce({
 				search: () =>
 					Promise.resolve({
 						config: configurationFromFile,
@@ -150,8 +151,8 @@ describe('[utils/configuration]', () => {
 					}),
 				...cosmiconfigFunctions,
 			});
-			vi.mocked(validateConfiguration).mockReturnValue(configurationFromFile);
-			vi.mocked(validateEnvConfiguration).mockReturnValue(configurationFromENVs);
+			vi.mocked(validateConfiguration).mockReturnValueOnce(configurationFromFile);
+			vi.mocked(validateEnvConfiguration).mockReturnValueOnce(configurationFromENVs);
 
 			const result = await getConfiguration();
 

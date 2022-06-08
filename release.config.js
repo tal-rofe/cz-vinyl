@@ -1,6 +1,6 @@
 module.exports = {
 	branches: ['main'],
-	repositoryUrl: 'git+https://github.com/Vinyl-Depository/cz-vinyl',
+	repositoryUrl: 'git+https://github.com/Exlint/cz-vinyl',
 	plugins: [
 		'@semantic-release/commit-analyzer',
 		'@semantic-release/release-notes-generator',

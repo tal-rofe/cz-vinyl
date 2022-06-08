@@ -33,8 +33,5 @@ jobs:
             - name: Check ESLint
               run: pnpm lint
 
-            - name: Testing with coverage
-              run: pnpm test:cov
-
             - name: Check dist command
               run: pnpm dist

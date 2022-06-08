@@ -1,18 +1,18 @@
 <p align="center">
-	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
-    	<img src="https://img.shields.io/github/workflow/status/Vinyl-Depository/cz-vinyl/Integration" alt="build status">
+	<a href="https://github.com/Exlint/cz-vinyl">
+    	<img src="https://img.shields.io/github/workflow/status/Exlint/cz-vinyl/Integration" alt="build status">
   	</a>
 	<a href="https://www.npmjs.com/package/cz-vinyl">
     	<img src="https://img.shields.io/npm/dw/cz-vinyl" alt="npm downloads">
   	</a>
-	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
+	<a href="https://github.com/Exlint/cz-vinyl">
     	<img src="https://img.shields.io/npm/l/cz-vinyl" alt="npm license">
   	</a>
-	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
+	<a href="https://github.com/Exlint/cz-vinyl">
     	<img src="https://img.shields.io/npm/v/cz-vinyl" alt="npm version">
   	</a>
-	<a href="https://github.com/Vinyl-Depository/cz-vinyl">
-    	<img src="https://img.shields.io/github/commit-activity/m/Vinyl-Depository/cz-vinyl" alt="commits">
+	<a href="https://github.com/Exlint/cz-vinyl">
+    	<img src="https://img.shields.io/github/commit-activity/m/Exlint/cz-vinyl" alt="commits">
   	</a>
 </p>
 
@@ -20,7 +20,7 @@
 
 <h1 align="center">cz-vinyl</h1>
 
-> Commitizen adapter formatting commit messages using Vinyl Depository conventions.
+> Commitizen adapter formatting commit messages using Exlint conventions.
 > Format commit messages with [conventional commits].
 
 cz-vinyl allows you to easily use emojis and ticket ID (JIRA, ...) in your commits using [commitizen].
@@ -174,12 +174,12 @@ The default commit types, descriptions and emoji that are used are:
 
 ## Examples
 
--   [landing-page](https://github.com/Vinyl-Depository/landing-page)
--   [cz-vinyl](https://github.com/Vinyl-Depository/cz-vinyl)
+-   [landing-page](https://github.com/Exlint/landing-page)
+-   [cz-vinyl](https://github.com/Exlint/cz-vinyl)
 
 ## Support
 
-For support, email dev@vinyldepository.com or open an issue at [cz-vinyl issues](https://github.com/Vinyl-Depository/cz-vinyl/issues).
+For support, email dev@exlint.io or open an issue at [cz-vinyl issues](https://github.com/Exlint/cz-vinyl/issues).
 
 ## Contributing
 

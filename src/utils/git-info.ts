@@ -1,4 +1,7 @@
-import { asyncExec } from './os';
+import { exec } from 'child_process';
+import util from 'util';
+
+const asyncExec = util.promisify(exec);
 
 /**
  * The function returns the current branch name
@@ -6,7 +9,11 @@ import { asyncExec } from './os';
  */
 const getBranchName = async () => {
 	const gitCommand = 'git rev-parse --abbrev-ref HEAD';
-	const branchName = await asyncExec(gitCommand);
+	const { stdout: branchName, stderr } = await asyncExec(gitCommand);
+
+	if (stderr) {
+		throw new Error(stderr);
+	}
 
 	return branchName;
 };
