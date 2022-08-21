@@ -99,5 +99,8 @@
 	"peerDependencies": {
 		"@types/node": "17.0.33",
 		"vite": "2.9.9"
+	},
+	"engines": {
+		"node": ">= 14.17"
 	}
 }
