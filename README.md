@@ -76,9 +76,9 @@ $ git cz
 ## Configuration
 
 Like commitizen, you can specify the configuration of cz-vinyl through various options.
-Configuration can be set in environment variables or in the following files:
+Configuration can be set in environment variables or in the following files (the following files can also be configured in home directory):
 
--   a `package.json` property: `"czvinyl": {...}`
+-   a `package.json` property: `"czvinyl": {...}` or in `~/package.json`, for example
 -   a `.czvinylrc` file in JSON or YAML format
 -   a `.czvinylrc.json`, `.czvinylrc.yaml`, `.czvinylrc.yml`, `.czvinylrc.js`, `.czvinylrc.ts`, or `.czvinylrc.cjs` file
 -   a `czvinyl.config.js`, `czvinyl.config.ts`, or `czvinyl.config.cjs` CommonJS module exporting an object
