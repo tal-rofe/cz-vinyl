@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Exlint/cz-vinyl/compare/v1.3.2...v1.4.0) (2022-08-21)
+
+
+### Features
+
+* 🔥 support global config in home directory ([8375849](https://github.com/Exlint/cz-vinyl/commit/83758494d372c49cc1cf84197687acb3ac54b565))
+
 ## [1.3.2](https://github.com/Exlint/cz-vinyl/compare/v1.3.1...v1.3.2) (2022-05-05)
 
 ### Bug Fixes
