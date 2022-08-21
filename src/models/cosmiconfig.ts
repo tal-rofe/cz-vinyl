@@ -1,3 +1,6 @@
+import os from 'os';
+import path from 'path';
+
 export const CONFIGURATION_MODULE_NAME = 'czvinyl';
 
 export const SEARCH_PLACES = [
@@ -12,4 +15,16 @@ export const SEARCH_PLACES = [
 	`${CONFIGURATION_MODULE_NAME}.config.js`,
 	`${CONFIGURATION_MODULE_NAME}.config.ts`,
 	`${CONFIGURATION_MODULE_NAME}.config.cjs`,
+
+	path.join(os.homedir(), 'package.json'),
+	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc`),
+	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.json`),
+	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.yaml`),
+	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.yml`),
+	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.js`),
+	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.ts`),
+	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.cjs`),
+	path.join(os.homedir(), `${CONFIGURATION_MODULE_NAME}.config.js`),
+	path.join(os.homedir(), `${CONFIGURATION_MODULE_NAME}.config.ts`),
+	path.join(os.homedir(), `${CONFIGURATION_MODULE_NAME}.config.cjs`),
 ];
