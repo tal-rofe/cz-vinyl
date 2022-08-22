@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Exlint/cz-vinyl/compare/v1.4.0...v1.4.1) (2022-08-22)
+
+
+### Bug Fixes
+
+* 🐞 fix webpack build ([b041652](https://github.com/Exlint/cz-vinyl/commit/b041652fa6936ce5637194c1a2d3fa31fbb5010e))
+
 # [1.4.0](https://github.com/Exlint/cz-vinyl/compare/v1.3.2...v1.4.0) (2022-08-21)
 
 
