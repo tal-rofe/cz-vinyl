@@ -6,7 +6,7 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"esModuleInterop": true,
-		"module": "commonjs",
+		"module": "CommonJS",
 		"noEmit": true,
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
