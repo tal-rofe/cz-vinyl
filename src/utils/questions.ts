@@ -11,6 +11,7 @@ import { getTicketIdFromBranchName } from './git-info';
  */
 export const getQuestions = async (configuration: IConfiguration) => {
 	const defaultCommitTypes = configuration.commitTypes.map(transformCommitType);
+	const isScopesListsMode = Array.isArray(configuration.scopes) && configuration.scopes.length > 0;
 
 	const commitTypesFuse = new fuse(configuration.commitTypes, {
 		shouldSort: true,
@@ -34,14 +35,14 @@ export const getQuestions = async (configuration: IConfiguration) => {
 				),
 		},
 		{
-			type: Array.isArray(configuration.scopes) && configuration.scopes.length > 0 ? 'list' : 'input',
+			type: isScopesListsMode ? 'list' : 'input',
 			name: 'scope',
 			message: configuration.scopeQuestion,
-			choices:
-				Array.isArray(configuration.scopes) && configuration.scopes.length > 0
-					? configuration.scopes
-					: null,
+			choices: isScopesListsMode ? configuration.scopes : null,
 			when: !configuration.skipScope,
+			validate: isScopesListsMode
+				? null
+				: (input: string) => input.length > 0 || 'Scope must be provided',
 		},
 		{
 			type: 'input',
