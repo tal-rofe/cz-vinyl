@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Exlint/cz-vinyl/compare/v1.4.1...v1.5.0) (2022-08-25)
+
+
+### Features
+
+* 🔥 enforce non-empty scope when asked for ([c48cb42](https://github.com/Exlint/cz-vinyl/commit/c48cb42456f89d4eb445f8a13faedb9e2e68f211))
+
 ## [1.4.1](https://github.com/Exlint/cz-vinyl/compare/v1.4.0...v1.4.1) (2022-08-22)
 
 
