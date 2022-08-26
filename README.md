@@ -189,6 +189,18 @@ See `CONTRIBUTING.md` for ways to get started.
 
 Please adhere to this project's `CODE_OF_CONDUCT.md`.
 
+If you want to make PR easily and check your code:
+
+1. Run `pnpm i` to install dependencies
+2. Build your source code by running `pnpm dist`
+3. Modify `.cz.json` file with:
+```json
+{
+	"path": "PATH TO dist/index.js file"
+}
+```
+4. Run `git cmt` and check results of your code
+
 ## Authors
 
 -   [@tal-rofe](https://github.com/tal-rofe)
