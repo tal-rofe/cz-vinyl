@@ -15,7 +15,7 @@ const getBranchName = async () => {
 		throw new Error(stderr);
 	}
 
-	return branchName;
+	return branchName.trim();
 };
 
 /**
