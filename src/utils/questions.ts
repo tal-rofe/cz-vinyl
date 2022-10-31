@@ -22,6 +22,8 @@ export const getQuestions = async (configuration: IConfiguration) => {
 		keys: ['value', 'emoji', 'description'],
 	});
 
+	const shouldValidateTicket = await shouldValidateTicketId(configuration.allowEmptyTicketIdForBranches);
+
 	return [
 		{
 			type: 'autocomplete',
@@ -48,13 +50,11 @@ export const getQuestions = async (configuration: IConfiguration) => {
 			type: 'input',
 			name: 'ticket_id',
 			message: configuration.ticketIdQuestion,
-			default: await getTicketIdFromBranchName(new RegExp(configuration.ticketIdRegex)),
-			validate: async (input: string) => {
-				const shouldValidate = await shouldValidateTicketId(
-					configuration.allowEmptyTicketIdForBranches,
-				);
-
-				if (!shouldValidate) {
+			default: shouldValidateTicket
+				? await getTicketIdFromBranchName(new RegExp(configuration.ticketIdRegex))
+				: '',
+			validate: (input: string) => {
+				if (!shouldValidateTicket) {
 					return true;
 				}
 
