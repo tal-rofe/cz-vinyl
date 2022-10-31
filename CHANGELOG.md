@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/Exlint/cz-vinyl/compare/v1.6.1...v1.6.2) (2022-10-31)
+
+
+### Bug Fixes
+
+* 🐞 trim output from branch name cmd ([2d18ac7](https://github.com/Exlint/cz-vinyl/commit/2d18ac72a91f0b02b7220461a0f829271bdbfc9a))
+
 ## [1.6.1](https://github.com/Exlint/cz-vinyl/compare/v1.6.0...v1.6.1) (2022-10-31)
 
 
