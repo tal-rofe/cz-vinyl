@@ -15,6 +15,7 @@ export interface IConfiguration {
 	readonly ticketIdQuestion: string;
 	readonly skipTicketId: boolean;
 	readonly ticketIdRegex: string;
+	readonly allowEmptyTicketIdForBranches: string[];
 	readonly subjectQuestion: string;
 	readonly subjectMaxLength: number;
 	readonly subjectMinLength: number;

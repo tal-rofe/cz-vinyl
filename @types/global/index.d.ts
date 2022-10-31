@@ -15,6 +15,7 @@ declare global {
 			readonly CZ_TICKET_ID_QUESTION?: string;
 			readonly CZ_SKIP_TICKET_ID?: string;
 			readonly CZ_TICKET_ID_REGEX?: string;
+			readonly CZ_ALLOW_EMPTY_TICKET_ID_FOR_BRANCHES?: string;
 			readonly CZ_SUBJECT_QUESTION?: string;
 			readonly CZ_SUBJECT_MAX_LENGTH?: string;
 			readonly CZ_SUBJECT_MIN_LENGTH?: string;

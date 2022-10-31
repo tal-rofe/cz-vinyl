@@ -45,7 +45,8 @@
 		"format": "prettier --write \"**/*.{ts,js,json}\"",
 		"type-check": "tsc --project ./tsconfig.json",
 		"depcheck": "depcheck --config .depcheckrc.json",
-		"inflint": "inflint -c inflint.config.ts"
+		"inflint": "inflint -c inflint.config.ts",
+		"prettier": "prettier --check **/*.{ts,js,json,yaml}"
 	},
 	"dependencies": {
 		"cosmiconfig": "7.0.1",

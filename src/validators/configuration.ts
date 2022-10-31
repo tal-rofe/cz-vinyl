@@ -24,6 +24,7 @@ export const validateConfiguration = (configuration: IUnknownRecord) => {
 		ticketIdQuestion: validateString(configuration['ticketIdQuestion']),
 		skipTicketId: validateBoolean(configuration['skipTicketId']),
 		ticketIdRegex: validateRegex(configuration['ticketIdRegex']),
+		allowEmptyTicketIdForBranches: validateStringArray(configuration['allowEmptyTicketIdForBranches']),
 		subjectQuestion: validateString(configuration['subjectQuestion']),
 		subjectMaxLength: validatePositiveInt(configuration['subjectMaxLength']),
 		subjectMinLength: validatePositiveInt(configuration['subjectMinLength']),
@@ -52,11 +53,17 @@ export const validateEnvConfiguration = () => {
 	} catch {}
 
 	let parsedScopes: string[] | undefined;
+	let parsedExcludedBranches: string[] | undefined;
 
 	try {
-		const parsedValue = JSON.parse(process.env.CZ_SCOPES ?? '');
+		const parsedScopesValue = JSON.parse(process.env.CZ_SCOPES ?? '');
 
-		parsedScopes = validateStringArray(parsedValue);
+		const parsedExcludedBranchesValue = JSON.parse(
+			process.env.CZ_ALLOW_EMPTY_TICKET_ID_FOR_BRANCHES ?? '',
+		);
+
+		parsedScopes = validateStringArray(parsedScopesValue);
+		parsedExcludedBranches = validateStringArray(parsedExcludedBranchesValue);
 	} catch {}
 
 	const envConfiguration: Partial<IConfiguration> = {
@@ -70,6 +77,7 @@ export const validateEnvConfiguration = () => {
 		ticketIdQuestion: validateString(process.env.CZ_TICKET_ID_QUESTION),
 		skipTicketId: parseToBoolean(process.env.CZ_SKIP_TICKET_ID),
 		ticketIdRegex: validateRegex(process.env.CZ_TICKET_ID_REGEX),
+		allowEmptyTicketIdForBranches: parsedExcludedBranches,
 		subjectQuestion: validateString(process.env.CZ_SUBJECT_QUESTION),
 		subjectMaxLength: validatePositiveInt(parseInt(process.env.CZ_SUBJECT_MAX_LENGTH ?? '')),
 		subjectMinLength: validatePositiveInt(parseInt(process.env.CZ_SUBJECT_MIN_LENGTH ?? '')),

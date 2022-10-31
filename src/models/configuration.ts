@@ -13,6 +13,7 @@ export const DEFAULT_CONFIGURATION: IConfiguration = {
 	ticketIdQuestion: 'Type the JIRA Id (ex. V-12345):',
 	skipTicketId: false,
 	ticketIdRegex: TICKET_ID_REGEX,
+	allowEmptyTicketIdForBranches: [],
 	subjectQuestion: 'Write a short, imperative mood description of the change:\n',
 	subjectMaxLength: 70,
 	subjectMinLength: 3,

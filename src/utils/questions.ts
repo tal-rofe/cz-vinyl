@@ -2,7 +2,7 @@ import fuse from 'fuse.js';
 
 import type { IConfiguration } from '../interfaces/configuration';
 import { transformCommitType } from '../pipes/commit-type';
-import { getTicketIdFromBranchName } from './git-info';
+import { getTicketIdFromBranchName, shouldValidateTicketId } from './git-info';
 
 /**
  * The function returns the questions for commitizen according to given configuration
@@ -49,8 +49,17 @@ export const getQuestions = async (configuration: IConfiguration) => {
 			name: 'ticket_id',
 			message: configuration.ticketIdQuestion,
 			default: await getTicketIdFromBranchName(new RegExp(configuration.ticketIdRegex)),
-			validate: (input: string) =>
-				new RegExp(configuration.ticketIdRegex).test(input) || 'Ticket Id must be valid',
+			validate: async (input: string) => {
+				const shouldValidate = await shouldValidateTicketId(
+					configuration.allowEmptyTicketIdForBranches,
+				);
+
+				if (!shouldValidate) {
+					return true;
+				}
+
+				return new RegExp(configuration.ticketIdRegex).test(input) || 'Ticket Id must be valid';
+			},
 			when: !configuration.skipTicketId,
 		},
 		{

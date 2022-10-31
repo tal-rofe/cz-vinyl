@@ -1,6 +1,24 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:base", ":semanticCommitTypeAll(chore)", ":semanticCommitScopeDisabled"],
+	"regexManagers": [
+		{
+			"fileMatch": ["^(\\.github\\/workflows)\\/[^/]+\\.yaml$"],
+			"matchStrings": [
+				"pnpm-version: (?<currentValue>.*)",
+				"package-manager-version: (?<currentValue>.*)"
+			],
+			"depNameTemplate": "pnpm",
+			"datasourceTemplate": "npm"
+		},
+		{
+			"fileMatch": ["^(\\.github\\/workflows)\\/[^/]+\\.yaml$"],
+			"matchStrings": ["node-version: (?<currentValue>.*)"],
+			"depNameTemplate": "node",
+			"datasourceTemplate": "node",
+			"versioningTemplate": "node"
+		}
+	],
 	"packageRules": [
 		{
 			"updateTypes": ["minor", "patch"],

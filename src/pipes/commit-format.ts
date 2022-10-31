@@ -28,6 +28,10 @@ export const formatHeader = (
 	ticketId: string,
 	subject: string,
 ) => {
+	if (!ticketId && format.includes('[{ticket_id}]')) {
+		format = format.replace('[{ticket_id}]', '');
+	}
+
 	const commitHeader = StringTemplate(format, {
 		type,
 		scope,

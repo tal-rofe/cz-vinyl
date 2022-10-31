@@ -19,8 +19,8 @@ const getBranchName = async () => {
 };
 
 /**
- * The function returns the ticket Id, if presents, in the branch name, or null if not
- * @returns ticket Id
+ * The function returns the ticket ID, if presents, in the branch name, or null if not
+ * @returns ticket ID
  */
 export const getTicketIdFromBranchName = async (ticketRegex: RegExp) => {
 	try {
@@ -35,4 +35,15 @@ export const getTicketIdFromBranchName = async (ticketRegex: RegExp) => {
 	} catch {
 		return null;
 	}
+};
+
+/**
+ * The function returns whether a validation for ticket ID is required
+ * @param excludedBranches excluded branches to allow empty ticket ID
+ * @returns indicator flag - whether to validate ticket ID
+ */
+export const shouldValidateTicketId = async (excludedBranches: string[]) => {
+	const branchName = await getBranchName();
+
+	return !excludedBranches.includes(branchName);
 };

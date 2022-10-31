@@ -11,10 +11,11 @@ export type Config = Partial<{
 	typeQuestion: string;
 	scopeQuestion: string;
 	skipScope: boolean;
-	scopes: Array<string>;
+	scopes: string[];
 	ticketIdQuestion: string;
 	skipTicketId: boolean;
 	ticketIdRegex: string;
+	allowEmptyTicketIdForBranches: string[];
 	subjectQuestion: string;
 	subjectMaxLength: number;
 	subjectMinLength: number;
