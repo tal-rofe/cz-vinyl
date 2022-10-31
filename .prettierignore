@@ -2,3 +2,5 @@ node_modules
 dist
 coverage
 README.md
+.github
+pnpm-lock.yaml
