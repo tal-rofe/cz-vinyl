@@ -177,6 +177,7 @@ The default commit types, descriptions and emoji that are used are:
 
 -   [landing-page](https://github.com/Exlint/landing-page)
 -   [cz-vinyl](https://github.com/Exlint/cz-vinyl)
+-   [inflint](https://github.com/Exlint/inflint)
 
 ## Support
 
