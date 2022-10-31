@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/Exlint/cz-vinyl/compare/v1.6.0...v1.6.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* 🐞 [EXL-000] fix issue with default value for ticket ID when excluding branches ([0940163](https://github.com/Exlint/cz-vinyl/commit/0940163127e5020e7ddec287bd2793de0b475f9e))
+
 # [1.6.0](https://github.com/Exlint/cz-vinyl/compare/v1.5.0...v1.6.0) (2022-10-31)
 
 
