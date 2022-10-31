@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Exlint/cz-vinyl/compare/v1.5.0...v1.6.0) (2022-10-31)
+
+
+### Features
+
+* 🔥 support excluded branches ([89a0096](https://github.com/Exlint/cz-vinyl/commit/89a009678511bbae7c35e924716538fab08eac58))
+
 # [1.5.0](https://github.com/Exlint/cz-vinyl/compare/v1.4.1...v1.5.0) (2022-08-25)
 
 
