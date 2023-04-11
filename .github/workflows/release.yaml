@@ -12,27 +12,19 @@ jobs:
 
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-
-            - name: Setup Node.js
-              uses: actions/setup-node@v3
+            - name: Setup Node environment
+              uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 16
-
-            - name: Install pnpm
-              uses: pnpm/action-setup@v2
-              with:
-                  version: 7.1.0
-
-            - name: Installing dependencies
-              run: pnpm install
+                should-cache: false
+                node-version: 18.13.0
+                package-manager: pnpm
+                package-manager-version: 7.25.0
 
             - name: Build dist folder
               run: pnpm dist
 
             - name: Semantic Release
-              uses: cycjimmy/semantic-release-action@v2
+              uses: cycjimmy/semantic-release-action@v3.4.0
               with:
                   extra_plugins: |
                       @semantic-release/changelog
