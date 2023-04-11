@@ -30,6 +30,9 @@ devDependencies:
   '@commitlint/cli':
     specifier: 17.0.3
     version: 17.0.3
+  '@exlint.io/inflint':
+    specifier: 1.2.10
+    version: 1.2.10(@types/node@17.0.33)(typescript@4.7.4)
   '@types/inquirer':
     specifier: 8.2.1
     version: 8.2.1
@@ -84,9 +87,6 @@ devDependencies:
   husky:
     specifier: 8.0.1
     version: 8.0.1
-  inflint:
-    specifier: 1.2.2
-    version: 1.2.2(@types/node@17.0.33)(typescript@4.7.4)
   is-ci:
     specifier: 3.0.1
     version: 3.0.1
@@ -443,6 +443,26 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@exlint.io/inflint@1.2.10(@types/node@17.0.33)(typescript@4.7.4):
+    resolution: {integrity: sha512-w/WF8km72qi6PqRCoyr4w7tFmE2RLSD1+0rq2joZKSubFAepcg52mqvQzdln/E4j4nADBNCKMlPxl8IRnV6asA==}
+    hasBin: true
+    dependencies:
+      '@expo/spawn-async': 1.6.0
+      cosmiconfig: 7.0.1
+      cosmiconfig-typescript-loader: 2.0.1(@types/node@17.0.33)(cosmiconfig@7.0.1)(typescript@4.7.4)
+      fast-glob: 3.2.11
+      inquirer: 8.2.4
+      micromatch: 4.0.5
+      minimist: 1.2.6
+      v8-compile-cache: 2.3.0
+      yaml: 2.1.1
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - typescript
     dev: true
 
   /@expo/spawn-async@1.6.0:
@@ -1464,23 +1484,6 @@ packages:
       meow: 8.1.2
       split2: 3.2.2
       through2: 4.0.2
-    dev: true
-
-  /cosmiconfig-typescript-loader@1.0.9(@types/node@17.0.33)(cosmiconfig@7.0.1)(typescript@4.7.4):
-    resolution: {integrity: sha512-tRuMRhxN4m1Y8hP9SNYfz7jRwt8lZdWxdjg/ohg5esKmsndJIn4yT96oJVcf5x0eA11taXl+sIp+ielu529k6g==}
-    engines: {node: '>=12', npm: '>=6'}
-    peerDependencies:
-      '@types/node': '*'
-      cosmiconfig: '>=7'
-      typescript: '>=3'
-    dependencies:
-      '@types/node': 17.0.33
-      cosmiconfig: 7.0.1
-      ts-node: 10.8.1(@types/node@17.0.33)(typescript@4.7.4)
-      typescript: 4.7.4
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
     dev: true
 
   /cosmiconfig-typescript-loader@2.0.1(@types/node@17.0.33)(cosmiconfig@7.0.1)(typescript@4.7.4):
@@ -2881,26 +2884,6 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /inflint@1.2.2(@types/node@17.0.33)(typescript@4.7.4):
-    resolution: {integrity: sha512-MU4vTLau6dNcnS0LfyEPf7L9QAQp95C9R0A6RHvo5fB0bU1bRtmhWeWMAMplGKLT9yaYwfp4jX8aezEIDgMf+A==}
-    hasBin: true
-    dependencies:
-      '@expo/spawn-async': 1.6.0
-      cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 1.0.9(@types/node@17.0.33)(cosmiconfig@7.0.1)(typescript@4.7.4)
-      fast-glob: 3.2.11
-      inquirer: 8.2.4
-      micromatch: 4.0.5
-      minimist: 1.2.6
-      v8-compile-cache: 2.3.0
-      yaml: 2.0.1
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - typescript
-    dev: true
-
   /inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
@@ -3039,7 +3022,7 @@ packages:
     dev: true
 
   /is-extglob@2.1.1:
-    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=}
+    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -3170,7 +3153,7 @@ packages:
     dev: true
 
   /isexe@2.0.0:
-    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
   /isobject@3.0.1:
@@ -3865,7 +3848,7 @@ packages:
     dev: true
 
   /path-key@2.0.1:
-    resolution: {integrity: sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=}
+    resolution: {integrity: sha512-fEHGKCSmUSDPv4uoj8AlD+joPlq3peND+HRYyxFz4KPw4z926S/b8rIuFs2FYJg3BwsxJf6A9/3eIdLaYC+9Dw==}
     engines: {node: '>=4'}
     dev: true
 
@@ -4251,7 +4234,7 @@ packages:
     dev: true
 
   /shebang-command@1.2.0:
-    resolution: {integrity: sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=}
+    resolution: {integrity: sha512-EV3L1+UQWGor21OmnvojK36mhg+TyIKDh3iFBKBohr5xeXIhNBcx8oWdgkTEEQ+BEFFYdLRuqMfd5L84N1V5Vg==}
     engines: {node: '>=0.10.0'}
     dependencies:
       shebang-regex: 1.0.0
@@ -4265,7 +4248,7 @@ packages:
     dev: true
 
   /shebang-regex@1.0.0:
-    resolution: {integrity: sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=}
+    resolution: {integrity: sha512-wpoSFAxys6b2a2wHZ1XpDSgD7N9iVjg29Ph9uV/uaP9Ex/KXlkTZTeddxDPSYQpgvzKLGJke2UU0AzoGCjNIvQ==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -5088,11 +5071,6 @@ packages:
   /yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
-
-  /yaml@2.0.1:
-    resolution: {integrity: sha512-1NpAYQ3wjzIlMs0mgdBmYzLkFgWBIWrzYVDYfrixhoFNNgJ444/jT2kUT2sicRbJES3oQYRZugjB6Ro8SjKeFg==}
-    engines: {node: '>= 14'}
-    dev: true
 
   /yaml@2.1.1:
     resolution: {integrity: sha512-o96x3OPo8GjWeSLF+wOAbrPfhFOGY0W00GNaxCDv+9hkcDJEnev1yh8S7pgHF0ik6zc8sQLuL8hjHjJULZp8bw==}
