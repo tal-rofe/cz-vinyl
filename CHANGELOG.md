@@ -1,3 +1,5 @@
+# [2.0.0](https://github.com/Exlint/cz-vinyl/compare/v1.6.2...v2.0.0) (2023-04-14)
+
 ## [1.6.2](https://github.com/Exlint/cz-vinyl/compare/v1.6.1...v1.6.2) (2022-10-31)
 
 
