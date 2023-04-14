@@ -91,8 +91,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0(@typescript-eslint/eslint-plugin@5.58.0)(eslint@8.38.0)
   figlet:
-    specifier: 1.5.2
-    version: 1.5.2
+    specifier: 1.6.0
+    version: 1.6.0
   husky:
     specifier: 8.0.3
     version: 8.0.3
@@ -2564,9 +2564,10 @@ packages:
       reusify: 1.0.4
     dev: true
 
-  /figlet@1.5.2:
-    resolution: {integrity: sha512-WOn21V8AhyE1QqVfPIVxe3tupJacq1xGkPTB4iagT6o+P2cAgEOOwIxMftr4+ZCTI6d551ij9j61DFr0nsP2uQ==}
+  /figlet@1.6.0:
+    resolution: {integrity: sha512-31EQGhCEITv6+hi2ORRPyn3bulaV9Fl4xOdR169cBzH/n1UqcxsiSB/noo6SJdD7Kfb1Ljit+IgR1USvF/XbdA==}
     engines: {node: '>= 0.4.0'}
+    hasBin: true
     dev: true
 
   /figures@2.0.0:
