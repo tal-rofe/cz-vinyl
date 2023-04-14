@@ -59,7 +59,7 @@
 		"inflint": "inflint -c ./inflint.config.cjs"
 	},
 	"dependencies": {
-		"cosmiconfig": "7.0.1",
+		"cosmiconfig": "7.1.0",
 		"cosmiconfig-typescript-loader": "2.0.2",
 		"fuse.js": "6.6.2",
 		"inquirer": "8.2.4",
