@@ -115,8 +115,8 @@ devDependencies:
     specifier: 3.0.2
     version: 3.0.2
   ts-loader:
-    specifier: 9.3.1
-    version: 9.3.1(typescript@5.0.4)(webpack@5.72.1)
+    specifier: 9.4.2
+    version: 9.4.2(typescript@5.0.4)(webpack@5.72.1)
   ts-node:
     specifier: 10.9.1
     version: 10.9.1(@types/node@17.0.33)(typescript@5.0.4)
@@ -782,7 +782,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.58.0(typescript@5.0.4)
       eslint: 8.38.0
       eslint-scope: 5.1.1
-      semver: 7.3.7
+      semver: 7.4.0
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -4889,8 +4889,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-loader@9.3.1(typescript@5.0.4)(webpack@5.72.1):
-    resolution: {integrity: sha512-OkyShkcZTsTwyS3Kt7a4rsT/t2qvEVQuKCTg4LJmpj9fhFR7ukGdZwV6Qq3tRUkqcXtfGpPR7+hFKHCG/0d3Lw==}
+  /ts-loader@9.4.2(typescript@5.0.4)(webpack@5.72.1):
+    resolution: {integrity: sha512-OmlC4WVmFv5I0PpaxYb+qGeGOdm5giHU7HwDDUjw59emP2UYMHy9fFSDcYgSNoH8sXcj4hGCSEhlDZ9ULeDraA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       typescript: '*'
@@ -4899,7 +4899,7 @@ packages:
       chalk: 4.1.2
       enhanced-resolve: 5.9.3
       micromatch: 4.0.5
-      semver: 7.3.7
+      semver: 7.4.0
       typescript: 5.0.4
       webpack: 5.72.1(webpack-cli@4.9.2)
     dev: true
