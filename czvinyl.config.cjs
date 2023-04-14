@@ -1,6 +1,4 @@
-import type { Config } from 'cz-vinyl';
-
-const czvinylConfig: Config = {
+const czvinylConfig = {
 	commitTypes: [
 		{
 			description: 'Breaking change',
@@ -62,4 +60,4 @@ const czvinylConfig: Config = {
 	skipTicketId: true,
 };
 
-export default czvinylConfig;
+module.exports = czvinylConfig;

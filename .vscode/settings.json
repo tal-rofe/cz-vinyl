@@ -13,7 +13,7 @@
 	"material-icon-theme.files.associations": {
 		".inflintignore": "crystal",
 		"inflint.config.cjs": "crystal",
-		"czvinyl.config.ts": "ocaml",
+		"czvinyl.config.cjs": "ocaml",
 		".depcheckrc.json": "parcel",
 		".cz.json": "jinja",
 		"tsconfig.paths.json": "tsconfig",
