@@ -1,13 +1,2 @@
-.eslintrc.js
-.prettierrc.js
-commitlint.config.js
-lint-staged.config.js
-release.config.js
-czvinyl.config.ts
-inflint.config.ts
-depcheck.config.js
-vite.config.ts
-vitest.setup.ts
-webpack.config.ts
+.eslintrc.cjs
 dist
-scripts

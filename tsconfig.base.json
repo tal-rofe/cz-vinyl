@@ -1,14 +1,16 @@
 {
+	"extends": "./tsconfig.paths.json",
 	"compilerOptions": {
 		"target": "ES2018",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"noEmit": true,
+		"baseUrl": "./",
 		"allowJs": false,
 		"skipLibCheck": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"esModuleInterop": true,
-		"module": "CommonJS",
-		"noEmit": true,
-		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"incremental": true,
@@ -25,14 +27,6 @@
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"baseUrl": "./",
-		"paths": {
-			"@/utils/*": ["src/utils/*"],
-			"@/models/*": ["src/models/*"],
-			"@/interfaces/*": ["src/interfaces/*"],
-			"@/validators/*": ["src/validators/*"],
-			"@/pipes/*": ["src/pipes/*"]
-		},
 		"typeRoots": ["./node_modules/@types", "./@types"]
 	}
 }

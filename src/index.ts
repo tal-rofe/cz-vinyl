@@ -1,4 +1,4 @@
-import { Inquirer } from 'inquirer';
+import type { Inquirer } from 'inquirer';
 import InquirerAutoComplete from 'inquirer-autocomplete-prompt';
 import InquirerMaxLength from 'inquirer-maxlength-input-prompt';
 import wrap from 'word-wrap';
@@ -6,7 +6,7 @@ import wrap from 'word-wrap';
 import { getConfiguration } from './utils/configuration';
 import { formatHeader, formatIssues, formatBreakingChange } from './pipes/commit-format';
 import { getQuestions } from './utils/questions';
-import { ICommitFunc } from './interfaces/commit';
+import type { ICommitFunc } from './interfaces/commit';
 
 const prompter = (cz: Inquirer, commit: ICommitFunc) => {
 	cz.prompt.registerPrompt('autocomplete', InquirerAutoComplete);

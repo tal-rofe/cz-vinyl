@@ -6,5 +6,20 @@
 	},
 	"files.associations": {
 		"commit-msg": "shellscript"
+	},
+	"[ignore]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"material-icon-theme.files.associations": {
+		".inflintignore": "crystal",
+		"inflint.config.cjs": "crystal",
+		"czvinyl.config.ts": "ocaml",
+		".depcheckrc.json": "parcel",
+		".cz.json": "jinja",
+		"tsconfig.paths.json": "tsconfig",
+		"release.config.cjs": "semantic-release"
+	},
+	"[properties]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
 	}
 }

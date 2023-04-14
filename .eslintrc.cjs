@@ -1,8 +1,6 @@
 module.exports = {
 	root: true,
-	env: {
-		node: true,
-	},
+	env: { node: true },
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
@@ -11,13 +9,15 @@ module.exports = {
 	],
 	parserOptions: {
 		ecmaVersion: 12,
-		project: './tsconfig.eslint.json',
 		sourceType: 'module',
+		project: './tsconfig.eslint.json',
+		tsconfigRootDir: __dirname,
+		extraFileExtensions: ['.cjs'],
 	},
-	plugins: ['@typescript-eslint', 'unused-imports', 'node', 'import'],
+	plugins: ['@typescript-eslint', 'unused-imports', 'node', 'import', 'deprecation', 'unicorn'],
 	rules: {
 		'max-lines': ['error', { max: 100, skipBlankLines: true, skipComments: true }],
-		'indent': ['error', 'tab'],
+		'indent': ['error', 'tab', { SwitchCase: 1 }],
 		'quotes': ['error', 'single', { avoidEscape: true }],
 		'semi': ['error', 'always'],
 		'no-empty': [
@@ -119,6 +119,13 @@ module.exports = {
 		'@typescript-eslint/ban-tslint-comment': ['error'],
 		'@typescript-eslint/no-require-imports': ['error'],
 		'@typescript-eslint/no-non-null-assertion': 'off',
+		'@typescript-eslint/no-use-before-define': ['error'],
+		'@typescript-eslint/consistent-type-imports': ['error'],
+		'@typescript-eslint/await-thenable': 'error',
+		'@typescript-eslint/explicit-member-accessibility': [
+			'error',
+			{ accessbility: 'explicit', overrides: { constructors: 'off' } },
+		],
 
 		'unused-imports/no-unused-imports': 'error',
 
@@ -155,12 +162,39 @@ module.exports = {
 		],
 
 		'node/no-sync': 'error',
+
+		'deprecation/deprecation': 'error',
+
+		'unicorn/catch-error-name': 'error',
+		'unicorn/new-for-builtins': 'error',
+		'unicorn/prefer-node-protocol': 'error',
+		'unicorn/no-new-buffer': 'error',
+		'unicorn/throw-new-error': 'error',
+		'unicorn/text-encoding-identifier-case': 'error',
+		'unicorn/switch-case-braces': 'error',
+		'unicorn/prefer-module': 'error',
+		'unicorn/no-empty-file': 'error',
 	},
 	overrides: [
 		{
-			files: ['tests/**/*'],
+			files: ['commitlint.config.cjs', './tests/**/*'],
 			rules: {
-				'max-lines': ['error', { max: 135, skipBlankLines: true, skipComments: true }],
+				'max-lines': 'off',
+			},
+		},
+		{
+			files: ['./scripts/onboarding.js'],
+			rules: {
+				'no-console': 'off',
+			},
+		},
+		{
+			files: ['./**/*.cjs'],
+			rules: {
+				'@typescript-eslint/no-var-requires': 'off',
+				'@typescript-eslint/no-require-imports': 'off',
+				'import/no-commonjs': 'off',
+				'unicorn/prefer-module': 'off',
 			},
 		},
 	],

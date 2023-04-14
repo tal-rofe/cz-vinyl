@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"@/utils/*": ["src/utils/*"],
+			"@/models/*": ["src/models/*"],
+			"@/interfaces/*": ["src/interfaces/*"],
+			"@/validators/*": ["src/validators/*"],
+			"@/pipes/*": ["src/pipes/*"]
+		}
+	}
+}

@@ -1,4 +1,4 @@
-import { ICommitType } from '../interfaces/configuration';
+import type { ICommitType } from '../interfaces/configuration';
 
 /**
  * The function gets a commit type and transforms it into a an object dedicated for inquirier

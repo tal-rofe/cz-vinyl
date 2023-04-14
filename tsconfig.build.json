@@ -3,7 +3,8 @@
 	"compilerOptions": {
 		"noEmit": false,
 		"outDir": "./dist",
-		"declaration": true
+		"declaration": true,
+		"removeComments": true
 	},
-	"include": ["src/**/*.ts"]
+	"include": ["./src/**/*.ts"]
 }

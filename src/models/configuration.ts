@@ -1,4 +1,4 @@
-import { IConfiguration } from '../interfaces/configuration';
+import type { IConfiguration } from '../interfaces/configuration';
 import { DEFAULT_COMMIT_TYPES } from './commit-type';
 import { TICKET_ID_REGEX } from './ticket-id';
 

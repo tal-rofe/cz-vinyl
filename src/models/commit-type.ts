@@ -1,4 +1,4 @@
-import { ICommitType } from '../interfaces/configuration';
+import type { ICommitType } from '../interfaces/configuration';
 
 export const DEFAULT_COMMIT_TYPES: ICommitType[] = [
 	{

@@ -16,9 +16,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.12.1
+                  node-version: 18.15.0
                   package-manager: pnpm
-                  package-manager-version: 7.19.0
+                  package-manager-version: 8.1.0
 
             - name: Test Depcheck
               run: pnpm depcheck
@@ -31,9 +31,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.12.1
+                  node-version: 18.15.0
                   package-manager: pnpm
-                  package-manager-version: 7.19.0
+                  package-manager-version: 8.1.0
 
             - name: Test Inflint
               run: pnpm inflint
@@ -46,9 +46,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.12.1
+                  node-version: 18.15.0
                   package-manager: pnpm
-                  package-manager-version: 7.19.0
+                  package-manager-version: 8.1.0
 
             - name: Test TypeScript
               run: pnpm type-check
@@ -61,9 +61,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.12.1
+                  node-version: 18.15.0
                   package-manager: pnpm
-                  package-manager-version: 7.19.0
+                  package-manager-version: 8.1.0
 
             - name: Test Prettier
               run: pnpm prettier
@@ -76,24 +76,24 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.12.1
+                  node-version: 18.15.0
                   package-manager: pnpm
-                  package-manager-version: 7.19.0
+                  package-manager-version: 8.1.0
 
             - name: Test ESLint
               run: pnpm lint
 
-    dist:
-        name: Dist
+    build:
+        name: Build
 
         runs-on: ubuntu-latest
         steps:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.12.1
+                  node-version: 18.15.0
                   package-manager: pnpm
-                  package-manager-version: 7.19.0
+                  package-manager-version: 8.1.0
 
-            - name: Test dist
-              run: pnpm dist
+            - name: Test build
+              run: pnpm build

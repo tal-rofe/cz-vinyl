@@ -1,6 +1,4 @@
-import { Config } from '@exlint.io/inflint';
-
-const inflintConfig: Config = {
+const inflintConfig = {
 	rules: {
 		'{assets,scripts}/**/*': [2, 'kebab-case'],
 		'{src,tests}/**/*': [2, 'kebab-case.point'],
@@ -10,4 +8,4 @@ const inflintConfig: Config = {
 	},
 };
 
-export default inflintConfig;
+module.exports = inflintConfig;
