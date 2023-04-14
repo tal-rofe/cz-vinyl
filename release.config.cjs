@@ -1,6 +1,6 @@
 const config = {
 	branches: ['main'],
-	repositoryUrl: 'git+https://github.com/Exlint/Inflint',
+	repositoryUrl: 'git+https://github.com/Exlint/cz-vinyl',
 	plugins: [
 		[
 			'@semantic-release/commit-analyzer',
