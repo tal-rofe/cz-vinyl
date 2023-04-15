@@ -1,18 +1,15 @@
 <p align="center">
 	<a href="https://github.com/Exlint/cz-vinyl">
-    	<img src="https://img.shields.io/github/workflow/status/Exlint/cz-vinyl/Integration" alt="build status">
+    	<img src="https://img.shields.io/github/actions/workflow/status/Exlint/cz-vinyl/integrate.yaml?label=CI&logo=GitHub" alt="CI status">
   	</a>
 	<a href="https://www.npmjs.com/package/cz-vinyl">
-    	<img src="https://img.shields.io/npm/dw/cz-vinyl" alt="npm downloads">
+    	<img src="https://img.shields.io/npm/dm/cz-vinyl?logo=NPM" alt="npm downloads">
   	</a>
-	<a href="https://github.com/Exlint/cz-vinyl">
+	<a href="https://github.com/Exlint/cli">
     	<img src="https://img.shields.io/npm/l/cz-vinyl" alt="npm license">
   	</a>
 	<a href="https://github.com/Exlint/cz-vinyl">
-    	<img src="https://img.shields.io/npm/v/cz-vinyl" alt="npm version">
-  	</a>
-	<a href="https://github.com/Exlint/cz-vinyl">
-    	<img src="https://img.shields.io/github/commit-activity/m/Exlint/cz-vinyl" alt="commits">
+    	<img src="https://img.shields.io/npm/v/cz-vinyl?label=version" alt="version">
   	</a>
 </p>
 
