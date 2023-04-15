@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/Exlint/cz-vinyl/compare/v2.0.1...v2.0.2) (2023-04-15)
+
+
+### Bug Fixes
+
+* 🐞 set require in exports package json ([4b1cff7](https://github.com/Exlint/cz-vinyl/commit/4b1cff7c32e4721a213b0e5516160e42745850a9))
+
 ## [2.0.1](https://github.com/Exlint/cz-vinyl/compare/v2.0.0...v2.0.1) (2023-04-15)
 
 

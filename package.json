@@ -1,6 +1,6 @@
 {
 	"name": "cz-vinyl",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "Commitizen adapter formatting commit messages using Exlint conventions.",
 	"author": "Exlint <dev@exlint.io> (https://www.exlint.io)",
 	"keywords": [
