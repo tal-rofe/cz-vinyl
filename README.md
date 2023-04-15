@@ -183,10 +183,10 @@ See `CONTRIBUTING.md` for ways to get started.
 
 Please adhere to this project's `CODE_OF_CONDUCT.md`.
 
-If you want to make PR easily and check your code:
+If you want to make PR please first check your code by:
 
 1. Run `pnpm i` to install dependencies
-2. Build your source code by running `pnpm dist`
+2. Build your source code by running `pnpm build`
 3. Modify `.cz.json` file with:
 ```json
 {
