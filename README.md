@@ -190,7 +190,7 @@ If you want to make PR please first check your code by:
 3. Modify `.cz.json` file with:
 ```json
 {
-	"path": "path to created dist/index.cjs file"
+	"path": "./dist/index.cjs"
 }
 ```
 4. Run `git cmt` and check results of your code
