@@ -73,6 +73,10 @@ Add this to your `package.json`:
 $ git cz
 ```
 
+## ESM support
+
+cz-vinyl now supports **only** ESM modules, from version `>1.6.2`. For any issue regarding this, please visit this link https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
 ## Configuration
 
 Like commitizen, you can specify the configuration of cz-vinyl through various options.

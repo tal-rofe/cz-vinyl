@@ -23,10 +23,8 @@ const configuration: webpack.Configuration = {
 	externals: [
 		nodeExternals({
 			modulesDir: path.join(__dirname, 'node_modules'),
-			importType: (moduleName) => `import ${moduleName}`,
 		}),
 	],
-	experiments: { outputModule: true },
 	module: {
 		rules: [
 			{
@@ -64,10 +62,9 @@ const configuration: webpack.Configuration = {
 		],
 	},
 	output: {
-		filename: 'index.js',
+		filename: 'index.cjs',
 		path: path.resolve(__dirname, 'dist'),
-		library: { type: 'module' },
-		chunkFormat: 'module',
+		library: { type: 'commonjs2' },
 	},
 };
 
