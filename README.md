@@ -84,19 +84,10 @@ Configuration can be set in environment variables or in the following files (the
 
 -   a `package.json` property: `"czvinyl": {...}` or in `~/package.json`, for example
 -   a `.czvinylrc` file in JSON or YAML format
--   a `.czvinylrc.json`, `.czvinylrc.yaml`, `.czvinylrc.yml`, `.czvinylrc.js`, `.czvinylrc.ts`, or `.czvinylrc.cjs` file
--   a `czvinyl.config.js`, `czvinyl.config.ts`, or `czvinyl.config.cjs` CommonJS module exporting an object
+-   a `.czvinylrc.json`, `.czvinylrc.yaml`, `.czvinylrc.yml`, `.czvinylrc.js`, or `.czvinylrc.cjs` file
+-   a `czvinyl.config.js`, or `czvinyl.config.cjs` CommonJS module exporting an object
 
-If you set a TypeScript configuration file, you can use the configuration interface:
-```ts
-import { Config } from 'cz-vinyl';
-
-const czvinyConfig: Config = {
-	...
-}
-
-export default czvinylConfig;
-```
+Currently, a TypeScript configuration file is not supported: https://github.com/Codex-/cosmiconfig-typescript-loader/issues/60
 
 The default commit types, descriptions and emoji that are used are:
 
