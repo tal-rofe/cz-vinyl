@@ -34,7 +34,7 @@
 		}
 	},
 	"files": [
-		"dist/**/*.js",
+		"dist/index.cjs",
 		"dist/config.d.ts"
 	],
 	"publishConfig": {
