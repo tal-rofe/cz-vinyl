@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Exlint/cz-vinyl/compare/v2.0.0...v2.0.1) (2023-04-15)
+
+
+### Bug Fixes
+
+* 🐞 bundle to CJS in webpack as for commitizen requirements ([cdf719b](https://github.com/Exlint/cz-vinyl/commit/cdf719b043a985e48f0fcdc2333c060e79a7edb5))
+
 # [2.0.0](https://github.com/Exlint/cz-vinyl/compare/v1.6.2...v2.0.0) (2023-04-14)
 
 ## [1.6.2](https://github.com/Exlint/cz-vinyl/compare/v1.6.1...v1.6.2) (2022-10-31)
