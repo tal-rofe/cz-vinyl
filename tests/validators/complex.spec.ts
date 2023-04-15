@@ -21,8 +21,8 @@ describe('[validators/complex]', () => {
 		const result1 = validateStringArray(['', 5]);
 		const result2 = validateStringArray(['DUMMY_TEXT']);
 
-		expect(result1).toJsonEqual([]);
-		expect(result2).toJsonEqual(['DUMMY_TEXT']);
+		expect(result1).toWeakEqual([]);
+		expect(result2).toWeakEqual(['DUMMY_TEXT']);
 	});
 
 	it('validateRegex | should return "undefined" for all invalid inputs', () => {

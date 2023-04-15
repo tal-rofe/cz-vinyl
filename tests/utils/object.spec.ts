@@ -10,7 +10,7 @@ describe('[utils/object]', () => {
 
 		const result = withCleanObject(input);
 
-		expect(result).toJsonEqual(input);
+		expect(result).toWeakEqual(input);
 	});
 
 	it('withCleanObject | Function should remove "undefined" fields', () => {
@@ -22,6 +22,6 @@ describe('[utils/object]', () => {
 
 		const expectedObject = {};
 
-		expect(result).toJsonEqual(expectedObject);
+		expect(result).toWeakEqual(expectedObject);
 	});
 });

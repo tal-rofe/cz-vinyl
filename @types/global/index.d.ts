@@ -1,5 +1,5 @@
 interface CustomMatchers<R = unknown> {
-	toJsonEqual(expected: unknown): R;
+	toWeakEqual(expected: unknown): R;
 }
 
 declare global {

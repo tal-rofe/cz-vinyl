@@ -29,7 +29,7 @@ describe('[utils/configuration]', () => {
 
 			const result = await getConfiguration();
 
-			expect(result).toJsonEqual(DEFAULT_CONFIGURATION);
+			expect(result).toWeakEqual(DEFAULT_CONFIGURATION);
 		});
 
 		it('should return the default when configuration file is empty', async () => {
@@ -45,7 +45,7 @@ describe('[utils/configuration]', () => {
 
 			const result = await getConfiguration();
 
-			expect(result).toJsonEqual(DEFAULT_CONFIGURATION);
+			expect(result).toWeakEqual(DEFAULT_CONFIGURATION);
 		});
 
 		it('should return the default when trying to get configuration file fails', async () => {
@@ -56,7 +56,7 @@ describe('[utils/configuration]', () => {
 
 			const result = await getConfiguration();
 
-			expect(result).toJsonEqual(DEFAULT_CONFIGURATION);
+			expect(result).toWeakEqual(DEFAULT_CONFIGURATION);
 		});
 
 		it('should return the proper configuration when found configuration file', async () => {
@@ -77,7 +77,7 @@ describe('[utils/configuration]', () => {
 				skipIssues: false,
 			};
 
-			expect(result).toJsonEqual(expectedOutput);
+			expect(result).toWeakEqual(expectedOutput);
 		});
 
 		it('should return the proper configuration when known environments variables are not set', async () => {
@@ -94,7 +94,6 @@ describe('[utils/configuration]', () => {
 					}),
 				...cosmiconfigFunctions,
 			});
-			vi.mocked(validateConfiguration).mockReturnValueOnce({});
 
 			const result = await getConfiguration();
 
@@ -103,7 +102,7 @@ describe('[utils/configuration]', () => {
 				...configurationFromFile,
 			};
 
-			expect(result).toJsonEqual(expectedOutput);
+			expect(result).toWeakEqual(expectedOutput);
 		});
 
 		it('should return the proper configuration when there are no configurations from fule returns an empty object and known environments variables are set', async () => {
@@ -130,7 +129,7 @@ describe('[utils/configuration]', () => {
 				...configurationFromENVs,
 			};
 
-			expect(result).toJsonEqual(expectedOutput);
+			expect(result).toWeakEqual(expectedOutput);
 		});
 
 		it('should return the proper configuration when environment variables are set with same keys from configuration file (ENVs has priority)', async () => {
@@ -161,7 +160,7 @@ describe('[utils/configuration]', () => {
 				...configurationFromENVs,
 			};
 
-			expect(result).toJsonEqual(expectedOutput);
+			expect(result).toWeakEqual(expectedOutput);
 		});
 	});
 });

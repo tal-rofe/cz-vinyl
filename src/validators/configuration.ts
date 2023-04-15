@@ -56,13 +56,16 @@ export const validateEnvConfiguration = () => {
 	let parsedExcludedBranches: string[] | undefined;
 
 	try {
-		const parsedScopesValue = JSON.parse(process.env.CZ_SCOPES ?? '');
-
-		const parsedExcludedBranchesValue = JSON.parse(
-			process.env.CZ_ALLOW_EMPTY_TICKET_ID_FOR_BRANCHES ?? '',
-		);
+		const parsedScopesValue = process.env.CZ_SCOPES ? JSON.parse(process.env.CZ_SCOPES) : undefined;
 
 		parsedScopes = validateStringArray(parsedScopesValue);
+	} catch {}
+
+	try {
+		const parsedExcludedBranchesValue = process.env.CZ_ALLOW_EMPTY_TICKET_ID_FOR_BRANCHES
+			? JSON.parse(process.env.CZ_ALLOW_EMPTY_TICKET_ID_FOR_BRANCHES)
+			: undefined;
+
 		parsedExcludedBranches = validateStringArray(parsedExcludedBranchesValue);
 	} catch {}
 

@@ -79,6 +79,6 @@ describe('[validators/commit-type]', () => {
 
 		const expectedOutput = [item9, item10];
 
-		expect(result).toJsonEqual(expectedOutput);
+		expect(result).toWeakEqual(expectedOutput);
 	});
 });

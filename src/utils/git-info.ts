@@ -1,7 +1,4 @@
-import { exec } from 'node:child_process';
-import util from 'node:util';
-
-const asyncExec = util.promisify(exec);
+import { asyncExec } from './os';
 
 /**
  * The function returns the current branch name
@@ -43,7 +40,13 @@ export const getTicketIdFromBranchName = async (ticketRegex: RegExp) => {
  * @returns indicator flag - whether to validate ticket ID
  */
 export const shouldValidateTicketId = async (excludedBranches: string[]) => {
-	const branchName = await getBranchName();
+	let branchName: string;
+
+	try {
+		branchName = await getBranchName();
+	} catch {
+		return false;
+	}
 
 	return !excludedBranches.includes(branchName);
 };

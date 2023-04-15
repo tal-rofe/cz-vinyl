@@ -34,8 +34,8 @@ describe('[utils/commit-type]', () => {
 				},
 			};
 
-			expect(result1).toJsonEqual(expectedOutput1);
-			expect(result2).toJsonEqual(expectedOutput2);
+			expect(result1).toWeakEqual(expectedOutput1);
+			expect(result2).toWeakEqual(expectedOutput2);
 		});
 	});
 });
