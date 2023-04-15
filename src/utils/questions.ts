@@ -22,6 +22,14 @@ export const getQuestions = async (configuration: IConfiguration) => {
 		keys: ['value', 'emoji', 'description'],
 	});
 
+	const scopesFuse = new fuse(configuration.scopes, {
+		shouldSort: true,
+		threshold: 0.4,
+		location: 0,
+		distance: 100,
+		minMatchCharLength: 1,
+	});
+
 	const shouldValidateTicket = await shouldValidateTicketId(configuration.allowEmptyTicketIdForBranches);
 
 	return [
@@ -37,14 +45,16 @@ export const getQuestions = async (configuration: IConfiguration) => {
 				),
 		},
 		{
-			type: isScopesListsMode ? 'list' : 'input',
+			when: !configuration.skipScope,
+			type: isScopesListsMode ? 'autocomplete' : 'input',
 			name: 'scope',
 			message: configuration.scopeQuestion,
-			choices: isScopesListsMode ? configuration.scopes : null,
-			when: !configuration.skipScope,
-			validate: isScopesListsMode
-				? null
-				: (input: string) => input.length > 0 || 'Scope must be provided',
+			source: (_: unknown, query: string) =>
+				Promise.resolve(
+					query
+						? scopesFuse.search(query).map((match) => ({ name: match.item, value: match.item }))
+						: configuration.scopes,
+				),
 		},
 		{
 			type: 'input',
