@@ -107,6 +107,6 @@
 		"webpack": "5.72.1",
 		"webpack-cli": "4.9.2",
 		"webpack-node-externals": "3.0.0",
-		"webpack-shell-plugin-next": "2.2.2"
+		"webpack-shell-plugin-next": "2.3.1"
 	}
 }

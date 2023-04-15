@@ -142,8 +142,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   webpack-shell-plugin-next:
-    specifier: 2.2.2
-    version: 2.2.2(webpack@5.72.1)
+    specifier: 2.3.1
+    version: 2.3.1(webpack@5.72.1)
 
 packages:
 
@@ -5474,8 +5474,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /webpack-shell-plugin-next@2.2.2(webpack@5.72.1):
-    resolution: {integrity: sha512-2HeC1e0cCvTgA3SD4XPAD69DnILM92mCschrtKdlLRORHCR+oG7xnibQMkVySxTAYWTQOcBRHlqa88x4syWwhQ==}
+  /webpack-shell-plugin-next@2.3.1(webpack@5.72.1):
+    resolution: {integrity: sha512-+ozr/BcsuPh2R6j4oxmu9qJCInhhDCQ+Lb/sSUNHuXjoGj+myxxZyjucHze+K9dCoIo22gAoK1yuCP/gSnpUNg==}
     peerDependencies:
       webpack: ^5.18.0
     dependencies:
