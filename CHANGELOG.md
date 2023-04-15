@@ -1,3 +1,11 @@
+# [2.1.0](https://github.com/Exlint/cz-vinyl/compare/v2.0.3...v2.1.0) (2023-04-15)
+
+
+### Features
+
+* 🔥 support fusejs on scopes list ([975cb90](https://github.com/Exlint/cz-vinyl/commit/975cb90bbd1f286c7cada731fb056a5bf55f247d))
+* 🔥 support fusejs on scopes list ([#105](https://github.com/Exlint/cz-vinyl/issues/105)) ([1058902](https://github.com/Exlint/cz-vinyl/commit/1058902bcece066c4224f3064938f12660906e9d))
+
 ## [2.0.3](https://github.com/Exlint/cz-vinyl/compare/v2.0.2...v2.0.3) (2023-04-15)
 
 
