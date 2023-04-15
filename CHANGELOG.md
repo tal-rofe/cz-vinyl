@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/Exlint/cz-vinyl/compare/v2.0.2...v2.0.3) (2023-04-15)
+
+
+### Bug Fixes
+
+* 🐞 set files with cjs file ([7fea879](https://github.com/Exlint/cz-vinyl/commit/7fea879d11e0f62f4746f7707bc60c93be7d3b3d))
+
 ## [2.0.2](https://github.com/Exlint/cz-vinyl/compare/v2.0.1...v2.0.2) (2023-04-15)
 
 
