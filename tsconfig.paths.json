@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"paths": {
 			"@/utils/*": ["src/utils/*"],
-			"@/models/*": ["src/models/*"],
+			"@/constants/*": ["src/constants/*"],
 			"@/interfaces/*": ["src/interfaces/*"],
 			"@/validators/*": ["src/validators/*"],
 			"@/pipes/*": ["src/pipes/*"]

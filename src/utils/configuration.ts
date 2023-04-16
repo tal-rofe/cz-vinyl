@@ -1,10 +1,10 @@
 import { cosmiconfig } from 'cosmiconfig';
 import TypeScriptLoader from 'cosmiconfig-typescript-loader';
 
-import { DEFAULT_CONFIGURATION } from '../models/configuration';
+import { DEFAULT_CONFIGURATION } from '../constants/configuration';
 import type { IConfiguration } from '../interfaces/configuration';
 import { validateConfiguration, validateEnvConfiguration } from '../validators/configuration';
-import { CONFIGURATION_MODULE_NAME, SEARCH_PLACES } from '../models/cosmiconfig';
+import { CONFIGURATION_MODULE_NAME, SEARCH_PLACES } from '../constants/cosmiconfig';
 
 /**
  * The function sets a default configuration to work with,

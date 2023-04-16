@@ -2,7 +2,7 @@ import { describe, it, expect, afterEach, vi } from 'vitest';
 import { cosmiconfig } from 'cosmiconfig';
 
 import { getConfiguration } from '@/utils/configuration';
-import { DEFAULT_CONFIGURATION } from '@/models/configuration';
+import { DEFAULT_CONFIGURATION } from '@/constants/configuration';
 import { validateConfiguration, validateEnvConfiguration } from '@/validators/configuration';
 
 vi.mock('cosmiconfig');

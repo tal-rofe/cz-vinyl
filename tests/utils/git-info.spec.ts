@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 
 import { asyncExec } from '@/utils/os';
 import { getTicketIdFromBranchName, shouldValidateTicketId } from '@/utils/git-info';
-import { TICKET_ID_REGEX } from '@/models/ticket-id';
+import { TICKET_ID_REGEX } from '@/constants/ticket-id';
 
 vi.mock('@/utils/os');
 
