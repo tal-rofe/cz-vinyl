@@ -11,14 +11,9 @@
 		"editor.defaultFormatter": "foxundermoon.shell-format"
 	},
 	"material-icon-theme.files.associations": {
-		".inflintignore": "crystal",
-		"inflint.config.cjs": "crystal",
-		"czvinyl.config.cjs": "ocaml",
-		".depcheckrc.json": "parcel",
-		".cz.json": "jinja",
 		"tsconfig.paths.json": "tsconfig",
 		"release.config.cjs": "semantic-release",
-		"knip.json": "karma"
+		"vitest.setup.ts": "vitest"
 	},
 	"[properties]": {
 		"editor.defaultFormatter": "foxundermoon.shell-format"
