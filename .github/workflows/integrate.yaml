@@ -112,3 +112,18 @@ jobs:
 
             - name: Unit Tests
               run: pnpm test:cov
+
+    knip:
+        name: Knip
+
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setup Node environment
+              uses: Exlint/node-environment@v1.2.6
+              with:
+                  node-version: 18.15.0
+                  package-manager: pnpm
+                  package-manager-version: 8.2.0
+
+            - name: Knip
+              run: pnpm knip
