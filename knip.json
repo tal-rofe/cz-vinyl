@@ -2,5 +2,22 @@
 	"$schema": "https://unpkg.com/knip@2/schema.json",
 	"entry": "./src/index.ts",
 	"project": ["./src/**/*"],
-	"webpack": false
+	"webpack": false,
+	"ignoreDependencies": [
+		"@commitlint/cli",
+		"@types/json-diff",
+		"@types/webpack-node-externals",
+		"@vitest/coverage-c8",
+		"commitizen",
+		"cz-vinyl",
+		"deep-object-diff",
+		"json-diff",
+		"rimraf",
+		"ts-loader",
+		"tsconfig-paths-webpack-plugin",
+		"webpack",
+		"webpack-cli",
+		"webpack-node-externals",
+		"webpack-shell-plugin-next"
+	]
 }

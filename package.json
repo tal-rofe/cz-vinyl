@@ -56,9 +56,8 @@
 		"lint": "eslint -c ./.eslintrc.cjs \"**/*.{ts,js,cjs}\"",
 		"prettier": "prettier --check **/*.{ts,js,cjs,json,yaml}",
 		"type-check": "tsc --project ./tsconfig.json",
-		"depcheck": "depcheck --config ./.depcheckrc.json",
 		"inflint": "inflint -c ./inflint.config.cjs",
-		"knip": "knip -c ./knip.json -t ./tsconfig.json --exclude dependencies,unlisted"
+		"knip": "knip -c ./knip.json -t ./tsconfig.json"
 	},
 	"dependencies": {
 		"cosmiconfig": "8.1.3",
@@ -84,9 +83,9 @@
 		"@vitest/coverage-c8": "0.30.1",
 		"chalk": "5.2.0",
 		"commitizen": "4.3.0",
+		"commitlint": "17.6.1",
 		"cz-vinyl": "2.1.0",
 		"deep-object-diff": "1.1.9",
-		"depcheck": "1.4.3",
 		"eslint": "8.38.0",
 		"eslint-config-prettier": "8.8.0",
 		"eslint-plugin-deprecation": "1.4.1",

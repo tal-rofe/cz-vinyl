@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm depcheck && pnpm knip && pnpm exec lint-staged
+pnpm knip && pnpm exec lint-staged
