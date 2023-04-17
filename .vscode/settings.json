@@ -17,7 +17,8 @@
 		".depcheckrc.json": "parcel",
 		".cz.json": "jinja",
 		"tsconfig.paths.json": "tsconfig",
-		"release.config.cjs": "semantic-release"
+		"release.config.cjs": "semantic-release",
+		"knip.json": "karma"
 	},
 	"[properties]": {
 		"editor.defaultFormatter": "foxundermoon.shell-format"
