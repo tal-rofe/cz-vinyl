@@ -85,7 +85,7 @@
 		"chalk": "5.2.0",
 		"commitizen": "4.3.0",
 		"commitlint": "17.6.1",
-		"cz-vinyl": "2.1.0",
+		"cz-vinyl": "2.2.0",
 		"deep-object-diff": "1.1.9",
 		"eslint": "8.38.0",
 		"eslint-config-prettier": "8.8.0",
