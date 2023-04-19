@@ -1,3 +1,11 @@
+# [2.2.0](https://github.com/Exlint/cz-vinyl/compare/v2.1.0...v2.2.0) (2023-04-19)
+
+
+### Features
+
+* 🔥 support bodyFormat ([5a134a0](https://github.com/Exlint/cz-vinyl/commit/5a134a00b66920d67562e7792c9d3366f1500c67))
+* 🔥 support bodyFormat ([#112](https://github.com/Exlint/cz-vinyl/issues/112)) ([259f9d8](https://github.com/Exlint/cz-vinyl/commit/259f9d81ef54a94b67583d0e4b97c6d1f0bc63a7))
+
 # [2.1.0](https://github.com/Exlint/cz-vinyl/compare/v2.0.3...v2.1.0) (2023-04-15)
 
 
