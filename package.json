@@ -67,7 +67,8 @@
 		"inquirer-autocomplete-prompt": "2.0.0",
 		"inquirer-maxlength-input-prompt": "1.0.2",
 		"string-template": "1.0.0",
-		"word-wrap": "1.2.3"
+		"word-wrap": "1.2.3",
+		"zod": "3.21.4"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "17.6.1",

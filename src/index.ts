@@ -4,9 +4,10 @@ import InquirerMaxLength from 'inquirer-maxlength-input-prompt';
 import wrap from 'word-wrap';
 
 import { getConfiguration } from './utils/configuration';
-import { formatHeader, formatIssues, formatBreakingChange } from './pipes/commit-format';
+import { formatHeader, formatIssues, formatBreakingChange, formatBody } from './pipes/commit-format';
 import { getQuestions } from './utils/questions';
 import type { ICommitFunc } from './interfaces/commit';
+import type { PromptAnswers } from './interfaces/prompt-answers';
 
 const prompter = async (cz: Inquirer, commit: ICommitFunc) => {
 	cz.prompt.registerPrompt('autocomplete', InquirerAutoComplete);
@@ -21,21 +22,34 @@ const prompter = async (cz: Inquirer, commit: ICommitFunc) => {
 	};
 
 	const questions = await getQuestions(configuration);
-	const answers = await cz.prompt(questions);
+	const answers = await cz.prompt<PromptAnswers>(questions);
+
+	const answersForHeader = [
+		answers.type.type,
+		answers.scope,
+		answers.type.emoji,
+		answers.ticket_id,
+		answers.subject,
+	] as const;
+
+	const header =
+		typeof configuration.headerFormat === 'function'
+			? configuration.headerFormat.call(null, ...answersForHeader)
+			: formatHeader(configuration.headerFormat, ...answersForHeader);
+
+	const answersForBody = [answers.type.type, answers.scope, answers.ticket_id, answers.body] as const;
+
+	const body =
+		typeof configuration.bodyFormat === 'function'
+			? configuration.bodyFormat.call(null, ...answersForBody)
+			: formatBody(configuration.bodyFormat, ...answersForBody);
 
 	commit(
 		[
-			formatHeader(
-				configuration.headerFormat,
-				answers.type.type,
-				answers.scope,
-				answers.type.emoji,
-				answers.ticket_id,
-				answers.subject,
-			),
-			wrap(answers.body || '', wrapOptions),
-			wrap(formatBreakingChange(answers.breakingBody) || '', wrapOptions),
-			formatIssues(answers.issues),
+			header,
+			body.length > 0 ? wrap(body, wrapOptions) : false,
+			answers.breakingBody ? wrap(formatBreakingChange(answers.breakingBody), wrapOptions) : false,
+			answers.issues ? formatIssues(answers.issues) : false,
 		]
 			.filter(Boolean)
 			.join('\n\n')

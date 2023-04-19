@@ -6,13 +6,14 @@ import StringTemplate from 'string-template';
  * @returns the formatted issues
  */
 export const formatIssues = (issues: string) => {
-	const issuesInCommit = issues ? 'Closes ' + (issues.match(/#\d+/g) || []).join(', closes ') : '';
+	const issuesInCommit = 'Closes ' + (issues.match(/#\d+/g) || []).join(', closes ');
 
 	return issuesInCommit.trim();
 };
 
 /**
- * The function receives the relevant inputs fro the header and format those to the commit message
+ * The function receives the relevant inputs for the header and formats those to the commit message
+ * @param format format of the header
  * @param type type of the commit
  * @param scope scope of the commit
  * @param emoji emoji of the commit
@@ -23,13 +24,22 @@ export const formatIssues = (issues: string) => {
 export const formatHeader = (
 	format: string,
 	type: string,
-	scope: string,
-	emoji: string,
-	ticketId: string,
+	scope: string | undefined,
+	emoji: string | undefined,
+	ticketId: string | undefined,
 	subject: string,
 ) => {
-	if (!ticketId && format.includes('[{ticket_id}]')) {
+	if (!scope && format.includes('{scope}')) {
+		format = format.replace('{scope}', '');
+	}
+
+	if (!emoji && format.includes('{emoji}')) {
+		format = format.replace('{emoji}', '');
+	}
+
+	if (!ticketId && format.includes('{ticket_id}')) {
 		format = format.replace('[{ticket_id}]', '');
+		format = format.replace('{ticket_id}', '');
 	}
 
 	const commitHeader = StringTemplate(format, {
@@ -46,12 +56,49 @@ export const formatHeader = (
 };
 
 /**
+ * The function receives the relevant inputs for the body and formats those to the commit message
+ * @param format format of the body
+ * @param type type of the commit
+ * @param scope scope of the commit
+ * @param ticketId ticket Id of the commit
+ * @param body body of the commit
+ * @returns the formatted body
+ */
+export const formatBody = (
+	format: string,
+	type: string,
+	scope: string | undefined,
+	ticketId: string | undefined,
+	body: string | undefined,
+) => {
+	if (!scope && format.includes('{scope}')) {
+		format = format.replace('{scope}', '');
+	}
+
+	if (!body && format.includes('{body}')) {
+		format = format.replace('{body}', '');
+	}
+
+	if (!ticketId && format.includes('{ticket_id}')) {
+		format = format.replace('[{ticket_id}]', '');
+		format = format.replace('{ticket_id}', '');
+	}
+
+	const commitBody = StringTemplate(format, {
+		type,
+		scope,
+		ticket_id: ticketId,
+		body,
+	})
+		.replace(/\s{2,}/g, ' ')
+		.trim();
+
+	return commitBody;
+};
+
+/**
  * The function receives the breaking change input and formats it into the commit message
  * @param breakingChange the breaking change input
  * @returns the formatted breaking change
  */
-export const formatBreakingChange = (breakingChange: string) => {
-	const breakingChangesInCommit = `${breakingChange ? `BREAKING CHANGE: ${breakingChange}` : ''}`;
-
-	return breakingChangesInCommit;
-};
+export const formatBreakingChange = (breakingChange: string) => `BREAKING CHANGE: ${breakingChange}`;
