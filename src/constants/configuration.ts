@@ -1,12 +1,13 @@
-import type { IConfiguration } from '../interfaces/configuration';
+import type { FinalConfiguration } from '../types/final-configuration';
 import { DEFAULT_COMMIT_TYPES } from './commit-type';
 import { TICKET_ID_REGEX } from './ticket-id';
 
-export const DEFAULT_CONFIGURATION: IConfiguration = {
+export const DEFAULT_CONFIGURATION: FinalConfiguration = {
 	headerFormat: '{type}: {emoji} [{ticket_id}] {subject}',
+	bodyFormat: '{body}',
 	commitTypes: DEFAULT_COMMIT_TYPES,
 	maxCommitLineWidth: 72,
-	typeQuestion: "Select the type of changes you're commiting:\n",
+	typeQuestion: "Select the type of changes you're committing:\n",
 	scopeQuestion: 'Specify a scope:',
 	skipScope: true,
 	scopes: [],

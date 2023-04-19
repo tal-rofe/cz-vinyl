@@ -1,6 +1,6 @@
-import type { ICommitType } from '../interfaces/configuration';
+import type { FinalConfiguration } from '../types/final-configuration';
 
-export const DEFAULT_COMMIT_TYPES: ICommitType[] = [
+export const DEFAULT_COMMIT_TYPES: FinalConfiguration['commitTypes'] = [
 	{
 		description: 'Build process or auxiliary tool changes',
 		emoji: '🤖',

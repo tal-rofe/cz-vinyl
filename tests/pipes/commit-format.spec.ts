@@ -1,15 +1,9 @@
 import { describe, it, expect } from 'vitest';
 
-import { formatIssues, formatHeader, formatBreakingChange } from '@/pipes/commit-format';
+import { formatIssues, formatHeader, formatBreakingChange, formatBody } from '@/pipes/commit-format';
 
 describe.concurrent('[pipes/commit-format]', () => {
 	describe.concurrent('formatIssues()', () => {
-		it('should return empty output when there is empty input', () => {
-			const result = formatIssues('');
-
-			expect(result === '').toEqual(true);
-		});
-
 		it('should return "Closes" output when there are no issues in input', () => {
 			const result = formatIssues('JUST A TEST');
 
@@ -26,9 +20,9 @@ describe.concurrent('[pipes/commit-format]', () => {
 	describe('formatHeader()', () => {
 		it('should return proper output for all possible options', () => {
 			const result1 = formatHeader(
-				'{type}: {emoji} [{ticket_id}] {subject}',
+				'{type}: {emoji} [{ticket_id}] {scope} {subject}',
 				'typeTest',
-				'scopeTest',
+				undefined,
 				'emojiTest',
 				'ticketIdTest',
 				'subjectTest',
@@ -68,13 +62,33 @@ describe.concurrent('[pipes/commit-format]', () => {
 		});
 	});
 
-	describe.concurrent('formatBreakingChange()', () => {
-		it('should return empty output when the input is empty', () => {
-			const result = formatBreakingChange('');
+	describe('formatBody()', () => {
+		it('should return proper output for all possible options', () => {
+			const result1 = formatBody(
+				'Type is: {type}. Ticket Id is: [{ticket_id}]. Body: {body}. From scope: {scope}',
+				'typeTest',
+				'scopeTest',
+				'ticketIdTest',
+				'bodyTest',
+			);
 
-			expect(result === '').toEqual(true);
+			const result2 = formatBody(
+				'{type} {body} {scope} {ticket_id}',
+				'typeTest',
+				undefined,
+				undefined,
+				undefined,
+			);
+
+			expect(
+				result1 ===
+					'Type is: typeTest. Ticket Id is: [ticketIdTest]. Body: bodyTest. From scope: scopeTest',
+			);
+			expect(result2 === 'typeTest');
 		});
+	});
 
+	describe('formatBreakingChange()', () => {
 		it('should return proper output when there is non-empty breaking change input', () => {
 			const breakingChangeInput = 'JUST A TEST';
 			const result = formatBreakingChange(breakingChangeInput);

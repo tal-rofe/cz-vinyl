@@ -1,7 +1,7 @@
 import fuse from 'fuse.js';
 
-import type { IConfiguration } from '../interfaces/configuration';
 import { transformCommitType } from '../pipes/commit-type';
+import type { FinalConfiguration } from '../types/final-configuration';
 import { getTicketIdFromBranchName, shouldValidateTicketId } from './git-info';
 
 /**
@@ -9,7 +9,7 @@ import { getTicketIdFromBranchName, shouldValidateTicketId } from './git-info';
  * @param configuration the configuration to use to build the questions
  * @returns questions
  */
-export const getQuestions = async (configuration: IConfiguration) => {
+export const getQuestions = async (configuration: FinalConfiguration) => {
 	const defaultCommitTypes = configuration.commitTypes.map(transformCommitType);
 	const isScopesListsMode = Array.isArray(configuration.scopes) && configuration.scopes.length > 0;
 
@@ -45,9 +45,9 @@ export const getQuestions = async (configuration: IConfiguration) => {
 				),
 		},
 		{
-			when: !configuration.skipScope,
 			type: isScopesListsMode ? 'autocomplete' : 'input',
 			name: 'scope',
+			when: !configuration.skipScope,
 			message: configuration.scopeQuestion,
 			source: (_: unknown, query: string) =>
 				Promise.resolve(
@@ -59,6 +59,7 @@ export const getQuestions = async (configuration: IConfiguration) => {
 		{
 			type: 'input',
 			name: 'ticket_id',
+			when: !configuration.skipTicketId,
 			message: configuration.ticketIdQuestion,
 			default: shouldValidateTicket
 				? await getTicketIdFromBranchName(new RegExp(configuration.ticketIdRegex))
@@ -70,7 +71,6 @@ export const getQuestions = async (configuration: IConfiguration) => {
 
 				return new RegExp(configuration.ticketIdRegex).test(input) || 'Ticket Id must be valid';
 			},
-			when: !configuration.skipTicketId,
 		},
 		{
 			type: 'maxlength-input',
@@ -95,21 +95,21 @@ export const getQuestions = async (configuration: IConfiguration) => {
 		{
 			type: 'input',
 			name: 'body',
-			message: configuration.bodyQuestion,
 			when: !configuration.skipBody,
+			message: configuration.bodyQuestion,
 		},
 		{
 			type: 'input',
 			name: 'breakingBody',
+			when: !configuration.skipBreakingChanges,
 			message:
 				'A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself:\n',
-			when: !configuration.skipBreakingChanges,
 		},
 		{
 			type: 'input',
 			name: 'issues',
-			message: configuration.issuesQuestion,
 			when: !configuration.skipIssues,
+			message: configuration.issuesQuestion,
 		},
 	];
 };

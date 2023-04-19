@@ -183,7 +183,7 @@ module.exports = {
 			},
 		},
 		{
-			files: ['./scripts/onboarding.js'],
+			files: ['./scripts/onboarding.js', './src/services/logger.service.ts'],
 			rules: {
 				'no-console': 'off',
 			},
