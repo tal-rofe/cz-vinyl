@@ -112,8 +112,8 @@ devDependencies:
     specifier: 1.0.3
     version: 1.0.3
   knip:
-    specifier: 2.9.0
-    version: 2.9.0
+    specifier: 2.10.0
+    version: 2.10.0
   lint-staged:
     specifier: 13.2.1
     version: 13.2.1
@@ -1729,7 +1729,7 @@ packages:
     dev: true
 
   /clone@1.0.4:
-    resolution: {integrity: sha1-2jCcwmPfFZlMaIypAheco8fNfH4=}
+    resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
 
   /color-convert@1.9.3:
@@ -2041,7 +2041,7 @@ packages:
     dev: true
 
   /defaults@1.0.3:
-    resolution: {integrity: sha1-xlYFHpgX2f8I7YgUd/P+QBnz730=}
+    resolution: {integrity: sha512-s82itHOnYrN0Ib8r+z7laQz3sdE+4FP3d9Q7VLO7U+KRT+CR0GsWuyHxzdAY82I7cXv0G/twrqomTJLOssO5HA==}
     dependencies:
       clone: 1.0.4
 
@@ -3679,8 +3679,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knip@2.9.0:
-    resolution: {integrity: sha512-1Hw89B7vjQwXKlbqypwIVv7FAnjrX9Xli+hftvKUpk6rWCFsY0Iqv13O8U8/ACSdnTgWQ4pHZYIIXsKfxNNkDQ==}
+  /knip@2.10.0:
+    resolution: {integrity: sha512-/X9cwSZZSleaN+VUD91iLyfD1B6uq2uXsmRs3XqkNMBZvtHPhhEl/dMrdi3xJ9QCRnxONzNvHocrkzxp37u0Vg==}
     engines: {node: '>=16.17.0 <17 || >=18.6.0'}
     hasBin: true
     dependencies:
