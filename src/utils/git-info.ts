@@ -1,4 +1,24 @@
+import os from 'node:os';
+
+import { AI_COMMIT_IGNORED_FILES } from '../constants/ai-commit';
 import { asyncExec } from './os';
+
+/**
+ * The function returns array of files paths that are in staged mode
+ * @returns array of files paths in staged mode
+ */
+const getStagedFiles = async () => {
+	const gitCommand = 'git diff --name-only --cached --relative .';
+	const { stdout: filesOutput, stderr } = await asyncExec(gitCommand);
+
+	if (stderr) {
+		throw new Error(stderr);
+	}
+
+	const filesList = filesOutput.split(os.EOL).filter(Boolean);
+
+	return filesList;
+};
 
 /**
  * The function returns the current branch name
@@ -49,4 +69,22 @@ export const shouldValidateTicketId = async (excludedBranches: string[]) => {
 	}
 
 	return !excludedBranches.includes(branchName);
+};
+
+/**
+ * The function returns the "git diff" command output for relevant staged files in the commit
+ * @returns "git diff" output as a string
+ */
+export const getStagedFilesDiff = async () => {
+	const stagedFiles = await getStagedFiles();
+	const filteredFiles = stagedFiles.filter((file) => !AI_COMMIT_IGNORED_FILES.includes(file));
+
+	const gitCommand = `git diff --staged -- ${filteredFiles.join(' ')}`;
+	const { stdout: diffOutput, stderr } = await asyncExec(gitCommand);
+
+	if (stderr) {
+		throw new Error(stderr);
+	}
+
+	return diffOutput;
 };

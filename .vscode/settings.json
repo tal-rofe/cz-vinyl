@@ -1,6 +1,7 @@
 {
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"material-icon-theme.activeIconPack": "nest",
 	"search.exclude": {
 		"**/node_modules": true
 	},

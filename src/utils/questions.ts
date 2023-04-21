@@ -1,7 +1,9 @@
 import fuse from 'fuse.js';
 
 import { transformCommitType } from '../pipes/commit-type';
+import OpenAiService from '../services/open-ai/open-ai.service';
 import type { FinalConfiguration } from '../types/final-configuration';
+import type { AiResponseResult } from '../types/ai-response';
 import { getTicketIdFromBranchName, shouldValidateTicketId } from './git-info';
 
 /**
@@ -10,6 +12,38 @@ import { getTicketIdFromBranchName, shouldValidateTicketId } from './git-info';
  * @returns questions
  */
 export const getQuestions = async (configuration: FinalConfiguration) => {
+	let aiCommitDataPromise: Promise<AiResponseResult> | null = null;
+
+	if (configuration.openAiToken) {
+		const openAiApi = new OpenAiService(
+			configuration.openAiToken,
+			configuration.subjectMaxLength,
+			configuration.skipBody,
+		);
+
+		aiCommitDataPromise = openAiApi.generateCommitData();
+	}
+
+	const subjectQuestionDefaultFunction = async () => {
+		if (!aiCommitDataPromise) {
+			return undefined;
+		}
+
+		const aiCommitData = await aiCommitDataPromise;
+
+		return aiCommitData?.subject;
+	};
+
+	const bodyQuestionDefaultFunction = async () => {
+		if (!aiCommitDataPromise) {
+			return undefined;
+		}
+
+		const aiCommitData = await aiCommitDataPromise;
+
+		return aiCommitData?.body;
+	};
+
 	const defaultCommitTypes = configuration.commitTypes.map(transformCommitType);
 	const isScopesListsMode = Array.isArray(configuration.scopes) && configuration.scopes.length > 0;
 
@@ -63,7 +97,7 @@ export const getQuestions = async (configuration: FinalConfiguration) => {
 			message: configuration.ticketIdQuestion,
 			default: shouldValidateTicket
 				? await getTicketIdFromBranchName(new RegExp(configuration.ticketIdRegex))
-				: '',
+				: undefined,
 			validate: (input: string) => {
 				if (!shouldValidateTicket) {
 					return true;
@@ -75,6 +109,7 @@ export const getQuestions = async (configuration: FinalConfiguration) => {
 		{
 			type: 'maxlength-input',
 			name: 'subject',
+			default: aiCommitDataPromise ? subjectQuestionDefaultFunction : undefined,
 			message: configuration.subjectQuestion,
 			maxLength: configuration.subjectMaxLength,
 			filter: (input: string) => {
@@ -96,6 +131,7 @@ export const getQuestions = async (configuration: FinalConfiguration) => {
 			type: 'input',
 			name: 'body',
 			when: !configuration.skipBody,
+			default: aiCommitDataPromise ? bodyQuestionDefaultFunction : undefined,
 			message: configuration.bodyQuestion,
 		},
 		{

@@ -43,6 +43,7 @@ const EnvConfigurationSchema = baseZ
 			invalid_type_error: '"CZ_ISSUES_QUESTION" env must be a string',
 		}),
 		CZ_SKIP_ISSUES: z.boolean({ invalid_type_error: '"CZ_SKIP_ISSUES" env must be a boolean' }),
+		CZ_OPEN_AI_TOKEN: z.string({ invalid_type_error: '"CZ_OPEN_AI_TOKEN" env must be a string' }),
 	})
 	.partial();
 
