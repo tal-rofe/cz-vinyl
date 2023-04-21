@@ -58,7 +58,8 @@
 		"prettier": "prettier --check **/*.{ts,js,cjs,json,yaml}",
 		"type-check": "tsc --project ./tsconfig.json",
 		"inflint": "inflint -c ./inflint.config.cjs",
-		"knip": "knip -c ./knip.json -t ./tsconfig.json"
+		"knip": "knip -c ./knip.json -t ./tsconfig.json",
+		"cspell": "cspell lint -c ./cspell.json --gitignore --no-progress --no-summary **"
 	},
 	"dependencies": {
 		"cosmiconfig": "8.1.3",
@@ -86,6 +87,7 @@
 		"chalk": "5.2.0",
 		"commitizen": "4.3.0",
 		"commitlint": "17.6.1",
+		"cspell": "6.31.1",
 		"cz-vinyl": "2.2.0",
 		"deep-object-diff": "1.1.9",
 		"eslint": "8.38.0",

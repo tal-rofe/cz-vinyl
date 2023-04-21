@@ -63,7 +63,7 @@ describe('[utils/git-info]', () => {
 			expect(result).toEqual(false);
 		});
 
-		it('should return "true" when "getBranchName" returns a string contained in the ignored branchrs', async () => {
+		it('should return "true" when "getBranchName" returns a string contained in the ignored branches', async () => {
 			vi.mocked(asyncExec).mockResolvedValueOnce({ stdout: 'TEST', stderr: '' });
 
 			const result = await shouldValidateTicketId(['TEST']);
@@ -71,7 +71,7 @@ describe('[utils/git-info]', () => {
 			expect(result).toEqual(false);
 		});
 
-		it('should return "true" when "getBranchName" returns a string which is not contained in the ignored branchrs', async () => {
+		it('should return "true" when "getBranchName" returns a string which is not contained in the ignored branches', async () => {
 			vi.mocked(asyncExec).mockResolvedValueOnce({ stdout: 'TEST', stderr: '' });
 
 			const result = await shouldValidateTicketId(['DUMMY_TEXT']);
@@ -143,11 +143,11 @@ describe('[utils/git-info]', () => {
 					stdout: `test1${os.EOL}go.sum`,
 					stderr: '',
 				})
-				.mockResolvedValueOnce({ stdout: 'BLABLA', stderr: '' });
+				.mockResolvedValueOnce({ stdout: 'dummy content', stderr: '' });
 
 			const result = await getStagedFilesDiff();
 
-			expect(result).toBe('BLABLA');
+			expect(result).toBe('dummy content');
 		});
 	});
 });

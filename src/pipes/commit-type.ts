@@ -1,7 +1,7 @@
 import type { FinalConfiguration } from '../types/final-configuration';
 
 /**
- * The function gets a commit type and transforms it into a an object dedicated for inquirier
+ * The function gets a commit type and transforms it into a an object dedicated for "Inquirier"
  * @param commitType the commit type to transform
  * @returns a detailed object
  */

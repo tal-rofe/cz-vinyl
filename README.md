@@ -23,7 +23,7 @@
 cz-vinyl allows you to easily use emojis and ticket ID (JIRA, ...) in your commits using [commitizen].
 
 ```javascript
-? Select the type of changes you're commiting: (Use arrow keys or type to search)
+? Select the type of changes you're committing: (Use arrow keys or type to search)
 > 🤖 chore: Build process or auxiliary tool changes
   🚀 ci: CI related changes
   📘 docs: Documentation only changes

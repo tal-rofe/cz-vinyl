@@ -1,0 +1,18 @@
+{
+	"language": "en",
+	"ignorePaths": ["./pnpm-lock.yaml", "./renovate.json", "./CHANGELOG.md"],
+	"words": [
+		"tal-rofe",
+		"maxlength",
+		"openai",
+		"Inquirier",
+		"czvinyl",
+		"Exlint",
+		"commitlint",
+		"inflint",
+		"setdev",
+		"knip",
+		"czvinylrc",
+		"czrc"
+	]
+}
