@@ -37,6 +37,12 @@ cz-vinyl allows you to easily use emojis and ticket ID (JIRA, ...) in your commi
 
 ![cz-vinyl](assets/basic-demo.gif)
 
+## OpenAI support
+As from version `2.3.0` we now support OpenAI to generate your commit message! [Create your own OpenAI account](https://platform.openai.com/signup) and provide this library your API key token to use it.
+
+### Payment
+You pay for your own requests to OpenAI API. The package uses the `3.5-turbo` model official model, that is ~15x times cheaper than GPT-4.
+
 ## Installation
 
 **Globally**
