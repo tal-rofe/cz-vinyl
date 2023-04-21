@@ -79,6 +79,10 @@ export const getStagedFilesDiff = async () => {
 	const stagedFiles = await getStagedFiles();
 	const filteredFiles = stagedFiles.filter((file) => !AI_COMMIT_IGNORED_FILES.includes(file));
 
+	if (filteredFiles.length === 0) {
+		return null;
+	}
+
 	const gitCommand = `git diff --staged -- ${filteredFiles.join(' ')}`;
 	const { stdout: diffOutput, stderr } = await asyncExec(gitCommand);
 

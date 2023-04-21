@@ -30,6 +30,10 @@ class OpenAiService {
 		const assistantMessage = getAssistantMessage(this.skipBody);
 		const stagedDiff = await getStagedFilesDiff();
 
+		if (!stagedDiff) {
+			return null;
+		}
+
 		const messages: ChatCompletionRequestMessage[] = [
 			{
 				role: ChatCompletionRequestMessageRoleEnum.System,
@@ -55,6 +59,10 @@ class OpenAiService {
 	public async generateCommitData(): Promise<AiResult> {
 		try {
 			const messages = await this.getPromptMessages();
+
+			if (!messages) {
+				return null;
+			}
 
 			const { data } = await this.openAiApi.createChatCompletion({
 				model: 'gpt-3.5-turbo',

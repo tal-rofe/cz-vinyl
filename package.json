@@ -53,6 +53,7 @@
 		"test": "vitest run -c ./vitest.config.ts",
 		"test:watch": "vitest watch -c ./vitest.config.ts",
 		"test:cov": "vitest run --coverage -c ./vitest.config.ts",
+		"automation": "node ./automation/main.spec.cjs",
 		"lint": "eslint -c ./.eslintrc.cjs \"**/*.{ts,js,cjs}\"",
 		"prettier": "prettier --check **/*.{ts,js,cjs,json,yaml}",
 		"type-check": "tsc --project ./tsconfig.json",

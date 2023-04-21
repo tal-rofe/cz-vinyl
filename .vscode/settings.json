@@ -16,6 +16,9 @@
 		"release.config.cjs": "semantic-release",
 		"vitest.setup.ts": "vitest"
 	},
+	"material-icon-theme.folders.associations": {
+		"automation": "test"
+	},
 	"[properties]": {
 		"editor.defaultFormatter": "foxundermoon.shell-format"
 	},
