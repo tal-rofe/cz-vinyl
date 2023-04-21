@@ -6,7 +6,7 @@ import {
 } from 'openai';
 
 import { getStagedFilesDiff } from '@/utils/git-info';
-import AiResponseSchema from '@/models/ai-response';
+import type { AiResult } from '@/interfaces/ai-result';
 
 import { getAssistantMessage, getSystemMessage } from './utils/message';
 import { USER_MESSAGE } from './constants/message';
@@ -52,7 +52,7 @@ class OpenAiService {
 		return messages;
 	}
 
-	public async generateCommitData() {
+	public async generateCommitData(): Promise<AiResult> {
 		try {
 			const messages = await this.getPromptMessages();
 
@@ -74,9 +74,22 @@ class OpenAiService {
 				return null;
 			}
 
-			const parseResult = await AiResponseSchema.parseAsync(JSON.parse(responseMessage));
+			const splittedResponse = responseMessage.split('\n');
+			let subject = splittedResponse[0];
 
-			return parseResult;
+			if (!subject) {
+				return null;
+			}
+
+			subject = subject.replace(/^((.{0,10}): )/, '');
+
+			if (this.skipBody) {
+				return { subject };
+			}
+
+			const body = splittedResponse.slice(1, splittedResponse.length).join('\n');
+
+			return { subject, body };
 		} catch {
 			return null;
 		}

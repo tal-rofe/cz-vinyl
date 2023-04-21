@@ -5,10 +5,10 @@ export const getSystemMessage = (
 This commit message must not be longer than ${subjectMaxLength} characters.
 ${
 	!skipBody
-		? 'Add a short description of WHY the changes are done after the commit message. Don\'t start it with "This commit", just describe the changes.'
+		? 'Add a short description of WHY the changes are done after the commit message. Start it with "Body:" prefix. Just describe the changes.'
 		: "Don't add any descriptions to the commit, only commit message."
 }
-Use the present tense. Lines must not be longer than 74 characters. Use English to answer.`;
+Use the present tense. Use English to answer.`;
 
 export const getAssistantMessage = (skipBody: boolean) => {
 	const subject = 'add support for process.env.PORT environment variable';

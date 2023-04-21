@@ -1,9 +1,10 @@
 import fuse from 'fuse.js';
 
+import type { AiResult } from '@/interfaces/ai-result';
+
 import { transformCommitType } from '../pipes/commit-type';
 import OpenAiService from '../services/open-ai/open-ai.service';
 import type { FinalConfiguration } from '../types/final-configuration';
-import type { AiResponseResult } from '../types/ai-response';
 import { getTicketIdFromBranchName, shouldValidateTicketId } from './git-info';
 
 /**
@@ -12,7 +13,7 @@ import { getTicketIdFromBranchName, shouldValidateTicketId } from './git-info';
  * @returns questions
  */
 export const getQuestions = async (configuration: FinalConfiguration) => {
-	let aiCommitDataPromise: Promise<AiResponseResult> | null = null;
+	let aiCommitDataPromise: Promise<AiResult> | null = null;
 
 	if (configuration.openAiToken) {
 		const openAiApi = new OpenAiService(
