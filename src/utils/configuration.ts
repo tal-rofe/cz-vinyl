@@ -33,7 +33,7 @@ export const getConfiguration = async () => {
 			if (!parseResult.success) {
 				const schemaErrorMessage = formatSchemaError(parseResult.error.issues);
 
-				LoggerService.info(schemaErrorMessage);
+				LoggerService.error(schemaErrorMessage);
 
 				process.exit(1);
 			}
@@ -50,7 +50,7 @@ export const getConfiguration = async () => {
 	if (!parseResult.success) {
 		const schemaErrorMessage = formatEnvSchemaError(parseResult.error.issues);
 
-		LoggerService.info(schemaErrorMessage);
+		LoggerService.error(schemaErrorMessage);
 
 		process.exit(1);
 	}

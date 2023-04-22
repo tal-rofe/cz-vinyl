@@ -12,7 +12,7 @@ const getStagedFiles = async () => {
 	const { stdout: filesOutput, stderr } = await asyncExec(gitCommand);
 
 	if (stderr) {
-		throw new Error(stderr);
+		throw new Error(`Failed to get staged files with error:\n${stderr}`);
 	}
 
 	const filesList = filesOutput.split(os.EOL).filter(Boolean);
@@ -87,7 +87,7 @@ export const getStagedFilesDiff = async () => {
 	const { stdout: diffOutput, stderr } = await asyncExec(gitCommand);
 
 	if (stderr) {
-		throw new Error(stderr);
+		throw new Error(`Failed to get "git diff" output of staged files with error:\n${stderr}`);
 	}
 
 	return diffOutput;

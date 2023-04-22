@@ -81,17 +81,17 @@ describe('[utils/git-info]', () => {
 	});
 
 	describe('getStagedFilesDiff()', () => {
-		/* 		it('should throw an error when "asyncExec" throws', async () => {
+		it.todo('should throw an error when "asyncExec" throws', async () => {
 			vi.mocked(asyncExec).mockRejectedValueOnce(undefined);
 
-			await expect(() => getStagedFilesDiff()).rejects.toThrowError(undefined);
+			await expect(() => getStagedFilesDiff()).rejects.toThrowError();
 		});
 
-		it('should throw an error when "asyncExec" resolves which stderr', () => {
+		it.todo('should throw an error when "asyncExec" resolves which stderr', () => {
 			vi.mocked(asyncExec).mockResolvedValueOnce({ stdout: '', stderr: 'DUMMY_ERROR' });
 
 			expect(() => getStagedFilesDiff()).toThrowError();
-		}); */
+		});
 
 		it('should return null when there are no staged files to scan', async () => {
 			vi.mocked(asyncExec).mockResolvedValueOnce({
@@ -115,7 +115,7 @@ describe('[utils/git-info]', () => {
 			expect(result).toBeNull();
 		});
 
-		/* 		it('should throw an error when "asyncExec" throws on second call', () => {
+		it.todo('should throw an error when "asyncExec" throws on second call', () => {
 			vi.mocked(asyncExec)
 				.mockResolvedValueOnce({
 					stdout: 'dummy-file',
@@ -126,7 +126,7 @@ describe('[utils/git-info]', () => {
 			expect(() => getStagedFilesDiff()).toThrowError();
 		});
 
-		it('should throw an error when "asyncExec" resolves which stderr', () => {
+		it.todo('should throw an error when "asyncExec" resolves which stderr', () => {
 			vi.mocked(asyncExec)
 				.mockResolvedValueOnce({
 					stdout: 'dummy-file',
@@ -135,7 +135,7 @@ describe('[utils/git-info]', () => {
 				.mockResolvedValueOnce({ stdout: '', stderr: 'DUMMY_ERROR' });
 
 			expect(() => getStagedFilesDiff()).toThrowError();
-		}); */
+		});
 
 		it('should return the diff result of files excluding the default ignored ones', async () => {
 			vi.mocked(asyncExec)
