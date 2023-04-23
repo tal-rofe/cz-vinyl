@@ -37,8 +37,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   '@types/inquirer':
-    specifier: 8.2.1
-    version: 8.2.1
+    specifier: 9.0.3
+    version: 9.0.3
   '@types/inquirer-autocomplete-prompt':
     specifier: 3.0.0
     version: 3.0.0
@@ -1036,14 +1036,14 @@ packages:
   /@types/inquirer-autocomplete-prompt@3.0.0:
     resolution: {integrity: sha512-qgaINEdGNMP4fq3BJi5rvs8iMNrYhrp6krGwuVJ3jhFr+6gwqiHPSWrKov4x9vCJFbpzDVoDYjNdFG3kepdhDw==}
     dependencies:
-      '@types/inquirer': 8.2.1
+      '@types/inquirer': 9.0.3
     dev: true
 
-  /@types/inquirer@8.2.1:
-    resolution: {integrity: sha512-wKW3SKIUMmltbykg4I5JzCVzUhkuD9trD6efAmYgN2MrSntY0SMRQzEnD3mkyJ/rv9NLbTC7g3hKKE86YwEDLw==}
+  /@types/inquirer@9.0.3:
+    resolution: {integrity: sha512-CzNkWqQftcmk2jaCWdBTf9Sm7xSw4rkI1zpU/Udw3HX5//adEZUIm9STtoRP1qgWj0CWQtJ9UTvqmO2NNjhMJw==}
     dependencies:
       '@types/through': 0.0.30
-      rxjs: 7.5.5
+      rxjs: 7.8.0
     dev: true
 
   /@types/istanbul-lib-coverage@2.0.4:
@@ -5274,12 +5274,6 @@ packages:
     engines: {npm: '>=2.0.0'}
     dependencies:
       symbol-observable: 1.0.1
-
-  /rxjs@7.5.5:
-    resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
-    dependencies:
-      tslib: 2.4.0
-    dev: true
 
   /rxjs@7.8.0:
     resolution: {integrity: sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==}
