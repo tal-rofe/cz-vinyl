@@ -57,6 +57,9 @@ const ConfigurationSchema = z
 			invalid_type_error: '"issuesQuestion" configuration key must be a string',
 		}),
 		skipIssues: z.boolean({ invalid_type_error: '"skipIssues" configuration key must be a boolean' }),
+		openAiToken: z
+			.string({ invalid_type_error: '"openAiToken" configuration key must be a string or null' })
+			.nullable(),
 	})
 	.partial();
 

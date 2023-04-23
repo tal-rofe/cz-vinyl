@@ -23,4 +23,5 @@ export const DEFAULT_CONFIGURATION: FinalConfiguration = {
 	skipBreakingChanges: true,
 	issuesQuestion: 'List any issue closed (#1, #2, ...):',
 	skipIssues: true,
+	openAiToken: null,
 };

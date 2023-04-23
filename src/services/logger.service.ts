@@ -1,5 +1,5 @@
 class LoggerService {
-	public static info(message: unknown) {
+	public static error(message: unknown) {
 		console.log(message);
 	}
 }

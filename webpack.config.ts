@@ -1,15 +1,10 @@
 import path from 'node:path';
-import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
-import webpack from 'webpack';
+import type webpack from 'webpack';
 import nodeExternals from 'webpack-node-externals';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 import WebpackShellPluginNext from 'webpack-shell-plugin-next';
-
-const packageJsonData = await fs.readFile('package.json', 'utf8');
-const packageJsonObject = JSON.parse(packageJsonData);
-const version = packageJsonObject.version;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -46,9 +41,6 @@ const configuration: webpack.Configuration = {
 				blocking: true,
 			},
 			safe: true,
-		}),
-		new webpack.DefinePlugin({
-			__PACKAGE_VERSION__: JSON.stringify(version),
 		}),
 	],
 	resolve: {

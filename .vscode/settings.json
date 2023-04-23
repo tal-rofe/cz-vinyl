@@ -1,6 +1,7 @@
 {
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"material-icon-theme.activeIconPack": "nest",
 	"search.exclude": {
 		"**/node_modules": true
 	},
@@ -14,6 +15,9 @@
 		"tsconfig.paths.json": "tsconfig",
 		"release.config.cjs": "semantic-release",
 		"vitest.setup.ts": "vitest"
+	},
+	"material-icon-theme.folders.associations": {
+		"automation": "test"
 	},
 	"[properties]": {
 		"editor.defaultFormatter": "foxundermoon.shell-format"

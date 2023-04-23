@@ -3,6 +3,7 @@
 		"paths": {
 			"@/utils/*": ["src/utils/*"],
 			"@/constants/*": ["src/constants/*"],
+			"@/models/*": ["src/models/*"],
 			"@/interfaces/*": ["src/interfaces/*"],
 			"@/validators/*": ["src/validators/*"],
 			"@/pipes/*": ["src/pipes/*"]
