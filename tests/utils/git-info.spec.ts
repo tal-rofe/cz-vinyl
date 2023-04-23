@@ -81,12 +81,18 @@ describe('[utils/git-info]', () => {
 	});
 
 	describe('getStagedFilesDiff()', () => {
+		/**
+		 * ! - This test fails because of Vitest issue: https://github.com/vitest-dev/vitest/discussions/3229
+		 */
 		it.todo('should throw an error when "asyncExec" throws', async () => {
 			vi.mocked(asyncExec).mockRejectedValueOnce(undefined);
 
 			await expect(() => getStagedFilesDiff()).rejects.toThrowError();
 		});
 
+		/**
+		 * ! - This test fails because of Vitest issue: https://github.com/vitest-dev/vitest/discussions/3229
+		 */
 		it.todo('should throw an error when "asyncExec" resolves which stderr', () => {
 			vi.mocked(asyncExec).mockResolvedValueOnce({ stdout: '', stderr: 'DUMMY_ERROR' });
 
@@ -115,6 +121,9 @@ describe('[utils/git-info]', () => {
 			expect(result).toBeNull();
 		});
 
+		/**
+		 * ! - This test fails because of Vitest issue: https://github.com/vitest-dev/vitest/discussions/3229
+		 */
 		it.todo('should throw an error when "asyncExec" throws on second call', () => {
 			vi.mocked(asyncExec)
 				.mockResolvedValueOnce({
@@ -126,6 +135,9 @@ describe('[utils/git-info]', () => {
 			expect(() => getStagedFilesDiff()).toThrowError();
 		});
 
+		/**
+		 * ! - This test fails because of Vitest issue: https://github.com/vitest-dev/vitest/discussions/3229
+		 */
 		it.todo('should throw an error when "asyncExec" resolves which stderr', () => {
 			vi.mocked(asyncExec)
 				.mockResolvedValueOnce({
