@@ -1,3 +1,11 @@
+# [2.3.0](https://github.com/Exlint/cz-vinyl/compare/v2.2.0...v2.3.0) (2023-04-23)
+
+
+### Features
+
+* 🔥 support OpenAI ([a5dc8c6](https://github.com/Exlint/cz-vinyl/commit/a5dc8c646c4ba2b697ef7d984b452ea23c099c1d))
+* 🔥 support OpenAI to generate commit message ([#115](https://github.com/Exlint/cz-vinyl/issues/115)) ([c426df0](https://github.com/Exlint/cz-vinyl/commit/c426df05eba1d35da82533adf2dcc51faa17d154))
+
 # [2.2.0](https://github.com/Exlint/cz-vinyl/compare/v2.1.0...v2.2.0) (2023-04-19)
 
 
