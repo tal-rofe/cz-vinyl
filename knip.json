@@ -5,18 +5,14 @@
 	"webpack": false,
 	"ignoreDependencies": [
 		"@commitlint/cli",
-		"@types/json-diff",
 		"@types/webpack-node-externals",
 		"@vitest/coverage-c8",
 		"commitizen",
 		"cz-vinyl",
-		"deep-object-diff",
-		"json-diff",
 		"rimraf",
 		"ts-loader",
 		"tsconfig-paths-webpack-plugin",
 		"webpack",
-		"webpack-cli",
 		"webpack-node-externals",
 		"webpack-shell-plugin-next"
 	]
