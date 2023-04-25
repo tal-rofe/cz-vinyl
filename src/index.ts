@@ -1,7 +1,7 @@
-import type { Inquirer } from 'inquirer';
 import InquirerAutoComplete from 'inquirer-autocomplete-prompt';
 import InquirerMaxLength from 'inquirer-maxlength-input-prompt';
 import wrap from 'word-wrap';
+import type Inquirer from 'inquirer';
 
 import { getConfiguration } from './utils/configuration';
 import { formatHeader, formatIssues, formatBreakingChange, formatBody } from './pipes/commit-format';
@@ -9,7 +9,7 @@ import { getQuestions } from './utils/questions';
 import type { ICommitFunc } from './interfaces/commit';
 import type { PromptAnswers } from './interfaces/prompt-answers';
 
-const prompter = async (cz: Inquirer, commit: ICommitFunc) => {
+const prompter = async (cz: typeof Inquirer, commit: ICommitFunc) => {
 	cz.prompt.registerPrompt('autocomplete', InquirerAutoComplete);
 	cz.prompt.registerPrompt('maxlength-input', InquirerMaxLength);
 
