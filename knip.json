@@ -3,6 +3,7 @@
 	"entry": "./src/index.ts",
 	"project": ["./src/**/*"],
 	"webpack": false,
+	"ignore": ["automation/main.spec.cjs"],
 	"ignoreDependencies": [
 		"@commitlint/cli",
 		"@types/webpack-node-externals",
