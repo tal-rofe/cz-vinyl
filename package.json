@@ -63,7 +63,7 @@
 	},
 	"dependencies": {
 		"cosmiconfig": "8.1.3",
-		"cosmiconfig-typescript-loader": "2.0.2",
+		"cosmiconfig-typescript-loader": "4.3.0",
 		"fuse.js": "6.6.2",
 		"inquirer-autocomplete-prompt": "2.0.0",
 		"inquirer-maxlength-input-prompt": "1.0.2",
