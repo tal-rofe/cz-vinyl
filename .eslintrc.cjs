@@ -124,7 +124,7 @@ module.exports = {
 		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/explicit-member-accessibility': [
 			'error',
-			{ accessbility: 'explicit', overrides: { constructors: 'off' } },
+			{ accessibility: 'explicit', overrides: { constructors: 'off' } },
 		],
 
 		'unused-imports/no-unused-imports': 'error',

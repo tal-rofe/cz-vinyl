@@ -57,8 +57,8 @@ const prompter = async (cz: typeof Inquirer, commit: ICommitFunc) => {
 	);
 };
 
-const InqObj = { prompter };
+const InquirerObj = { prompter };
 
 export * from './config';
 
-export default InqObj;
+export default InquirerObj;
