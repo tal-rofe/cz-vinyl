@@ -18,7 +18,7 @@ jobs:
                   should-cache: false
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.3.1
+                  package-manager-version: 8.4.0
 
             - name: Build dist folder
               run: pnpm build
