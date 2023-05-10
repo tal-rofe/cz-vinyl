@@ -39,7 +39,9 @@ export const getConfiguration = async () => {
 				...parseResult.data,
 			};
 		}
-	} catch {}
+	} catch (error) {
+		void error;
+	}
 
 	const parseResult = await EnvConfigurationSchema.safeParseAsync(process.env);
 

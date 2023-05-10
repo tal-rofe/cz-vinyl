@@ -20,12 +20,7 @@ module.exports = {
 		'indent': ['error', 'tab', { SwitchCase: 1 }],
 		'quotes': ['error', 'single', { avoidEscape: true }],
 		'semi': ['error', 'always'],
-		'no-empty': [
-			'error',
-			{
-				allowEmptyCatch: true,
-			},
-		],
+		'no-empty': 'error',
 		'no-duplicate-imports': 'error',
 		'no-promise-executor-return': 'error',
 		'no-self-compare': 'error',

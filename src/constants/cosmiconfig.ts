@@ -10,10 +10,8 @@ export const SEARCH_PLACES = [
 	`.${CONFIGURATION_MODULE_NAME}rc.yaml`,
 	`.${CONFIGURATION_MODULE_NAME}rc.yml`,
 	`.${CONFIGURATION_MODULE_NAME}rc.js`,
-	`.${CONFIGURATION_MODULE_NAME}rc.ts`,
 	`.${CONFIGURATION_MODULE_NAME}rc.cjs`,
 	`${CONFIGURATION_MODULE_NAME}.config.js`,
-	`${CONFIGURATION_MODULE_NAME}.config.ts`,
 	`${CONFIGURATION_MODULE_NAME}.config.cjs`,
 
 	path.join(os.homedir(), 'package.json'),
@@ -22,9 +20,7 @@ export const SEARCH_PLACES = [
 	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.yaml`),
 	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.yml`),
 	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.js`),
-	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.ts`),
 	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc.cjs`),
 	path.join(os.homedir(), `${CONFIGURATION_MODULE_NAME}.config.js`),
-	path.join(os.homedir(), `${CONFIGURATION_MODULE_NAME}.config.ts`),
 	path.join(os.homedir(), `${CONFIGURATION_MODULE_NAME}.config.cjs`),
 ];
