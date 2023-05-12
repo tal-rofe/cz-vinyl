@@ -109,8 +109,8 @@ devDependencies:
     specifier: 3.0.1
     version: 3.0.1
   json-diff:
-    specifier: 1.0.3
-    version: 1.0.3
+    specifier: 1.0.4
+    version: 1.0.4
   knip:
     specifier: 2.10.4
     version: 2.10.4
@@ -4048,8 +4048,8 @@ packages:
     hasBin: true
     dev: true
 
-  /json-diff@1.0.3:
-    resolution: {integrity: sha512-W0yk/xzjz7bag9v9eS4qthvPG4O07uxNeXwirhvcOqmX4w8HLtB/Pw76o5Z7Pblwvf4vpCi4+iHOlHDnmav/rA==}
+  /json-diff@1.0.4:
+    resolution: {integrity: sha512-XtIVdpX4nj0YeFqd0Fp9g7ASp1Z2S0YZ5tmL37jBiOIKkL6zehqhA2mUplB8+kITsgMTkInnuZpqD72cVgWLHA==}
     hasBin: true
     dependencies:
       '@ewoudenberg/difflib': 0.1.0
