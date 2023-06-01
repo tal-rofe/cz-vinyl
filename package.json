@@ -76,7 +76,7 @@
 		"@exlint.io/inflint": "2.0.0",
 		"@types/inquirer": "9.0.3",
 		"@types/inquirer-autocomplete-prompt": "3.0.0",
-		"@types/json-diff": "0.9.1",
+		"@types/json-diff": "1.0.0",
 		"@types/node": "18.16.0",
 		"@types/string-template": "1.0.2",
 		"@types/webpack-node-externals": "3.0.0",
