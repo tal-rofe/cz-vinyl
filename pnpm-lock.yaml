@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.0.2
     version: 1.0.2
   openai:
-    specifier: 3.2.1
-    version: 3.2.1
+    specifier: 3.3.0
+    version: 3.3.0
   string-template:
     specifier: 1.0.0
     version: 1.0.0
@@ -4686,8 +4686,8 @@ packages:
       mimic-fn: 4.0.0
     dev: true
 
-  /openai@3.2.1:
-    resolution: {integrity: sha512-762C9BNlJPbjjlWZi4WYK9iM2tAVAv0uUp1UmI34vb0CN5T2mjB/qM6RYBmNKMh/dN9fC+bxqPwWJZUTWW052A==}
+  /openai@3.3.0:
+    resolution: {integrity: sha512-uqxI/Au+aPRnsaQRe8CojU0eCR7I0mBiKjD3sNMzY6DaC1ZVrc85u98mtJW6voDug8fgGN+DIZmTDxTthxb7dQ==}
     dependencies:
       axios: 0.26.1
       form-data: 4.0.0
