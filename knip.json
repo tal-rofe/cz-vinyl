@@ -7,7 +7,7 @@
 	"ignoreDependencies": [
 		"@commitlint/cli",
 		"@types/webpack-node-externals",
-		"@vitest/coverage-c8",
+		"@vitest/coverage-v8",
 		"commitizen",
 		"cz-vinyl",
 		"rimraf",
