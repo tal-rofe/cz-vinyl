@@ -1,9 +1,4 @@
-import {
-	Configuration as OpenAiConfiguration,
-	OpenAIApi,
-	ChatCompletionRequestMessageRoleEnum,
-	type ChatCompletionRequestMessage,
-} from 'openai';
+import OpenAI from 'openai';
 
 import { getStagedFilesDiff } from '@/utils/git-info';
 import type { AiResult } from '@/interfaces/ai-result';
@@ -12,14 +7,12 @@ import { getAssistantMessage, getSystemMessage } from './utils/message';
 import { USER_MESSAGE } from './constants/message';
 
 class OpenAiService {
-	private openAiApi: OpenAIApi;
+	private openAiApi: OpenAI;
 	private subjectMaxLength: number;
 	private skipBody: boolean;
 
 	constructor(token: string, subjectMaxLength: number, skipBody: boolean) {
-		const configuration = new OpenAiConfiguration({ apiKey: token });
-
-		this.openAiApi = new OpenAIApi(configuration);
+		this.openAiApi = new OpenAI({ apiKey: token });
 
 		this.subjectMaxLength = subjectMaxLength;
 		this.skipBody = skipBody;
@@ -34,21 +27,21 @@ class OpenAiService {
 			return null;
 		}
 
-		const messages: ChatCompletionRequestMessage[] = [
+		const messages: OpenAI.Chat.CreateChatCompletionRequestMessage[] = [
 			{
-				role: ChatCompletionRequestMessageRoleEnum.System,
+				role: 'system',
 				content: systemMessage,
 			},
 			{
-				role: ChatCompletionRequestMessageRoleEnum.User,
+				role: 'user',
 				content: USER_MESSAGE,
 			},
 			{
-				role: ChatCompletionRequestMessageRoleEnum.Assistant,
+				role: 'assistant',
 				content: assistantMessage,
 			},
 			{
-				role: ChatCompletionRequestMessageRoleEnum.User,
+				role: 'user',
 				content: stagedDiff,
 			},
 		];
@@ -64,7 +57,7 @@ class OpenAiService {
 				return null;
 			}
 
-			const { data } = await this.openAiApi.createChatCompletion({
+			const data = await this.openAiApi.chat.completions.create({
 				model: 'gpt-3.5-turbo',
 				messages,
 				temperature: 0,
