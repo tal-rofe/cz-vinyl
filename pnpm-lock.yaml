@@ -27,8 +27,8 @@ dependencies:
     specifier: 1.2.5
     version: 1.2.5
   zod:
-    specifier: 3.22.1
-    version: 3.22.1
+    specifier: 3.22.2
+    version: 3.22.2
 
 devDependencies:
   '@commitlint/cli':
@@ -4223,8 +4223,8 @@ packages:
       strip-json-comments: 5.0.0
       summary: 2.1.0
       typescript: 5.1.6
-      zod: 3.22.1
-      zod-validation-error: 1.3.1(zod@3.22.1)
+      zod: 3.22.2
+      zod-validation-error: 1.3.1(zod@3.22.2)
     dev: true
 
   /levn@0.4.1:
@@ -6533,14 +6533,14 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /zod-validation-error@1.3.1(zod@3.22.1):
+  /zod-validation-error@1.3.1(zod@3.22.2):
     resolution: {integrity: sha512-cNEXpla+tREtNdAnNKY4xKY1SGOn2yzyuZMu4O0RQylX9apRpUjNcPkEc3uHIAr5Ct7LenjZt6RzjEH6+JsqVQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       zod: ^3.18.0
     dependencies:
-      zod: 3.22.1
+      zod: 3.22.2
     dev: true
 
-  /zod@3.22.1:
-    resolution: {integrity: sha512-+qUhAMl414+Elh+fRNtpU+byrwjDFOS1N7NioLY+tSlcADTx4TkCUua/hxJvxwDXcV4397/nZ420jy4n4+3WUg==}
+  /zod@3.22.2:
+    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
