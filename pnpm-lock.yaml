@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   cosmiconfig:
-    specifier: 8.3.4
-    version: 8.3.4(typescript@5.2.2)
+    specifier: 8.3.5
+    version: 8.3.5(typescript@5.2.2)
   fuse.js:
     specifier: 6.6.2
     version: 6.6.2
@@ -279,8 +279,8 @@ packages:
       '@commitlint/types': 17.4.4
       '@types/node': 20.4.7
       chalk: 4.1.2
-      cosmiconfig: 8.3.4(typescript@5.2.2)
-      cosmiconfig-typescript-loader: 4.3.0(@types/node@20.4.7)(cosmiconfig@8.3.4)(ts-node@10.9.1)(typescript@5.2.2)
+      cosmiconfig: 8.3.5(typescript@5.2.2)
+      cosmiconfig-typescript-loader: 4.3.0(@types/node@20.4.7)(cosmiconfig@8.3.5)(ts-node@10.9.1)(typescript@5.2.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2319,7 +2319,7 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig-typescript-loader@4.3.0(@types/node@20.4.7)(cosmiconfig@8.3.4)(ts-node@10.9.1)(typescript@5.2.2):
+  /cosmiconfig-typescript-loader@4.3.0(@types/node@20.4.7)(cosmiconfig@8.3.5)(ts-node@10.9.1)(typescript@5.2.2):
     resolution: {integrity: sha512-NTxV1MFfZDLPiBMjxbHRwSh5LaLcPMwNdCutmnHJCKoVnlvldPWlllonKwrsRJ5pYZBIBGRWWU2tfvzxgeSW5Q==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -2329,7 +2329,7 @@ packages:
       typescript: '>=3'
     dependencies:
       '@types/node': 20.4.7
-      cosmiconfig: 8.3.4(typescript@5.2.2)
+      cosmiconfig: 8.3.5(typescript@5.2.2)
       ts-node: 10.9.1(@types/node@20.4.7)(typescript@5.2.2)
       typescript: 5.2.2
     dev: true
@@ -2355,8 +2355,8 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /cosmiconfig@8.3.4(typescript@5.2.2):
-    resolution: {integrity: sha512-SF+2P8+o/PTV05rgsAjDzL4OFdVXAulSfC/L19VaeVT7+tpOOSscCt2QLxDZ+CLxF2WOiq6y1K5asvs8qUJT/Q==}
+  /cosmiconfig@8.3.5(typescript@5.2.2):
+    resolution: {integrity: sha512-A5Xry3xfS96wy2qbiLkQLAg4JUrR2wvfybxj6yqLmrUfMAvhS3MZxIP2oQn0grgYIvJqzpeTEWu4vK0t+12NNw==}
     engines: {node: '>=14'}
     peerDependencies:
       typescript: '>=4.9.5'

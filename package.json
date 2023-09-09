@@ -62,7 +62,7 @@
 		"cspell": "cspell lint -c ./cspell.json --gitignore --no-progress --no-summary **"
 	},
 	"dependencies": {
-		"cosmiconfig": "8.3.4",
+		"cosmiconfig": "8.3.5",
 		"fuse.js": "6.6.2",
 		"inquirer-autocomplete-prompt": "2.0.0",
 		"inquirer-maxlength-input-prompt": "1.0.2",
