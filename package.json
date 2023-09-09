@@ -109,7 +109,7 @@
 		"ts-node": "10.9.1",
 		"tsconfig-paths-webpack-plugin": "4.1.0",
 		"typescript": "5.2.2",
-		"vite-tsconfig-paths": "4.2.0",
+		"vite-tsconfig-paths": "4.2.1",
 		"vitest": "0.31.4",
 		"webpack": "5.88.2",
 		"webpack-cli": "5.1.4",
