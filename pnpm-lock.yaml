@@ -12,8 +12,8 @@ dependencies:
     specifier: 6.6.2
     version: 6.6.2
   inquirer-autocomplete-prompt:
-    specifier: 2.0.0
-    version: 2.0.0(inquirer@8.2.5)
+    specifier: 2.0.1
+    version: 2.0.1(inquirer@8.2.5)
   inquirer-maxlength-input-prompt:
     specifier: 1.0.2
     version: 1.0.2
@@ -3824,8 +3824,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /inquirer-autocomplete-prompt@2.0.0(inquirer@8.2.5):
-    resolution: {integrity: sha512-c2LljLP3ewVJe4AUZzKdA6oWjqhpy5pfsisHAjh7mP3WUQ/O02x5OLMMqcLOYuRHx6i2hlVSIhUv0xYGyFxFYA==}
+  /inquirer-autocomplete-prompt@2.0.1(inquirer@8.2.5):
+    resolution: {integrity: sha512-jUHrH0btO7j5r8DTQgANf2CBkTZChoVySD8zF/wp5fZCOLIuUbleXhf4ZY5jNBOc1owA3gdfWtfZuppfYBhcUg==}
     engines: {node: '>=12'}
     peerDependencies:
       inquirer: ^8.0.0
