@@ -78,7 +78,7 @@
 		"@types/inquirer-autocomplete-prompt": "3.0.0",
 		"@types/json-diff": "1.0.0",
 		"@types/node": "18.16.0",
-		"@types/string-template": "1.0.2",
+		"@types/string-template": "1.0.3",
 		"@types/webpack-node-externals": "3.0.1",
 		"@typescript-eslint/eslint-plugin": "6.7.2",
 		"@typescript-eslint/parser": "6.7.2",
