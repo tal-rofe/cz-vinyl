@@ -53,8 +53,8 @@ devDependencies:
     specifier: 1.0.3
     version: 1.0.3
   '@types/webpack-node-externals':
-    specifier: 3.0.1
-    version: 3.0.1(webpack-cli@5.1.4)
+    specifier: 3.0.2
+    version: 3.0.2(webpack-cli@5.1.4)
   '@typescript-eslint/eslint-plugin':
     specifier: 6.7.2
     version: 6.7.2(@typescript-eslint/parser@6.7.2)(eslint@8.50.0)(typescript@5.2.2)
@@ -1202,8 +1202,8 @@ packages:
       '@types/node': 18.16.0
     dev: true
 
-  /@types/webpack-node-externals@3.0.1(webpack-cli@5.1.4):
-    resolution: {integrity: sha512-qUW0dOwn+ohnflSrDnscXx25VMli+IRFd9D6B0u7VzWU/DNg6zwqjh6gC6vNWyB7VoPHOYmEAa9pAmoSnYFrXg==}
+  /@types/webpack-node-externals@3.0.2(webpack-cli@5.1.4):
+    resolution: {integrity: sha512-eJv3PhUj2ntixIBMuNdhhEA5wQJyFn6ing61wABO23Bd2XvtWO8Cn5cpR4+Ey4riT0SXq1dKOGHjQySPhkOqeg==}
     dependencies:
       '@types/node': 18.16.0
       webpack: 5.88.2(webpack-cli@5.1.4)
