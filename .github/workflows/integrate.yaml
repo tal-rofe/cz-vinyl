@@ -18,7 +18,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Test Inflint
               run: pnpm inflint
@@ -33,7 +33,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Test TypeScript
               run: pnpm type-check
@@ -48,7 +48,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Test Prettier
               run: pnpm prettier
@@ -63,7 +63,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Test ESLint
               run: pnpm lint
@@ -78,7 +78,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Test build
               run: pnpm build
@@ -93,7 +93,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Unit Tests
               run: pnpm test:cov
@@ -108,7 +108,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Knip
               run: pnpm knip
@@ -124,7 +124,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: Build
               run: pnpm build
@@ -142,7 +142,7 @@ jobs:
               with:
                   node-version: 18.16.0
                   package-manager: pnpm
-                  package-manager-version: 8.9.0
+                  package-manager-version: 8.9.1
 
             - name: CSpell
               run: pnpm cspell
