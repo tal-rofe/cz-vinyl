@@ -79,7 +79,7 @@
 		"@types/json-diff": "1.0.1",
 		"@types/node": "18.16.0",
 		"@types/string-template": "1.0.4",
-		"@types/webpack-node-externals": "3.0.2",
+		"@types/webpack-node-externals": "3.0.3",
 		"@typescript-eslint/eslint-plugin": "6.8.0",
 		"@typescript-eslint/parser": "6.8.0",
 		"@vitest/coverage-c8": "0.31.4",
