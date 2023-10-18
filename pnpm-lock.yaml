@@ -50,8 +50,8 @@ devDependencies:
     specifier: 18.16.0
     version: 18.16.0
   '@types/string-template':
-    specifier: 1.0.3
-    version: 1.0.3
+    specifier: 1.0.4
+    version: 1.0.4
   '@types/webpack-node-externals':
     specifier: 3.0.2
     version: 3.0.2(webpack-cli@5.1.4)
@@ -1315,8 +1315,8 @@ packages:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
     dev: true
 
-  /@types/string-template@1.0.3:
-    resolution: {integrity: sha512-7kWz0WG8+ztinI4swkhXsuKfTTIv2aMz+Vj+ack238syout7Y7oyvKtPFThS2OwMGefYV6AFyed0n6mL1P0nLQ==}
+  /@types/string-template@1.0.4:
+    resolution: {integrity: sha512-XrXytahkpKsM4z1hhzcPOvWin9PWMIahDvOpUO1uqf5HZMGDqJZZCf1cTTXMShZXcMqmqsuMHY9X9/auEmiDfw==}
     dev: true
 
   /@types/through@0.0.30:
