@@ -74,7 +74,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "17.8.0",
 		"@exlint.io/inflint": "2.0.0",
-		"@types/inquirer": "9.0.4",
+		"@types/inquirer": "9.0.5",
 		"@types/inquirer-autocomplete-prompt": "3.0.0",
 		"@types/json-diff": "1.0.0",
 		"@types/node": "18.16.0",
