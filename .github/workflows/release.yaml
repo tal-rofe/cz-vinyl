@@ -16,7 +16,7 @@ jobs:
               uses: Exlint/node-environment@v1.2.6
               with:
                   should-cache: false
-                  node-version: 18.16.0
+                  node-version: 18.18.2
                   package-manager: pnpm
                   package-manager-version: 8.9.2
 
@@ -26,7 +26,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v3
               with:
-                  node-version: 14
+                  node-version: 18
 
             - name: Semantic Release
               uses: cycjimmy/semantic-release-action@v3.4.2
