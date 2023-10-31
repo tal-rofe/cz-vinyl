@@ -16,20 +16,20 @@ jobs:
               uses: Exlint/node-environment@v1.2.6
               with:
                   should-cache: false
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Build dist folder
               run: pnpm build
 
             - name: Setup Node
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
-                  node-version: 14
+                  node-version: 20
 
             - name: Semantic Release
-              uses: cycjimmy/semantic-release-action@v3.4.2
+              uses: cycjimmy/semantic-release-action@v4.0.0
               with:
                   extra_plugins: |
                       @semantic-release/changelog

@@ -16,9 +16,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Test Inflint
               run: pnpm inflint
@@ -31,9 +31,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Test TypeScript
               run: pnpm type-check
@@ -46,9 +46,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Test Prettier
               run: pnpm prettier
@@ -61,9 +61,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Test ESLint
               run: pnpm lint
@@ -76,9 +76,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Test build
               run: pnpm build
@@ -91,9 +91,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Unit Tests
               run: pnpm test:cov
@@ -106,9 +106,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Knip
               run: pnpm knip
@@ -122,9 +122,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: Build
               run: pnpm build
@@ -140,9 +140,9 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 18.16.0
+                  node-version: 20.9.0
                   package-manager: pnpm
-                  package-manager-version: 8.6.2
+                  package-manager-version: 8.10.0
 
             - name: CSpell
               run: pnpm cspell

@@ -9,6 +9,7 @@ export default defineConfig({
 		coverage: {
 			'100': true,
 			'skipFull': true,
+			'provider': 'v8',
 		},
 	},
 });
