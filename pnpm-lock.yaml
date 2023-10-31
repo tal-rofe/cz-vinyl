@@ -65,8 +65,8 @@ devDependencies:
     specifier: 0.34.6
     version: 0.34.6(vitest@0.34.6)
   chalk:
-    specifier: 5.2.0
-    version: 5.2.0
+    specifier: 5.3.0
+    version: 5.3.0
   commitizen:
     specifier: 4.3.0
     version: 4.3.0(typescript@5.2.2)
@@ -2181,7 +2181,7 @@ packages:
     resolution: {integrity: sha512-T2VJbcDuZQ0Tb2EWwSotMPJjgpy1/tGee1BTpUNsGZ/qgNjV2t7Mvu+d4600U564nbLesN1x2dPL+xii174Ekg==}
     engines: {node: '>=14.16'}
     dependencies:
-      chalk: 5.2.0
+      chalk: 5.3.0
     dev: true
 
   /chalk@2.4.2:
@@ -4588,7 +4588,7 @@ packages:
       '@pnpm/logger': 5.0.0
       '@pnpm/workspace.pkgs-graph': 2.0.9(@pnpm/logger@5.0.0)
       '@snyk/github-codeowners': 1.1.0
-      chalk: 5.2.0
+      chalk: 5.3.0
       easy-table: 1.2.0
       fast-glob: 3.3.1
       globby: 13.1.4
