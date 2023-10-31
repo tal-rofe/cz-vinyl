@@ -78,7 +78,7 @@
 		"@types/inquirer-autocomplete-prompt": "3.0.0",
 		"@vitest/coverage-v8": "0.34.6",
 		"@types/json-diff": "1.0.1",
-		"@types/node": "20.8.9",
+		"@types/node": "20.8.10",
 		"@types/string-template": "1.0.4",
 		"@types/webpack-node-externals": "3.0.3",
 		"@typescript-eslint/eslint-plugin": "6.9.1",
