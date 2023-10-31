@@ -27,7 +27,7 @@ class OpenAiService {
 			return null;
 		}
 
-		const messages: OpenAI.Chat.CreateChatCompletionRequestMessage[] = [
+		const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
 			{
 				role: 'system',
 				content: systemMessage,
