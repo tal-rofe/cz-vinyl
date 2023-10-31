@@ -63,7 +63,7 @@
 	},
 	"dependencies": {
 		"cosmiconfig": "8.3.6",
-		"fuse.js": "6.6.2",
+		"fuse.js": "7.0.0",
 		"inquirer-autocomplete-prompt": "2.0.1",
 		"inquirer-maxlength-input-prompt": "1.0.2",
 		"openai": "4.3.1",
