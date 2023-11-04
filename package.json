@@ -1,8 +1,8 @@
 {
 	"name": "cz-vinyl",
 	"version": "2.3.0",
-	"description": "Commitizen adapter formatting commit messages using Exlint conventions.",
-	"author": "Exlint <dev@exlint.io> (https://www.exlint.io)",
+	"description": "Commitizen adapter for formatting commit messages",
+	"author": "Tal Rofe <talrofe111@gmail.com> (https://github.com/tal-rofe)",
 	"keywords": [
 		"commitizen",
 		"adapter",
@@ -11,18 +11,18 @@
 	],
 	"contributors": [
 		{
-			"name": "tal-rofe",
-			"email": "tal@exlint.io"
+			"name": "Tal Rofe",
+			"email": "talrofe111@gmail.com"
 		}
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/Exlint/cz-vinyl#readme",
+	"homepage": "https://github.com/tal-rofe/cz-vinyl#readme",
 	"bugs": {
-		"url": "https://github.com/Exlint/cz-vinyl/issues"
+		"url": "https://github.com/tal-rofe/cz-vinyl/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Exlint/cz-vinyl.git"
+		"url": "git+https://github.com/tal-rofe/cz-vinyl.git"
 	},
 	"type": "module",
 	"exports": {
