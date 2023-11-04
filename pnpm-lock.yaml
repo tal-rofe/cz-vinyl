@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.0.2
     version: 1.0.2
   openai:
-    specifier: 4.14.2
-    version: 4.14.2
+    specifier: 4.15.0
+    version: 4.15.0
   string-template:
     specifier: 1.0.0
     version: 1.0.0
@@ -5231,8 +5231,8 @@ packages:
       mimic-fn: 4.0.0
     dev: true
 
-  /openai@4.14.2:
-    resolution: {integrity: sha512-JGlm7mMC7J+cyQZnQMOH7daD9cBqqWqLtlBsejElEkgoehPrYfdyxSxIGICz5xk4YimbwI5FlLATSVojLtCKXQ==}
+  /openai@4.15.0:
+    resolution: {integrity: sha512-LPNgtG9gxRphH+7AUM5Q/dS/iWuM0UOKf+723e2kvyENNVMjYFrnQjCdcb2nNJY7+ao+J2jP/PfsXBLN8Si7iA==}
     hasBin: true
     dependencies:
       '@types/node': 18.18.7
