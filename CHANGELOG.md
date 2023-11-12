@@ -1,3 +1,11 @@
+# [2.4.0](https://github.com/tal-rofe/cz-vinyl/compare/v2.3.0...v2.4.0) (2023-11-12)
+
+
+### Features
+
+* 🔥 allow TypeScript configuration for the package ([f2c8e55](https://github.com/tal-rofe/cz-vinyl/commit/f2c8e55349a7bf6121ca85001a5322492ecf8f31))
+* 🔥 allow TypeScript configuration for the package ([#382](https://github.com/tal-rofe/cz-vinyl/issues/382)) ([c72f2d5](https://github.com/tal-rofe/cz-vinyl/commit/c72f2d507015ddf45d35d189115282be28087931))
+
 # [2.3.0](https://github.com/Exlint/cz-vinyl/compare/v2.2.0...v2.3.0) (2023-04-23)
 
 
