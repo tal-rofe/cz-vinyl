@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.0...v2.4.1) (2023-11-12)
+
+
+### Bug Fixes
+
+* 🐞 add TypeScript search place ([fa7b347](https://github.com/tal-rofe/cz-vinyl/commit/fa7b34735b331c8bdf49d9627fc1039e76c4e7ff))
+
 # [2.4.0](https://github.com/tal-rofe/cz-vinyl/compare/v2.3.0...v2.4.0) (2023-11-12)
 
 
