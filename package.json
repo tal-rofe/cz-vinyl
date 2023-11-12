@@ -1,6 +1,6 @@
 {
 	"name": "cz-vinyl",
-	"version": "2.4.0",
+	"version": "2.4.1",
 	"description": "Commitizen adapter for formatting commit messages",
 	"author": "Tal Rofe <talrofe111@gmail.com> (https://github.com/tal-rofe)",
 	"keywords": [
