@@ -13,6 +13,7 @@ export const SEARCH_PLACES = [
 	`.${CONFIGURATION_MODULE_NAME}rc.cjs`,
 	`${CONFIGURATION_MODULE_NAME}.config.js`,
 	`${CONFIGURATION_MODULE_NAME}.config.cjs`,
+	`${CONFIGURATION_MODULE_NAME}.config.ts`,
 
 	path.join(os.homedir(), 'package.json'),
 	path.join(os.homedir(), `.${CONFIGURATION_MODULE_NAME}rc`),
