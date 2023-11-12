@@ -80,8 +80,8 @@ devDependencies:
     specifier: 7.3.8
     version: 7.3.8
   cz-vinyl:
-    specifier: 2.4.0
-    version: 2.4.0(@types/node@20.8.10)(inquirer@8.2.5)(typescript@5.2.2)
+    specifier: 2.4.1
+    version: 2.4.1(@types/node@20.8.10)(inquirer@8.2.5)(typescript@5.2.2)
   deep-object-diff:
     specifier: 1.1.9
     version: 1.1.9
@@ -2695,8 +2695,8 @@ packages:
       - typescript
     dev: true
 
-  /cz-vinyl@2.4.0(@types/node@20.8.10)(inquirer@8.2.5)(typescript@5.2.2):
-    resolution: {integrity: sha512-yjGJxgOcEXFvbM+BVH5CffpUqBaLgIqXj3JBF07ZYs2uHAhb7x/TjdzQfQz0He6PYViaKZlZXYL7NwKLTTBEmQ==}
+  /cz-vinyl@2.4.1(@types/node@20.8.10)(inquirer@8.2.5)(typescript@5.2.2):
+    resolution: {integrity: sha512-vrZhOIiFKylP6ZJmDI6bJ18bGwsHH8FQfq/06MzLTlcmJSS3tUBIAUdma1LhCdbL2y3t/exlNTrA3TdkzG3cXg==}
     engines: {node: '>=14.16'}
     dependencies:
       cosmiconfig: 8.3.6(typescript@5.2.2)
