@@ -1,4 +1,5 @@
 import { cosmiconfig } from 'cosmiconfig';
+import { TypeScriptLoader } from 'cosmiconfig-typescript-loader';
 
 import { DEFAULT_CONFIGURATION } from '../constants/configuration';
 import { CONFIGURATION_MODULE_NAME, SEARCH_PLACES } from '../constants/cosmiconfig';
@@ -18,6 +19,7 @@ export const getConfiguration = async () => {
 
 	const explorer = cosmiconfig(CONFIGURATION_MODULE_NAME, {
 		searchPlaces: SEARCH_PLACES,
+		loaders: { '.ts': TypeScriptLoader() },
 	});
 
 	try {

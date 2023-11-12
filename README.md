@@ -88,9 +88,7 @@ Configuration can be set in environment variables or in the following files (the
 -   a `package.json` property: `"czvinyl": {...}` or in `~/package.json`, for example
 -   a `.czvinylrc` file in JSON or YAML format
 -   a `.czvinylrc.json`, `.czvinylrc.yaml`, `.czvinylrc.yml`, `.czvinylrc.js`, or `.czvinylrc.cjs` file
--   a `czvinyl.config.js`, or `czvinyl.config.cjs` CommonJS module exporting an object
-
-Currently, a TypeScript configuration file is not supported: https://github.com/Codex-/cosmiconfig-typescript-loader/issues/60
+-   a `inflint.config.ts`, `czvinyl.config.js`, or `czvinyl.config.cjs` CommonJS module exporting an object
 
 The default commit types, descriptions and emoji that are used are:
 
