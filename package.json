@@ -35,7 +35,8 @@
 	},
 	"files": [
 		"dist/index.cjs",
-		"dist/config.d.ts"
+		"dist/config.d.ts",
+		"dist/models/configuration.d.ts"
 	],
 	"publishConfig": {
 		"access": "public"
