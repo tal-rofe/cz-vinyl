@@ -1,3 +1,10 @@
+## [2.4.2](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.1...v2.4.2) (2023-11-23)
+
+
+### Bug Fixes
+
+* 🐞 include types definition for configuration schema ([d40fde7](https://github.com/tal-rofe/cz-vinyl/commit/d40fde7a79f5f367035e105cbff709a9fb5b6167))
+
 ## [2.4.1](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.0...v2.4.1) (2023-11-12)
 
 
