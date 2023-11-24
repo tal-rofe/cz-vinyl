@@ -47,8 +47,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   '@types/json-diff':
-    specifier: 1.0.1
-    version: 1.0.1
+    specifier: 1.0.2
+    version: 1.0.2
   '@types/node':
     specifier: 20.8.10
     version: 20.8.10
@@ -1293,8 +1293,8 @@ packages:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
     dev: true
 
-  /@types/json-diff@1.0.1:
-    resolution: {integrity: sha512-ikZFvf8Daw68CV6Ggawl0uz3UvisGrr4BNXhgLG25jLesuSUQVS2j7MYuZQfN5TLiBID+zAoyDsdwqmdgnr5Ow==}
+  /@types/json-diff@1.0.2:
+    resolution: {integrity: sha512-XsYtsD5ih3imV3W+e2/ick1rMqs1ERG2uW3EJPPgF6PndPmf+sci2PtR3wOd7u4Di2wn3gU/EPql/2AYdKqqDw==}
     dev: true
 
   /@types/json-schema@7.0.12:
