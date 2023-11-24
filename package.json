@@ -72,7 +72,7 @@
 		"zod": "3.22.4"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "18.2.0",
+		"@commitlint/cli": "18.4.3",
 		"@exlint.io/inflint": "2.0.0",
 		"@types/inquirer": "9.0.7",
 		"@types/inquirer-autocomplete-prompt": "3.0.0",
@@ -85,7 +85,7 @@
 		"@vitest/coverage-v8": "0.34.6",
 		"chalk": "5.3.0",
 		"commitizen": "4.3.0",
-		"commitlint": "18.2.0",
+		"commitlint": "18.4.3",
 		"cspell": "8.0.0",
 		"cz-vinyl": "2.4.2",
 		"deep-object-diff": "1.1.9",
