@@ -53,8 +53,8 @@ devDependencies:
     specifier: 20.8.10
     version: 20.8.10
   '@types/string-template':
-    specifier: 1.0.4
-    version: 1.0.4
+    specifier: 1.0.6
+    version: 1.0.6
   '@types/webpack-node-externals':
     specifier: 3.0.3
     version: 3.0.3(webpack-cli@5.1.4)
@@ -1337,8 +1337,8 @@ packages:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
     dev: true
 
-  /@types/string-template@1.0.4:
-    resolution: {integrity: sha512-XrXytahkpKsM4z1hhzcPOvWin9PWMIahDvOpUO1uqf5HZMGDqJZZCf1cTTXMShZXcMqmqsuMHY9X9/auEmiDfw==}
+  /@types/string-template@1.0.6:
+    resolution: {integrity: sha512-DZVchMskuKMbenWAio71PiJHFQpvSxo++NFxCsr9cOdWgiJ3ZgiX2nNwREcOXW8M0H4qwUVNMiOrm7r/2s+PKQ==}
     dev: true
 
   /@types/through@0.0.30:
