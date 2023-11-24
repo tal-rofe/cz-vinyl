@@ -27,9 +27,7 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"import": {
-				"types": "./dist/config.d.ts"
-			},
+			"types": "./dist/config.d.ts",
 			"require": "./dist/index.cjs"
 		}
 	},
