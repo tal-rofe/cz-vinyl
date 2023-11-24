@@ -1,3 +1,10 @@
+## [2.4.3](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.2...v2.4.3) (2023-11-24)
+
+
+### Bug Fixes
+
+* 🐞 change "exports" key in package json ([3c34fb2](https://github.com/tal-rofe/cz-vinyl/commit/3c34fb2754986c99c39498b59ce0a865e4c0536e))
+
 ## [2.4.2](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.1...v2.4.2) (2023-11-23)
 
 
