@@ -28,6 +28,7 @@
 	"exports": {
 		".": {
 			"types": "./dist/config.d.ts",
+			"import": "./dist/config.d.ts",
 			"require": "./dist/index.cjs"
 		}
 	},
