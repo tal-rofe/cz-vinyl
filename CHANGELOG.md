@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.3...v2.5.0) (2023-11-26)
+
+
+### Features
+
+* 🔥 allow global configuration in Windows ([e6d3fbb](https://github.com/tal-rofe/cz-vinyl/commit/e6d3fbbb0a3bdbb6b07c4503bca252a8c30cb420))
+
 ## [2.4.3](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.2...v2.4.3) (2023-11-24)
 
 
