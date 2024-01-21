@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/tal-rofe/cz-vinyl/compare/v2.5.0...v2.5.1) (2024-01-21)
+
+
+### Bug Fixes
+
+* 🐞 release version with fixed pnpm lock file ([b09b852](https://github.com/tal-rofe/cz-vinyl/commit/b09b852ddf3ee77b64f31b63e01d57b8e5fe9766))
+
 # [2.5.0](https://github.com/tal-rofe/cz-vinyl/compare/v2.4.3...v2.5.0) (2023-11-26)
 
 
