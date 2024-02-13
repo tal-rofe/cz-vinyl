@@ -95,7 +95,7 @@
 		"eslint-plugin-deprecation": "2.0.0",
 		"eslint-plugin-import": "2.29.1",
 		"eslint-plugin-node": "11.1.0",
-		"eslint-plugin-unicorn": "49.0.0",
+		"eslint-plugin-unicorn": "51.0.1",
 		"eslint-plugin-unused-imports": "3.0.0",
 		"figlet": "1.7.0",
 		"husky": "9.0.10",
