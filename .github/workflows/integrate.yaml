@@ -16,7 +16,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -31,7 +31,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -46,7 +46,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -61,7 +61,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -76,7 +76,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -91,7 +91,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -106,7 +106,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -122,7 +122,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
@@ -140,7 +140,7 @@ jobs:
             - name: Setup Node environment
               uses: Exlint/node-environment@v1.2.6
               with:
-                  node-version: 20.10.0
+                  node-version: 20.11.0
                   package-manager: pnpm
                   package-manager-version: 8.15.2
 
