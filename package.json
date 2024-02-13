@@ -107,7 +107,7 @@
 		"prettier": "3.2.5",
 		"rimraf": "5.0.5",
 		"ts-loader": "9.5.1",
-		"ts-node": "10.9.1",
+		"ts-node": "10.9.2",
 		"tsconfig-paths-webpack-plugin": "4.1.0",
 		"typescript": "5.3.2",
 		"vite-tsconfig-paths": "4.3.1",
