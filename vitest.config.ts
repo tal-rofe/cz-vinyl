@@ -7,9 +7,10 @@ export default defineConfig({
 		include: ['tests/**/*.spec.ts'],
 		setupFiles: './vitest.setup.ts',
 		coverage: {
-			'100': true,
-			'skipFull': true,
-			'provider': 'v8',
+			thresholds: { '100': true },
+			skipFull: true,
+			provider: 'v8',
+			include: ['./src/**/*'],
 		},
 	},
 });
