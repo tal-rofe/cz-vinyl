@@ -67,7 +67,7 @@
 		"fuse.js": "7.0.0",
 		"inquirer-autocomplete-prompt": "2.0.1",
 		"inquirer-maxlength-input-prompt": "1.0.2",
-		"openai": "4.28.0",
+		"openai": "4.28.4",
 		"string-template": "1.0.0",
 		"word-wrap": "1.2.5",
 		"zod": "3.22.4"
