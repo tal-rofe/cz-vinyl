@@ -119,8 +119,8 @@ devDependencies:
     specifier: 1.0.6
     version: 1.0.6
   knip:
-    specifier: 5.0.3
-    version: 5.0.3(@types/node@20.11.26)(typescript@5.4.2)
+    specifier: 5.0.4
+    version: 5.0.4(@types/node@20.11.26)(typescript@5.4.2)
   lint-staged:
     specifier: 15.2.2
     version: 15.2.2
@@ -292,27 +292,6 @@ packages:
       '@commitlint/types': 19.0.3
     dev: true
 
-  /@commitlint/load@19.0.3(@types/node@20.11.26)(typescript@5.4.2):
-    resolution: {integrity: sha512-18Tk/ZcDFRKIoKfEcl7kC+bYkEQ055iyKmGsYDoYWpKf6FUvBrP9bIWapuy/MB+kYiltmP9ITiUx6UXtqC9IRw==}
-    engines: {node: '>=v18'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 19.0.3
-      '@commitlint/execute-rule': 19.0.0
-      '@commitlint/resolve-extends': 19.0.3
-      '@commitlint/types': 19.0.3
-      chalk: 5.3.0
-      cosmiconfig: 8.3.6(typescript@5.4.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.26)(cosmiconfig@8.3.6)(typescript@5.4.2)
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
-    transitivePeerDependencies:
-      - '@types/node'
-      - typescript
-    dev: true
-    optional: true
-
   /@commitlint/load@19.1.0(@types/node@20.11.26)(typescript@5.4.2):
     resolution: {integrity: sha512-rWqnvNDpeshX8JfUC/qjpDkQB78qF+4uHcJmIRJMwvlj6zWce08SP/TPKN3GlNKgXhAawwcAPxXL9qOTTdiOBA==}
     engines: {node: '>=v18'}
@@ -355,20 +334,6 @@ packages:
       git-raw-commits: 4.0.0
       minimist: 1.2.8
     dev: true
-
-  /@commitlint/resolve-extends@19.0.3:
-    resolution: {integrity: sha512-18BKmta8OC8+Ub+Q3QGM9l27VjQaXobloVXOrMvu8CpEwJYv62vC/t7Ka5kJnsW0tU9q1eMqJFZ/nN9T/cOaIA==}
-    engines: {node: '>=v18'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 19.0.3
-      '@commitlint/types': 19.0.3
-      global-directory: 4.0.1
-      import-meta-resolve: 4.0.0
-      lodash.mergewith: 4.6.2
-      resolve-from: 5.0.0
-    dev: true
-    optional: true
 
   /@commitlint/resolve-extends@19.1.0:
     resolution: {integrity: sha512-z2riI+8G3CET5CPgXJPlzftH+RiWYLMYv4C9tSLdLXdr6pBNimSKukYP9MS27ejmscqCTVA4almdLh0ODD2KYg==}
@@ -1223,8 +1188,8 @@ packages:
       '@pnpm/types': 9.4.2
     dev: true
 
-  /@pnpm/error@5.0.2:
-    resolution: {integrity: sha512-0TEm+tWNYm+9uh6DSKyRbv8pv/6b4NL0PastLvMxIoqZbBZ5Zj1cYi332R9xsSUi31ZOsu2wpgn/bC7DA9hrjg==}
+  /@pnpm/error@5.0.3:
+    resolution: {integrity: sha512-ONJU5cUeoeJSy50qOYsMZQHTA/9QKmGgh1ATfEpCLgtbdwqUiwD9MxHNeXUYYI/pocBCz6r1ZCFqiQvO+8SUKA==}
     engines: {node: '>=16.14'}
     dependencies:
       '@pnpm/constants': 7.1.1
@@ -1264,14 +1229,14 @@ packages:
       validate-npm-package-name: 4.0.0
     dev: true
 
-  /@pnpm/npm-resolver@18.1.0(@pnpm/logger@5.0.0):
-    resolution: {integrity: sha512-fUYKX/iHiHldL0VRVvkQI35YK2jWhZEkPO6rrGke8309+LKAo12v833nBttMDpQrtHefmqhB4mhCzQq6L2Xqmg==}
+  /@pnpm/npm-resolver@18.1.1(@pnpm/logger@5.0.0):
+    resolution: {integrity: sha512-NptzncmMD5ZMimbjWkGpMzuBRhlCY+sh7mzypPdBOTNlh5hmEQe/VaRKjNK4V9/b0C/llElkvIePL6acybu86w==}
     engines: {node: '>=16.14'}
     peerDependencies:
       '@pnpm/logger': ^5.0.0
     dependencies:
       '@pnpm/core-loggers': 9.0.6(@pnpm/logger@5.0.0)
-      '@pnpm/error': 5.0.2
+      '@pnpm/error': 5.0.3
       '@pnpm/fetching-types': 5.0.0
       '@pnpm/graceful-fs': 3.2.0
       '@pnpm/logger': 5.0.0
@@ -1319,12 +1284,12 @@ packages:
     engines: {node: '>=16.14'}
     dev: true
 
-  /@pnpm/workspace.pkgs-graph@2.0.14(@pnpm/logger@5.0.0):
-    resolution: {integrity: sha512-SBXXyWDkPEoaLTjLRyQzRHoBYH+P0NLcIjX1yPUxuJiMTvGOMzjpLWTuxYNVe/P0V0VQMrjpJFaJPjlViNLhzg==}
+  /@pnpm/workspace.pkgs-graph@2.0.15(@pnpm/logger@5.0.0):
+    resolution: {integrity: sha512-Txxd5FzzVfBfGCTngISaxFlJzZhzdS8BUrCEtAWJfZOFbQzpWy27rzkaS7TaWW2dHiFcCVYzPI/2vgxfeRansA==}
     engines: {node: '>=16.14'}
     dependencies:
       '@pnpm/npm-package-arg': 1.0.0
-      '@pnpm/npm-resolver': 18.1.0(@pnpm/logger@5.0.0)
+      '@pnpm/npm-resolver': 18.1.1(@pnpm/logger@5.0.0)
       '@pnpm/resolve-workspace-range': 5.0.1
       ramda: /@pnpm/ramda@0.28.1
     transitivePeerDependencies:
@@ -2885,7 +2850,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 19.0.3(@types/node@20.11.26)(typescript@5.4.2)
+      '@commitlint/load': 19.1.0(@types/node@20.11.26)(typescript@5.4.2)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -4714,8 +4679,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knip@5.0.3(@types/node@20.11.26)(typescript@5.4.2):
-    resolution: {integrity: sha512-U4bCIkf4aZ3zZSrBaNE8xIdqX1QVhIHXpwUoAW7odx7oajMwa76hUDd9KjlFlb6qAPjdUuTGHjDszIgpfg+Ndg==}
+  /knip@5.0.4(@types/node@20.11.26)(typescript@5.4.2):
+    resolution: {integrity: sha512-NW8tPh2UBOQUi5ArHthjyZTmkCdjUWXNPYX3By63Ntg2dpNkqAU4nSs5wDFz858mLs9PsIPWauiWgHgLAZwDPw==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
@@ -4727,7 +4692,7 @@ packages:
       '@npmcli/map-workspaces': 3.0.4
       '@npmcli/package-json': 5.0.0
       '@pnpm/logger': 5.0.0
-      '@pnpm/workspace.pkgs-graph': 2.0.14(@pnpm/logger@5.0.0)
+      '@pnpm/workspace.pkgs-graph': 2.0.15(@pnpm/logger@5.0.0)
       '@snyk/github-codeowners': 1.1.0
       '@types/node': 20.11.26
       '@types/picomatch': 2.3.3
@@ -4740,13 +4705,12 @@ packages:
       picocolors: 1.0.0
       picomatch: 4.0.1
       pretty-ms: 9.0.0
-      semver: 7.6.0
       smol-toml: 1.1.4
       strip-json-comments: 5.0.1
       summary: 2.1.0
       typescript: 5.4.2
       zod: 3.22.4
-      zod-validation-error: 3.0.2(zod@3.22.4)
+      zod-validation-error: 3.0.3(zod@3.22.4)
     transitivePeerDependencies:
       - bluebird
       - domexception
@@ -7169,8 +7133,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /zod-validation-error@3.0.2(zod@3.22.4):
-    resolution: {integrity: sha512-21xGaDmnU7lJZ4J63n5GXWqi+rTzGy3gDHbuZ1jP6xrK/DEQGyOqs/xW7eH96tIfCOYm+ecCuT0bfajBRKEVUw==}
+  /zod-validation-error@3.0.3(zod@3.22.4):
+    resolution: {integrity: sha512-cETTrcMq3Ze58vhdR0zD37uJm/694I6mAxcf/ei5bl89cC++fBNxrC2z8lkFze/8hVMPwrbtrwXHR2LB50fpHw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       zod: ^3.18.0
