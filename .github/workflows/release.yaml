@@ -18,7 +18,7 @@ jobs:
                   should-cache: false
                   node-version: 20.11.1
                   package-manager: pnpm
-                  package-manager-version: 8.15.4
+                  package-manager-version: 8.15.5
 
             - name: Build dist folder
               run: pnpm build
