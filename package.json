@@ -90,7 +90,7 @@
 		"cspell": "8.8.0",
 		"cz-vinyl": "2.5.1",
 		"deep-object-diff": "1.1.9",
-		"eslint": "8.57.0",
+		"eslint": "9.2.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-deprecation": "2.0.0",
 		"eslint-plugin-import": "2.29.1",
