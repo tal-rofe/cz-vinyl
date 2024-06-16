@@ -119,8 +119,8 @@ devDependencies:
     specifier: 1.0.6
     version: 1.0.6
   knip:
-    specifier: 5.19.0
-    version: 5.19.0(@types/node@20.14.2)(typescript@5.4.5)
+    specifier: 5.20.0
+    version: 5.20.0(@types/node@20.14.2)(typescript@5.4.5)
   lint-staged:
     specifier: 15.2.7
     version: 15.2.7
@@ -4419,8 +4419,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knip@5.19.0(@types/node@20.14.2)(typescript@5.4.5):
-    resolution: {integrity: sha512-UGt7i9y+xvA1+Q6ssB3rqqMNKtpWvvjBcgRn25NEywDFECMkbOKK7A30Qlke04YKENIl8y2yaKp46P1INBv6Cg==}
+  /knip@5.20.0(@types/node@20.14.2)(typescript@5.4.5):
+    resolution: {integrity: sha512-pQ8fJ6Be7dVsKIqEW06g8TOjiTW9knQPkN0hg2fQTY/Jw16L3EmngAx6cg+5pVLpyxo2wVChCUAn93/ATcatIA==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
@@ -4444,6 +4444,7 @@ packages:
       smol-toml: 1.1.4
       strip-json-comments: 5.0.1
       summary: 2.1.0
+      tsconfig-paths: 4.2.0
       typescript: 5.4.5
       zod: 3.23.8
       zod-validation-error: 3.0.3(zod@3.23.8)
