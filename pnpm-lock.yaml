@@ -21,8 +21,8 @@ dependencies:
     specifier: 1.0.2
     version: 1.0.2
   openai:
-    specifier: 4.52.3
-    version: 4.52.3
+    specifier: 4.52.4
+    version: 4.52.4
   string-template:
     specifier: 1.0.0
     version: 1.0.0
@@ -4849,8 +4849,8 @@ packages:
       - encoding
     dev: true
 
-  /openai@4.52.3:
-    resolution: {integrity: sha512-IyQLYKGYoEEkUCEm2frPzwHDJ3Ym663KtivnY6pWCzuoi6/HgSIMMxpcuTRS81GH6tiULPYGmTxIvzXdmPIWOw==}
+  /openai@4.52.4:
+    resolution: {integrity: sha512-3CkV7e8epJBnTe5ptn4i3ivfm1d8cvkbvBOzhGmGYEarpDpcCgwOMV1aBPvZ/HoveUtREWUE9Fqcy7BcPNtMJg==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.15
