@@ -104,7 +104,7 @@
 		"knip": "5.25.2",
 		"lint-staged": "15.2.7",
 		"npm-run-all2": "6.2.2",
-		"prettier": "3.3.2",
+		"prettier": "3.3.3",
 		"rimraf": "5.0.9",
 		"ts-loader": "9.5.1",
 		"ts-node": "10.9.2",
