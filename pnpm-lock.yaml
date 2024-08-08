@@ -21,8 +21,8 @@ dependencies:
     specifier: 1.0.2
     version: 1.0.2
   openai:
-    specifier: 4.55.1
-    version: 4.55.1(zod@3.23.8)
+    specifier: 4.55.3
+    version: 4.55.3(zod@3.23.8)
   string-template:
     specifier: 1.0.0
     version: 1.0.0
@@ -4884,8 +4884,8 @@ packages:
       - encoding
     dev: true
 
-  /openai@4.55.1(zod@3.23.8):
-    resolution: {integrity: sha512-FziYJcWl+SAGbt5AcRIzVzNcnKohpEMQdtzVOmHFbBp/if7x2+ACqgxF2XUbyi2PcKONPcVpmtG5h9qoDAEXwQ==}
+  /openai@4.55.3(zod@3.23.8):
+    resolution: {integrity: sha512-/IUDdK5w3aB1Kd88Ml7w5F+EkVM5aXlrY+lSpWXdIPL18CmGkC7lV9HFJ7beR0OUSFLFT0qmWvMynqtbMF06/Q==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
