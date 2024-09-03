@@ -119,8 +119,8 @@ devDependencies:
     specifier: 1.0.6
     version: 1.0.6
   knip:
-    specifier: 5.29.1
-    version: 5.29.1(@types/node@20.16.3)(typescript@5.5.4)
+    specifier: 5.29.2
+    version: 5.29.2(@types/node@20.16.3)(typescript@5.5.4)
   lint-staged:
     specifier: 15.2.10
     version: 15.2.10
@@ -2494,7 +2494,7 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       '@cspell/url': 8.14.2
-      micromatch: 4.0.7
+      micromatch: 4.0.8
     dev: true
 
   /cspell-grammar@8.14.2:
@@ -3447,7 +3447,7 @@ packages:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.7
+      micromatch: 4.0.8
     dev: true
 
   /fast-json-stable-stringify@2.1.0:
@@ -3555,7 +3555,7 @@ packages:
     dependencies:
       detect-file: 1.0.0
       is-glob: 4.0.3
-      micromatch: 4.0.7
+      micromatch: 4.0.8
       resolve-dir: 1.0.1
     dev: true
 
@@ -4484,8 +4484,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knip@5.29.1(@types/node@20.16.3)(typescript@5.5.4):
-    resolution: {integrity: sha512-l8qFtRqNpCk8xf46VOwhBUva7LBwanoGPJ4KQNwVRl6hmEXStf1BJlfbYRZ+yQpbilbIV6LN+ztX6LaGtyd4TQ==}
+  /knip@5.29.2(@types/node@20.16.3)(typescript@5.5.4):
+    resolution: {integrity: sha512-NfJ3VDyV7gHvI4lVmr9PQCvC4lvrnTdaRMmtHIVBWB2GWWKj86uTw8Yfnp07M+fQeqOnX3AGPG8hjXHPlE1MEw==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
