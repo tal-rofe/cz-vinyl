@@ -119,8 +119,8 @@ devDependencies:
     specifier: 1.0.6
     version: 1.0.6
   knip:
-    specifier: 5.29.2
-    version: 5.29.2(@types/node@20.16.5)(typescript@5.5.4)
+    specifier: 5.30.0
+    version: 5.30.0(@types/node@20.16.5)(typescript@5.5.4)
   lint-staged:
     specifier: 15.2.10
     version: 15.2.10
@@ -3436,7 +3436,7 @@ packages:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.7
+      micromatch: 4.0.8
     dev: true
 
   /fast-glob@3.3.2:
@@ -4484,8 +4484,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knip@5.29.2(@types/node@20.16.5)(typescript@5.5.4):
-    resolution: {integrity: sha512-NfJ3VDyV7gHvI4lVmr9PQCvC4lvrnTdaRMmtHIVBWB2GWWKj86uTw8Yfnp07M+fQeqOnX3AGPG8hjXHPlE1MEw==}
+  /knip@5.30.0(@types/node@20.16.5)(typescript@5.5.4):
+    resolution: {integrity: sha512-QDpxtXosXK3OBnmWC2LJudjJROozAXyGzSi+aTuEx/Pf9/OKjmegQWix+X6uBYhPbMb8YEFcKWvI7qBnQCkIEA==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
@@ -4745,14 +4745,6 @@ packages:
 
   /micromatch@4.0.5:
     resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
-    engines: {node: '>=8.6'}
-    dependencies:
-      braces: 3.0.3
-      picomatch: 2.3.1
-    dev: true
-
-  /micromatch@4.0.7:
-    resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
     engines: {node: '>=8.6'}
     dependencies:
       braces: 3.0.3
