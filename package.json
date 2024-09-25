@@ -99,6 +99,7 @@
 		"eslint-plugin-unused-imports": "4.1.4",
 		"figlet": "1.7.0",
 		"husky": "9.1.6",
+		"inquirer": "8.2.6",
 		"is-ci": "3.0.1",
 		"json-diff": "1.0.6",
 		"knip": "5.30.5",
@@ -116,5 +117,8 @@
 		"webpack-cli": "5.1.4",
 		"webpack-node-externals": "3.0.0",
 		"webpack-shell-plugin-next": "2.3.2"
+	},
+	"peerDependencies": {
+		"inquirer": "8.2.6"
 	}
 }
