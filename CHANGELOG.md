@@ -1,3 +1,10 @@
+## [2.5.2](https://github.com/tal-rofe/cz-vinyl/compare/v2.5.1...v2.5.2) (2024-09-25)
+
+
+### Bug Fixes
+
+* 🐞 use "inquirer" peer dependency to fix issue of ESM ([6b280b3](https://github.com/tal-rofe/cz-vinyl/commit/6b280b32e261a599de97b02d8562f70062c42455))
+
 ## [2.5.1](https://github.com/tal-rofe/cz-vinyl/compare/v2.5.0...v2.5.1) (2024-01-21)
 
 
