@@ -1,3 +1,10 @@
+## [2.5.3](https://github.com/tal-rofe/cz-vinyl/compare/v2.5.2...v2.5.3) (2024-09-28)
+
+
+### Bug Fixes
+
+* 🐞 explicit version of inquirer always ([06310d8](https://github.com/tal-rofe/cz-vinyl/commit/06310d8ce5cf0fe871e6afd93172b2ba7210145c))
+
 ## [2.5.2](https://github.com/tal-rofe/cz-vinyl/compare/v2.5.1...v2.5.2) (2024-09-25)
 
 
