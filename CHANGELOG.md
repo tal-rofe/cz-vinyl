@@ -1,3 +1,10 @@
+## [2.5.4](https://github.com/tal-rofe/cz-vinyl/compare/v2.5.3...v2.5.4) (2024-09-28)
+
+
+### Bug Fixes
+
+* 🐞 dummy release ([cc3ad10](https://github.com/tal-rofe/cz-vinyl/commit/cc3ad10dc89c2fc9dff2475c80ee03c033171bd6))
+
 ## [2.5.3](https://github.com/tal-rofe/cz-vinyl/compare/v2.5.2...v2.5.3) (2024-09-28)
 
 
