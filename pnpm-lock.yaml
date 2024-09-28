@@ -83,7 +83,7 @@ importers:
         version: 8.14.4
       cz-vinyl:
         specifier: 2.5.2
-        version: 2.5.2(@types/node@20.16.10)(inquirer@8.2.6)(typescript@5.6.2)
+        version: 'link:'
       deep-object-diff:
         specifier: 1.1.9
         version: 1.1.9
@@ -114,9 +114,6 @@ importers:
       husky:
         specifier: 9.1.6
         version: 9.1.6
-      inquirer:
-        specifier: 8.2.6
-        version: 8.2.6
       is-ci:
         specifier: 3.0.1
         version: 3.0.1
@@ -1471,12 +1468,6 @@ packages:
     resolution: {integrity: sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==}
     engines: {node: '>= 10'}
 
-  cz-vinyl@2.5.2:
-    resolution: {integrity: sha512-klKV9tUVr3Iptt1p+6mrMUlg4Rgckc2hxUK/EPbrk8Vmd5G2mTQLOhabUuPCYrKNm3eOkSzuIIxFleS5bWghyQ==}
-    engines: {node: '>=14.16'}
-    peerDependencies:
-      inquirer: 8.2.6
-
   dargs@8.1.0:
     resolution: {integrity: sha512-wAV9QHOsNbwnWdNW2FYvE1P56wtgSbM+3SZcdGiWQILwVjACCXDCI3Ai8QlCjMDB8YK5zySiXZYBiwGmNY3lnw==}
     engines: {node: '>=12'}
@@ -2766,15 +2757,6 @@ packages:
   onetime@7.0.0:
     resolution: {integrity: sha512-VXJjc87FScF88uafS3JllDgvAm+c/Slfz06lorj2uAY34rlUu0Nt+v8wreiImcrgAjjIHp1rXpTDlLOGw29WwQ==}
     engines: {node: '>=18'}
-
-  openai@4.63.0:
-    resolution: {integrity: sha512-Y9V4KODbmrOpqiOmCDVnPfMxMqKLOx8Hwcdn/r8mePq4yv7FSXGnxCs8/jZKO7zCB/IVPWihpJXwJNAIOEiZ2g==}
-    hasBin: true
-    peerDependencies:
-      zod: ^3.23.8
-    peerDependenciesMeta:
-      zod:
-        optional: true
 
   openai@4.65.0:
     resolution: {integrity: sha512-LfA4KUBpH/8rA3vjCQ74LZtdK/8wx9W6Qxq8MHqEdImPsN1XPQ2ompIuJWkKS6kXt5Cs5i8Eb65IIo4M7U+yeQ==}
@@ -5190,23 +5172,6 @@ snapshots:
       - '@types/node'
       - typescript
 
-  cz-vinyl@2.5.2(@types/node@20.16.10)(inquirer@8.2.6)(typescript@5.6.2):
-    dependencies:
-      cosmiconfig: 9.0.0(typescript@5.6.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.16.10)(cosmiconfig@9.0.0(typescript@5.6.2))(typescript@5.6.2)
-      fuse.js: 7.0.0
-      inquirer: 8.2.6
-      inquirer-autocomplete-prompt: 2.0.1(inquirer@8.2.6)
-      inquirer-maxlength-input-prompt: 1.0.2
-      openai: 4.63.0(zod@3.23.8)
-      string-template: 1.0.0
-      word-wrap: 1.2.5
-      zod: 3.23.8
-    transitivePeerDependencies:
-      - '@types/node'
-      - encoding
-      - typescript
-
   dargs@8.1.0: {}
 
   data-view-buffer@1.0.1:
@@ -6636,20 +6601,6 @@ snapshots:
   onetime@7.0.0:
     dependencies:
       mimic-function: 5.0.1
-
-  openai@4.63.0(zod@3.23.8):
-    dependencies:
-      '@types/node': 18.19.15
-      '@types/node-fetch': 2.6.11
-      abort-controller: 3.0.0
-      agentkeepalive: 4.5.0
-      form-data-encoder: 1.7.2
-      formdata-node: 4.4.1
-      node-fetch: 2.7.0
-    optionalDependencies:
-      zod: 3.23.8
-    transitivePeerDependencies:
-      - encoding
 
   openai@4.65.0(zod@3.23.8):
     dependencies:
