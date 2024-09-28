@@ -82,8 +82,8 @@ importers:
         specifier: 8.14.4
         version: 8.14.4
       cz-vinyl:
-        specifier: 2.5.2
-        version: 'link:'
+        specifier: 2.5.4
+        version: 2.5.4(@types/node@20.16.10)(inquirer@8.2.6)(typescript@5.6.2)
       deep-object-diff:
         specifier: 1.1.9
         version: 1.1.9
@@ -1467,6 +1467,10 @@ packages:
   cz-conventional-changelog@3.3.0:
     resolution: {integrity: sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==}
     engines: {node: '>= 10'}
+
+  cz-vinyl@2.5.4:
+    resolution: {integrity: sha512-XyAnDZx654hbUuUka+kuhOG0PztGgcRsPxaUzVHis3kGTvsuLgr3/efPhKyzDXR4r+J7ZVEgEwm5C24HKTRIwA==}
+    engines: {node: '>=14.16'}
 
   dargs@8.1.0:
     resolution: {integrity: sha512-wAV9QHOsNbwnWdNW2FYvE1P56wtgSbM+3SZcdGiWQILwVjACCXDCI3Ai8QlCjMDB8YK5zySiXZYBiwGmNY3lnw==}
@@ -5170,6 +5174,23 @@ snapshots:
       '@commitlint/load': 19.5.0(@types/node@20.16.10)(typescript@5.6.2)
     transitivePeerDependencies:
       - '@types/node'
+      - typescript
+
+  cz-vinyl@2.5.4(@types/node@20.16.10)(inquirer@8.2.6)(typescript@5.6.2):
+    dependencies:
+      cosmiconfig: 9.0.0(typescript@5.6.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.16.10)(cosmiconfig@9.0.0(typescript@5.6.2))(typescript@5.6.2)
+      fuse.js: 7.0.0
+      inquirer-autocomplete-prompt: 2.0.1(inquirer@8.2.6)
+      inquirer-maxlength-input-prompt: 1.0.2
+      openai: 4.65.0(zod@3.23.8)
+      string-template: 1.0.0
+      word-wrap: 1.2.5
+      zod: 3.23.8
+    transitivePeerDependencies:
+      - '@types/node'
+      - encoding
+      - inquirer
       - typescript
 
   dargs@8.1.0: {}
