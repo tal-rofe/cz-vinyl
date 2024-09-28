@@ -118,6 +118,6 @@
 		"webpack-shell-plugin-next": "2.3.2"
 	},
 	"overrides": {
-		"inquirer": "8.2.6"
+		"inquirer": "11.1.0"
 	}
 }
