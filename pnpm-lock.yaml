@@ -12,8 +12,8 @@ importers:
         specifier: 9.0.0
         version: 9.0.0(typescript@5.6.3)
       cosmiconfig-typescript-loader:
-        specifier: 5.1.0
-        version: 5.1.0(@types/node@22.9.0)(cosmiconfig@9.0.0(typescript@5.6.3))(typescript@5.6.3)
+        specifier: 6.0.0
+        version: 6.0.0(@types/node@22.9.0)(cosmiconfig@9.0.0(typescript@5.6.3))(typescript@5.6.3)
       fuse.js:
         specifier: 7.0.0
         version: 7.0.0
@@ -1415,6 +1415,14 @@ packages:
       '@types/node': '*'
       cosmiconfig: '>=8.2'
       typescript: '>=4'
+
+  cosmiconfig-typescript-loader@6.0.0:
+    resolution: {integrity: sha512-Pi86SNGpc99r5jRNv94gbFO0rE/eSWwcpMGeLDbhNaPqZBCHtoouNVPqOE4p0/mFeNE9Us/S6qQknntn26uX9Q==}
+    engines: {node: '>=v18'}
+    peerDependencies:
+      '@types/node': '*'
+      cosmiconfig: '>=9'
+      typescript: '>=5'
 
   cosmiconfig@8.3.6:
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
@@ -5082,6 +5090,13 @@ snapshots:
       '@types/node': 22.9.0
       cosmiconfig: 9.0.0(typescript@5.6.3)
       jiti: 1.21.6
+      typescript: 5.6.3
+
+  cosmiconfig-typescript-loader@6.0.0(@types/node@22.9.0)(cosmiconfig@9.0.0(typescript@5.6.3))(typescript@5.6.3):
+    dependencies:
+      '@types/node': 22.9.0
+      cosmiconfig: 9.0.0(typescript@5.6.3)
+      jiti: 2.3.3
       typescript: 5.6.3
 
   cosmiconfig@8.3.6(typescript@5.6.3):
