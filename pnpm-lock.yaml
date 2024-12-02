@@ -24,8 +24,8 @@ importers:
         specifier: 1.0.2
         version: 1.0.2
       openai:
-        specifier: 4.73.1
-        version: 4.73.1(zod@3.23.8)
+        specifier: 4.74.0
+        version: 4.74.0(zod@3.23.8)
       string-template:
         specifier: 1.0.0
         version: 1.0.0
@@ -2809,8 +2809,8 @@ packages:
       zod:
         optional: true
 
-  openai@4.73.1:
-    resolution: {integrity: sha512-nWImDJBcUsqrhy7yJScXB4+iqjzbUEgzfA3un/6UnHFdwWhjX24oztj69Ped/njABfOdLcO/F7CeWTI5dt8Xmg==}
+  openai@4.74.0:
+    resolution: {integrity: sha512-pQ8t1jchUymw5WB5jZPchuBtWvxul7RyVxa+9RWfiCQyzvzUyI2sKvUYfpEDI/ouaRLcik3K6psj15ByCefeNA==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
@@ -6653,7 +6653,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  openai@4.73.1(zod@3.23.8):
+  openai@4.74.0(zod@3.23.8):
     dependencies:
       '@types/node': 18.19.15
       '@types/node-fetch': 2.6.11
