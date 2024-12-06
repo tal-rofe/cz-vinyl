@@ -12,8 +12,8 @@ importers:
         specifier: 9.0.0
         version: 9.0.0(typescript@5.7.2)
       cosmiconfig-typescript-loader:
-        specifier: 6.0.0
-        version: 6.0.0(@types/node@22.10.1)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2)
+        specifier: 6.1.0
+        version: 6.1.0(@types/node@22.10.1)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2)
       fuse.js:
         specifier: 7.0.0
         version: 7.0.0
@@ -1424,8 +1424,8 @@ packages:
       cosmiconfig: '>=8.2'
       typescript: '>=4'
 
-  cosmiconfig-typescript-loader@6.0.0:
-    resolution: {integrity: sha512-Pi86SNGpc99r5jRNv94gbFO0rE/eSWwcpMGeLDbhNaPqZBCHtoouNVPqOE4p0/mFeNE9Us/S6qQknntn26uX9Q==}
+  cosmiconfig-typescript-loader@6.1.0:
+    resolution: {integrity: sha512-tJ1w35ZRUiM5FeTzT7DtYWAFFv37ZLqSRkGi2oeCK1gPhvaWjkAtfXvLmvE1pRfxxp9aQo6ba/Pvg1dKj05D4g==}
     engines: {node: '>=v18'}
     peerDependencies:
       '@types/node': '*'
@@ -2422,12 +2422,12 @@ packages:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
-  jiti@2.3.3:
-    resolution: {integrity: sha512-EX4oNDwcXSivPrw2qKH2LB5PoFxEvgtv2JgwW0bU858HoLQ+kutSvjLMUqBd0PeJYEinLWhoI9Ol0eYMqj/wNQ==}
-    hasBin: true
-
   jiti@2.4.0:
     resolution: {integrity: sha512-H5UpaUI+aHOqZXlYOaFP/8AzKsg+guWu+Pr3Y8i7+Y3zr1aXAvCvTAQ1RxSc6oVD8R8c7brgNtTVP91E7upH/g==}
+    hasBin: true
+
+  jiti@2.4.1:
+    resolution: {integrity: sha512-yPBThwecp1wS9DmoA4x4KR2h3QoslacnDR8ypuFM962kI4/456Iy1oHx2RAgh4jfZNdn0bctsdadceiBUgpU1g==}
     hasBin: true
 
   js-tokens@4.0.0:
@@ -5098,11 +5098,11 @@ snapshots:
       jiti: 1.21.6
       typescript: 5.7.2
 
-  cosmiconfig-typescript-loader@6.0.0(@types/node@22.10.1)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@22.10.1)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2):
     dependencies:
       '@types/node': 22.10.1
       cosmiconfig: 9.0.0(typescript@5.7.2)
-      jiti: 2.3.3
+      jiti: 2.4.1
       typescript: 5.7.2
 
   cosmiconfig@8.3.6(typescript@5.7.2):
@@ -6284,9 +6284,9 @@ snapshots:
 
   jiti@1.21.6: {}
 
-  jiti@2.3.3: {}
-
   jiti@2.4.0: {}
+
+  jiti@2.4.1: {}
 
   js-tokens@4.0.0: {}
 
