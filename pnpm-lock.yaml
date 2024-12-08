@@ -115,8 +115,8 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       is-ci:
-        specifier: 3.0.1
-        version: 3.0.1
+        specifier: 4.1.0
+        version: 4.1.0
       json-diff:
         specifier: 1.0.6
         version: 1.0.6
@@ -1272,12 +1272,12 @@ packages:
     resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}
     engines: {node: '>=6.0'}
 
-  ci-info@3.9.0:
-    resolution: {integrity: sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==}
-    engines: {node: '>=8'}
-
   ci-info@4.0.0:
     resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
+    engines: {node: '>=8'}
+
+  ci-info@4.1.0:
+    resolution: {integrity: sha512-HutrvTNsF48wnxkzERIXOe5/mlcfFcbfCmwcg6CJnizbSue78AbDt+1cgl26zwn61WFxhcPykPfZrbqjGmBb4A==}
     engines: {node: '>=8'}
 
   clean-regexp@1.0.0:
@@ -2263,8 +2263,8 @@ packages:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
 
-  is-ci@3.0.1:
-    resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
+  is-ci@4.1.0:
+    resolution: {integrity: sha512-Ab9bQDQ11lWootZUI5qxgN2ZXwxNI5hTwnsvOc1wyxQ7zQ8OkEDw79mI0+9jI3x432NfwbVRru+3noJfXF6lSQ==}
     hasBin: true
 
   is-core-module@2.13.1:
@@ -4935,9 +4935,9 @@ snapshots:
 
   chrome-trace-event@1.0.3: {}
 
-  ci-info@3.9.0: {}
-
   ci-info@4.0.0: {}
+
+  ci-info@4.1.0: {}
 
   clean-regexp@1.0.0:
     dependencies:
@@ -6148,9 +6148,9 @@ snapshots:
 
   is-callable@1.2.7: {}
 
-  is-ci@3.0.1:
+  is-ci@4.1.0:
     dependencies:
-      ci-info: 3.9.0
+      ci-info: 4.1.0
 
   is-core-module@2.13.1:
     dependencies:
