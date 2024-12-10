@@ -103,7 +103,7 @@
 		"is-ci": "3.0.1",
 		"json-diff": "1.0.6",
 		"knip": "5.39.2",
-		"lint-staged": "15.2.10",
+		"lint-staged": "15.2.11",
 		"npm-run-all2": "7.0.1",
 		"prettier": "3.4.2",
 		"rimraf": "6.0.1",
