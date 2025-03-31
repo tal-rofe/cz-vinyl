@@ -121,8 +121,8 @@ importers:
         specifier: 1.0.6
         version: 1.0.6
       knip:
-        specifier: 5.46.3
-        version: 5.46.3(@types/node@22.10.1)(typescript@5.8.2)
+        specifier: 5.46.4
+        version: 5.46.4(@types/node@22.10.1)(typescript@5.8.2)
       lint-staged:
         specifier: 15.5.0
         version: 15.5.0
@@ -1691,6 +1691,10 @@ packages:
     resolution: {integrity: sha512-0/r0MySGYG8YqlayBZ6MuCfECmHFdJ5qyPh8s8wa5Hnm6SaFLSK1VYCbj+NKp090Nm1caZhD+QTnmxO7esYGyQ==}
     engines: {node: '>=10.13.0'}
 
+  enhanced-resolve@5.18.1:
+    resolution: {integrity: sha512-ZSW3ma5GkcQBIpwZTSRAI8N71Uuwgs93IezB7mf7R60tC8ZbJideoDNKjHn2O9KIlx6rkGTTEk1xUCK2E1Y2Yg==}
+    engines: {node: '>=10.13.0'}
+
   env-paths@2.2.1:
     resolution: {integrity: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==}
     engines: {node: '>=6'}
@@ -2553,8 +2557,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  knip@5.46.3:
-    resolution: {integrity: sha512-DpxZYvFDh0POjgnfXie39zd4SCxmw3iQTSLPgnf1Umq+k+sCHjcv553UmI3hfo39qlVIq2c8XSsjS3IeZfdAoA==}
+  knip@5.46.4:
+    resolution: {integrity: sha512-iU2VGdXOPOj6Y8jEeixYMjlf2MCLZNjB63u2pfuP14gprRFjxgF+8wZiCgrjvogWt9H2WT+ytLYouXoEFAcm5g==}
     engines: {node: '>=18.18.0'}
     hasBin: true
     peerDependencies:
@@ -5485,6 +5489,11 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.2.1
 
+  enhanced-resolve@5.18.1:
+    dependencies:
+      graceful-fs: 4.2.11
+      tapable: 2.2.1
+
   env-paths@2.2.1: {}
 
   env-paths@3.0.0: {}
@@ -6462,13 +6471,13 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  knip@5.46.3(@types/node@22.10.1)(typescript@5.8.2):
+  knip@5.46.4(@types/node@22.10.1)(typescript@5.8.2):
     dependencies:
       '@nodelib/fs.walk': 3.0.1
       '@snyk/github-codeowners': 1.1.0
       '@types/node': 22.10.1
       easy-table: 1.2.0
-      enhanced-resolve: 5.18.0
+      enhanced-resolve: 5.18.1
       fast-glob: 3.3.3
       jiti: 2.4.2
       js-yaml: 4.1.0
