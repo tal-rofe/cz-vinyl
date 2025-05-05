@@ -25,7 +25,7 @@ importers:
         version: 1.0.2
       openai:
         specifier: 4.97.0
-        version: 4.97.0(zod@3.24.3)
+        version: 4.97.0(zod@3.24.4)
       string-template:
         specifier: 1.0.0
         version: 1.0.0
@@ -33,8 +33,8 @@ importers:
         specifier: 1.2.5
         version: 1.2.5
       zod:
-        specifier: 3.24.3
-        version: 3.24.3
+        specifier: 3.24.4
+        version: 3.24.4
     devDependencies:
       '@commitlint/cli':
         specifier: 19.8.0
@@ -3791,8 +3791,8 @@ packages:
   zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
-  zod@3.24.3:
-    resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
+  zod@3.24.4:
+    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
 
 snapshots:
 
@@ -6411,8 +6411,8 @@ snapshots:
       smol-toml: 1.3.1
       strip-json-comments: 5.0.1
       typescript: 5.8.3
-      zod: 3.24.3
-      zod-validation-error: 3.0.3(zod@3.24.3)
+      zod: 3.24.4
+      zod-validation-error: 3.0.3(zod@3.24.4)
 
   levn@0.4.1:
     dependencies:
@@ -6702,7 +6702,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  openai@4.97.0(zod@3.24.3):
+  openai@4.97.0(zod@3.24.4):
     dependencies:
       '@types/node': 18.19.15
       '@types/node-fetch': 2.6.11
@@ -6712,7 +6712,7 @@ snapshots:
       formdata-node: 4.4.1
       node-fetch: 2.7.0
     optionalDependencies:
-      zod: 3.24.3
+      zod: 3.24.4
     transitivePeerDependencies:
       - encoding
 
@@ -7654,10 +7654,10 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zod-validation-error@3.0.3(zod@3.24.3):
+  zod-validation-error@3.0.3(zod@3.24.4):
     dependencies:
-      zod: 3.24.3
+      zod: 3.24.4
 
   zod@3.23.8: {}
 
-  zod@3.24.3: {}
+  zod@3.24.4: {}
