@@ -71,7 +71,7 @@
 		"openai": "4.103.0",
 		"string-template": "1.0.0",
 		"word-wrap": "1.2.5",
-		"zod": "3.25.28"
+		"zod": "3.25.30"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "19.8.1",
