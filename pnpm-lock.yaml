@@ -24,8 +24,8 @@ importers:
         specifier: 1.0.2
         version: 1.0.2
       openai:
-        specifier: 4.103.0
-        version: 4.103.0(zod@3.25.36)
+        specifier: 4.104.0
+        version: 4.104.0(zod@3.25.36)
       string-template:
         specifier: 1.0.0
         version: 1.0.0
@@ -2824,8 +2824,8 @@ packages:
     resolution: {integrity: sha512-VXJjc87FScF88uafS3JllDgvAm+c/Slfz06lorj2uAY34rlUu0Nt+v8wreiImcrgAjjIHp1rXpTDlLOGw29WwQ==}
     engines: {node: '>=18'}
 
-  openai@4.103.0:
-    resolution: {integrity: sha512-eWcz9kdurkGOFDtd5ySS5y251H2uBgq9+1a2lTBnjMMzlexJ40Am5t6Mu76SSE87VvitPa0dkIAp75F+dZVC0g==}
+  openai@4.104.0:
+    resolution: {integrity: sha512-p99EFNsA/yX6UhVO93f5kJsDRLAg+CTA2RBqdHK4RtK8u5IJw32Hyb2dTGKbnnFmnuoBv5r7Z2CURI9sGZpSuA==}
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
@@ -6692,7 +6692,7 @@ snapshots:
     dependencies:
       mimic-function: 5.0.1
 
-  openai@4.103.0(zod@3.25.36):
+  openai@4.104.0(zod@3.25.36):
     dependencies:
       '@types/node': 18.19.15
       '@types/node-fetch': 2.6.11
