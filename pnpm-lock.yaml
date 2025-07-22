@@ -55,8 +55,8 @@ importers:
         specifier: 22.15.24
         version: 22.15.24
       '@types/string-template':
-        specifier: 1.0.6
-        version: 1.0.6
+        specifier: 1.0.7
+        version: 1.0.7
       '@types/webpack-node-externals':
         specifier: 3.0.4
         version: 3.0.4(webpack-cli@6.0.1)
@@ -874,8 +874,8 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@types/string-template@1.0.6':
-    resolution: {integrity: sha512-DZVchMskuKMbenWAio71PiJHFQpvSxo++NFxCsr9cOdWgiJ3ZgiX2nNwREcOXW8M0H4qwUVNMiOrm7r/2s+PKQ==}
+  '@types/string-template@1.0.7':
+    resolution: {integrity: sha512-sQWEsTbB0pKCc1eAC9mwTKftyXuWfSZVfDTskhlQLE/xTtuevqOlFG/t4Djf/VFbRdt7PROaovoqpWfZWhMRfA==}
 
   '@types/through@0.0.33':
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
@@ -4481,7 +4481,7 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@types/string-template@1.0.6': {}
+  '@types/string-template@1.0.7': {}
 
   '@types/through@0.0.33':
     dependencies:
