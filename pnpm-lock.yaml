@@ -109,8 +109,8 @@ importers:
         specifier: 4.1.4
         version: 4.1.4(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)
       figlet:
-        specifier: 1.8.1
-        version: 1.8.1
+        specifier: 1.8.2
+        version: 1.8.2
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -1932,8 +1932,8 @@ packages:
       picomatch:
         optional: true
 
-  figlet@1.8.1:
-    resolution: {integrity: sha512-kEC3Sme+YvA8Hkibv0NR1oClGcWia0VB2fC1SlMy027cwe795Xx40Xiv/nw/iFAwQLupymWh+uhAAErn/7hwPg==}
+  figlet@1.8.2:
+    resolution: {integrity: sha512-iPCpE9B/rOcjewIzDnagP9F2eySzGeHReX8WlrZQJkqFBk2wvq8gY0c6U6Hd2y9HnX1LQcYSeP7aEHoPt6sVKQ==}
     engines: {node: '>= 0.4.0'}
     hasBin: true
 
@@ -5809,7 +5809,7 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.2
 
-  figlet@1.8.1: {}
+  figlet@1.8.2: {}
 
   figures@2.0.0:
     dependencies:
