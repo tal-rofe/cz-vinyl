@@ -43,8 +43,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(@types/node@22.16.5)(typescript@5.8.3)
       '@types/inquirer':
-        specifier: 9.0.8
-        version: 9.0.8
+        specifier: 9.0.9
+        version: 9.0.9
       '@types/inquirer-autocomplete-prompt':
         specifier: 3.0.0
         version: 3.0.0
@@ -853,8 +853,8 @@ packages:
   '@types/inquirer-autocomplete-prompt@3.0.0':
     resolution: {integrity: sha512-qgaINEdGNMP4fq3BJi5rvs8iMNrYhrp6krGwuVJ3jhFr+6gwqiHPSWrKov4x9vCJFbpzDVoDYjNdFG3kepdhDw==}
 
-  '@types/inquirer@9.0.8':
-    resolution: {integrity: sha512-CgPD5kFGWsb8HJ5K7rfWlifao87m4ph8uioU7OTncJevmE/VLIqAAjfQtko578JZg7/f69K4FgqYym3gNr7DeA==}
+  '@types/inquirer@9.0.9':
+    resolution: {integrity: sha512-/mWx5136gts2Z2e5izdoRCo46lPp5TMs9R15GTSsgg/XnZyxDWVqoVU3R9lWnccKpqwsJLvRoxbCjoJtZB7DSw==}
 
   '@types/json-diff@1.0.3':
     resolution: {integrity: sha512-Qvxm8fpRMv/1zZR3sQWImeRK2mBYJji20xF51Fq9Gt//Ed18u0x6/FNLogLS1xhfUWTEmDyqveJqn95ltB6Kvw==}
@@ -4761,9 +4761,9 @@ snapshots:
 
   '@types/inquirer-autocomplete-prompt@3.0.0':
     dependencies:
-      '@types/inquirer': 9.0.8
+      '@types/inquirer': 9.0.9
 
-  '@types/inquirer@9.0.8':
+  '@types/inquirer@9.0.9':
     dependencies:
       '@types/through': 0.0.33
       rxjs: 7.8.1
