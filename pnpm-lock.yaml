@@ -70,8 +70,8 @@ importers:
         specifier: 1.6.1
         version: 1.6.1(vitest@1.6.1(@types/node@22.16.5)(terser@5.39.0))
       chalk:
-        specifier: 5.4.1
-        version: 5.4.1
+        specifier: 5.6.0
+        version: 5.6.0
       commitizen:
         specifier: 4.3.1
         version: 4.3.1(@types/node@22.16.5)(typescript@5.8.3)
@@ -1320,10 +1320,6 @@ packages:
 
   chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-
-  chalk@5.4.1:
-    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   chalk@5.6.0:
@@ -4182,7 +4178,7 @@ snapshots:
   '@commitlint/format@19.8.1':
     dependencies:
       '@commitlint/types': 19.8.1
-      chalk: 5.4.1
+      chalk: 5.6.0
 
   '@commitlint/is-ignored@19.8.1':
     dependencies:
@@ -4202,7 +4198,7 @@ snapshots:
       '@commitlint/execute-rule': 19.8.0
       '@commitlint/resolve-extends': 19.8.0
       '@commitlint/types': 19.8.0
-      chalk: 5.4.1
+      chalk: 5.6.0
       cosmiconfig: 9.0.0(typescript@5.8.3)
       cosmiconfig-typescript-loader: 6.1.0(@types/node@22.16.5)(cosmiconfig@9.0.0(typescript@5.8.3))(typescript@5.8.3)
       lodash.isplainobject: 4.0.6
@@ -4219,7 +4215,7 @@ snapshots:
       '@commitlint/execute-rule': 19.8.1
       '@commitlint/resolve-extends': 19.8.1
       '@commitlint/types': 19.8.1
-      chalk: 5.4.1
+      chalk: 5.6.0
       cosmiconfig: 9.0.0(typescript@5.8.3)
       cosmiconfig-typescript-loader: 6.1.0(@types/node@22.16.5)(cosmiconfig@9.0.0(typescript@5.8.3))(typescript@5.8.3)
       lodash.isplainobject: 4.0.6
@@ -4280,13 +4276,13 @@ snapshots:
   '@commitlint/types@19.8.0':
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
-      chalk: 5.4.1
+      chalk: 5.6.0
     optional: true
 
   '@commitlint/types@19.8.1':
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
-      chalk: 5.4.1
+      chalk: 5.6.0
 
   '@cspell/cspell-bundled-dicts@9.2.1':
     dependencies:
@@ -5321,7 +5317,7 @@ snapshots:
 
   chalk-template@1.1.0:
     dependencies:
-      chalk: 5.4.1
+      chalk: 5.6.0
 
   chalk@2.4.2:
     dependencies:
@@ -5335,8 +5331,6 @@ snapshots:
       supports-color: 7.2.0
 
   chalk@5.3.0: {}
-
-  chalk@5.4.1: {}
 
   chalk@5.6.0: {}
 
@@ -7029,7 +7023,7 @@ snapshots:
 
   lint-staged@15.5.2:
     dependencies:
-      chalk: 5.4.1
+      chalk: 5.6.0
       commander: 13.1.0
       debug: 4.4.0
       execa: 8.0.1
