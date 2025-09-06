@@ -119,6 +119,6 @@
 		"webpack-shell-plugin-next": "2.3.3"
 	},
 	"overrides": {
-		"inquirer": "8.2.6"
+		"inquirer": "8.2.7"
 	}
 }
