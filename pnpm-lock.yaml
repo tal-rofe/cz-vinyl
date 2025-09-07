@@ -137,7 +137,7 @@ importers:
         version: 6.0.1
       ts-loader:
         specifier: 9.5.4
-        version: 9.5.4(typescript@5.9.2)(webpack@5.100.2)
+        version: 9.5.4(typescript@5.9.2)(webpack@5.101.3)
       ts-node:
         specifier: 10.9.2
         version: 10.9.2(@types/node@22.16.5)(typescript@5.9.2)
@@ -154,17 +154,17 @@ importers:
         specifier: 1.6.1
         version: 1.6.1(@types/node@22.16.5)(terser@5.39.0)
       webpack:
-        specifier: 5.100.2
-        version: 5.100.2(webpack-cli@6.0.1)
+        specifier: 5.101.3
+        version: 5.101.3(webpack-cli@6.0.1)
       webpack-cli:
         specifier: 6.0.1
-        version: 6.0.1(webpack@5.100.2)
+        version: 6.0.1(webpack@5.101.3)
       webpack-node-externals:
         specifier: 3.0.0
         version: 3.0.0
       webpack-shell-plugin-next:
         specifier: 2.3.3
-        version: 2.3.3(webpack@5.100.2)
+        version: 2.3.3(webpack@5.101.3)
 
 packages:
 
@@ -844,9 +844,6 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  '@types/estree@1.0.6':
-    resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
-
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
@@ -1095,11 +1092,6 @@ packages:
 
   acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
-  acorn@8.14.0:
-    resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -3967,8 +3959,8 @@ packages:
     resolution: {integrity: sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.100.2:
-    resolution: {integrity: sha512-QaNKAvGCDRh3wW1dsDjeMdDXwZm2vqq3zn6Pvq4rHOEOGSaUMgOOjG2Y9ZbIGzpfkJk9ZYTHpDqgDfeBDcnLaw==}
+  webpack@5.101.3:
+    resolution: {integrity: sha512-7b0dTKR3Ed//AD/6kkx/o7duS8H3f1a4w3BYpIriX4BzIhjkn4teo05cptsxvLesHFKK5KObnadmCHBwGc+51A==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -4751,8 +4743,6 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@types/estree@1.0.6': {}
-
   '@types/estree@1.0.8': {}
 
   '@types/inquirer-autocomplete-prompt@3.0.0':
@@ -4794,7 +4784,7 @@ snapshots:
   '@types/webpack-node-externals@3.0.4(webpack-cli@6.0.1)':
     dependencies:
       '@types/node': 22.16.5
-      webpack: 5.100.2(webpack-cli@6.0.1)
+      webpack: 5.101.3(webpack-cli@6.0.1)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
@@ -5046,20 +5036,20 @@ snapshots:
       '@webassemblyjs/ast': 1.14.1
       '@xtuc/long': 4.2.2
 
-  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.100.2)':
+  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.101.3)':
     dependencies:
-      webpack: 5.100.2(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack@5.100.2)
+      webpack: 5.101.3(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack@5.101.3)
 
-  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.100.2)':
+  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.101.3)':
     dependencies:
-      webpack: 5.100.2(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack@5.100.2)
+      webpack: 5.101.3(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack@5.101.3)
 
-  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack@5.100.2)':
+  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack@5.101.3)':
     dependencies:
-      webpack: 5.100.2(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack@5.100.2)
+      webpack: 5.101.3(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack@5.101.3)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -5085,8 +5075,6 @@ snapshots:
   acorn-walk@8.3.2: {}
 
   acorn@8.11.3: {}
-
-  acorn@8.14.0: {}
 
   acorn@8.15.0: {}
 
@@ -6191,7 +6179,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   esutils@2.0.3: {}
 
@@ -7187,7 +7175,7 @@ snapshots:
 
   mlly@1.5.0:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.15.0
       pathe: 1.1.2
       pkg-types: 1.0.3
       ufo: 1.4.0
@@ -7936,14 +7924,14 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.11(webpack@5.100.2):
+  terser-webpack-plugin@5.3.11(webpack@5.101.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
       terser: 5.39.0
-      webpack: 5.100.2(webpack-cli@6.0.1)
+      webpack: 5.101.3(webpack-cli@6.0.1)
 
   terser@5.39.0:
     dependencies:
@@ -7993,7 +7981,7 @@ snapshots:
     dependencies:
       typescript: 5.9.2
 
-  ts-loader@9.5.4(typescript@5.9.2)(webpack@5.100.2):
+  ts-loader@9.5.4(typescript@5.9.2)(webpack@5.101.3):
     dependencies:
       chalk: 4.1.2
       enhanced-resolve: 5.18.1
@@ -8001,7 +7989,7 @@ snapshots:
       semver: 7.7.2
       source-map: 0.7.4
       typescript: 5.9.2
-      webpack: 5.100.2(webpack-cli@6.0.1)
+      webpack: 5.101.3(webpack-cli@6.0.1)
 
   ts-node@10.9.2(@types/node@22.16.5)(typescript@5.9.2):
     dependencies:
@@ -8261,12 +8249,12 @@ snapshots:
 
   webidl-conversions@3.0.1: {}
 
-  webpack-cli@6.0.1(webpack@5.100.2):
+  webpack-cli@6.0.1(webpack@5.101.3):
     dependencies:
       '@discoveryjs/json-ext': 0.6.3
-      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.100.2)
-      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.100.2)
-      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack@5.100.2)
+      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.101.3)
+      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.101.3)
+      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack@5.101.3)
       colorette: 2.0.20
       commander: 12.1.0
       cross-spawn: 7.0.6
@@ -8275,7 +8263,7 @@ snapshots:
       import-local: 3.1.0
       interpret: 3.1.1
       rechoir: 0.8.0
-      webpack: 5.100.2(webpack-cli@6.0.1)
+      webpack: 5.101.3(webpack-cli@6.0.1)
       webpack-merge: 6.0.1
 
   webpack-merge@6.0.1:
@@ -8286,13 +8274,13 @@ snapshots:
 
   webpack-node-externals@3.0.0: {}
 
-  webpack-shell-plugin-next@2.3.3(webpack@5.100.2):
+  webpack-shell-plugin-next@2.3.3(webpack@5.101.3):
     dependencies:
-      webpack: 5.100.2(webpack-cli@6.0.1)
+      webpack: 5.101.3(webpack-cli@6.0.1)
 
   webpack-sources@3.3.3: {}
 
-  webpack@5.100.2(webpack-cli@6.0.1):
+  webpack@5.101.3(webpack-cli@6.0.1):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.8
@@ -8316,11 +8304,11 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.2
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.11(webpack@5.100.2)
+      terser-webpack-plugin: 5.3.11(webpack@5.101.3)
       watchpack: 2.4.1
       webpack-sources: 3.3.3
     optionalDependencies:
-      webpack-cli: 6.0.1(webpack@5.100.2)
+      webpack-cli: 6.0.1(webpack@5.101.3)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
